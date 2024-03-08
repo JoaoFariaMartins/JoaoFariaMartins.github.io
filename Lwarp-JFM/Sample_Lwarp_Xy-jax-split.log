@@ -1,0 +1,1626 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.7)  23 MAY 2023 14:41
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Sample_Lwarp_Xy-jax-split.tex
+(./Sample_Lwarp_Xy-jax-split.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp.sty
+Package: lwarp 2022/02/01 v0.903 Allows LaTeX to directly produce HTML5 output.
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifptex/ifptex.sty
+Package: ifptex 2021/07/01 v2.1 pTeX checker
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box50
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+
+Package newunicodechar Warning: Redefining Unicode character on input line 858.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 859.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 860.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 861.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 862.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 863.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 864.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+\LWR@templengthone=\skip49
+\LWR@templengthtwo=\skip50
+\LWR@templengththree=\skip51
+\c@LWR@tempcountone=\count195
+\c@LWR@texboxdepth=\count196
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+Package lwarp Info: Using option 'mathjax' on input line 1175.
+
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment') Lwarp: Including comment 'warpall'
+Lwarp: Excluding comment 'warpHTML' Lwarp: Including comment 'warpprint'
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut Lwarp: Excluding comment 'warpMathJax')
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut
+Lwarp: Including comment 'warpsvg') Excluding 'warpHTML' comment.
+Lwarp: Excluding comment 'LWRcreatelwarpmk' Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count197
+\calc@Bcount=\count198
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count199
+\calc@Cskip=\skip54
+))
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count266
+\decimalpart=\count267
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks19
+))
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+\LWR@quickfile=\write4
+)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Lwarp: Excluding comment 'LWRwriteconf' Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut
+Package lwarp Info: Generating lwarp configuration files, on input line 12.
+
+Lwarp: Including comment 'LWRwriteconf') Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+
+Straight input of comment_writeconf.cut. (./comment_writeconf.cut
+\openout4 = `Sample_Lwarp_Xy-jax-split_html.tex'.
+
+)
+Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+
+Straight input of comment_writeconf.cut. (./comment_writeconf.cut)
+Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+
+Straight input of comment_writeconf.cut. (./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp.css'.
+
+\openout15 = `lwarp.css'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp_sagebrush.css'.
+
+\openout15 = `lwarp_sagebrush.css'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp_formal.css'.
+
+\openout15 = `lwarp_formal.css'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./sample_project.css'.
+
+\openout15 = `sample_project.css'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp.ist'.
+
+\openout15 = `lwarp.ist'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp.xdy'.
+
+\openout15 = `lwarp.xdy'.
+
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+ Straight input of comment_writeconf.cut.
+(./comment_writeconf.cut
+\openout4 = `lwarp_one_limage.txt'.
+
+) Including 'LWRwriteconf' comment.
+\openout3 = `comment_writeconf.cut'.
+
+
+Straight input of comment_writeconf.cut. (./comment_writeconf.cut
+
+LaTeX Warning: Writing or overwriting file `./lwarp_mathjax.txt'.
+
+\openout15 = `lwarp_mathjax.txt'.
+
+
+) Excluding 'LWRcreatelwarpmk' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut
+\c@FootnoteDepth=\count268
+\c@footnoteReset=\count269
+) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+\c@LWR@currentautosecpage=\count270
+\c@LWR@currentautosecfloatpage=\count271
+\c@LWR@previousautopagelabel=\count272
+
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut
+\c@FileDepth=\count273
+) Excluding 'warpHTML' comment.
+Excluding 'warpMathJax' comment. Excluding 'warpMathJax' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+\HTMLvleftskip=\skip55
+\HTMLleftmargini=\skip56
+)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut
+\VerbatimHTMLWidth=\skip57
+) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+\c@SideTOCDepth=\count274
+)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+\LWR@fminipagebox=\box51
+)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode, (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrecat.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen141
+\Y@c=\dimen142
+\U@c=\dimen143
+\D@c=\dimen144
+\L@c=\dimen145
+\R@c=\dimen146
+\Edge@c=\toks20
+\X@p=\dimen147
+\Y@p=\dimen148
+\U@p=\dimen149
+\D@p=\dimen150
+\L@p=\dimen151
+\R@p=\dimen152
+\Edge@p=\toks21
+\X@origin=\dimen153
+\Y@origin=\dimen154
+\X@xbase=\dimen155
+\Y@xbase=\dimen156
+\X@ybase=\dimen157
+\Y@ybase=\dimen158
+\X@min=\dimen159
+\Y@min=\dimen160
+\X@max=\dimen161
+\Y@max=\dimen162
+\lastobjectbox@=\box52
+\zerodotbox@=\box53
+\almostz@=\dimen163
+ direction,
+\d@X=\dimen164
+\d@Y=\dimen165
+\K@=\count275
+\KK@=\count276
+\Direction=\count277
+\K@dXdY=\dimen166
+\K@dYdX=\dimen167
+\xyread@=\read2
+\xywrite@=\write5
+\csp@=\count278
+\quotPTK@=\dimen168
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks22
+\connectobjectbox@@=\box54
+ objects,
+\styletoks@=\toks23
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.8
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count279
+\crvpts@=\toks24
+\splinebox@=\box55
+\splineval@=\dimen169
+\splinedepth@=\dimen170
+\splinetol@=\dimen171
+\splinelength@=\dimen172
+ circles,
+\L@=\dimen173
+ loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.7
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen174
+ loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.11 loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count280
+\Col=\count281
+\queue@=\toks25
+\queue@@=\toks26
+\qcount@=\count282
+\qcount@@=\count283
+\matrixsize@=\count284
+ loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.11 loaded) loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy2cell.tex
+ Xy-pic option: Two-cell feature v.3.7 two-cells, loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyknot.tex
+ Xy-pic option: Knots and Links feature v.3.9 knots and links, loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf.tex
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
+Xy-pic pdf driver: `curve' extension support
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+Xy-pic pdf driver: `frame' extension support
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
+Xy-pic pdf driver: `line' extension support
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
+Xy-pic pdf driver: `rotate' extension support
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen175
+\pgfutil@tempdimb=\dimen176
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
+\pgf@xd=\dimen187
+\pgf@yd=\dimen188
+\w@pgf@writea=\write6
+\r@pgf@reada=\read3
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count289
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen189
+\pgfmath@count=\count292
+\pgfmath@box=\box57
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count293
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen190
+\pgf@picmaxx=\dimen191
+\pgf@picminy=\dimen192
+\pgf@picmaxy=\dimen193
+\pgf@pathminx=\dimen194
+\pgf@pathmaxx=\dimen195
+\pgf@pathminy=\dimen196
+\pgf@pathmaxy=\dimen197
+\pgf@xx=\dimen198
+\pgf@xy=\dimen199
+\pgf@yx=\dimen256
+\pgf@yy=\dimen257
+\pgf@zx=\dimen258
+\pgf@zy=\dimen259
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen260
+\pgf@path@lasty=\dimen261
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen262
+\pgf@shorten@start@additional=\dimen263
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count294
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen264
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen265
+\pgf@pt@y=\dimen266
+\pgf@pt@temp=\dimen267
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen268
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen269
+\pgf@sys@shading@range@num=\count295
+\pgf@shadingcount=\count296
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box61
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box62
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen270
+\pgf@nodesepend=\dimen271
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen272
+\pgffor@skip=\dimen273
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count297
+\pgfplotmarksize=\dimen274
+)
+\tikz@lastx=\dimen275
+\tikz@lasty=\dimen276
+\tikz@lastxsaved=\dimen277
+\tikz@lastysaved=\dimen278
+\tikz@lastmovetox=\dimen279
+\tikz@lastmovetoy=\dimen280
+\tikzleveldistance=\dimen281
+\tikzsiblingdistance=\dimen282
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count298
+\tikznumberofchildren=\count299
+\tikznumberofcurrentchild=\count300
+\tikz@fig@count=\count301
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count302
+\pgfmatrixcurrentcolumn=\count303
+\pgf@matrix@numberofcolumns=\count304
+)
+\tikz@expandcount=\count305
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+
+(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen283
+\pgfarrowlength=\dimen284
+\pgfarrowwidth=\dimen285
+\pgfarrowlinewidth=\dimen286
+))) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count306
+\U@D=\dimen287
+\l@unhyphenated=\language87
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count307
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count310
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count311
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen289
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count312
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count313
+\c@Item=\count314
+\c@Hfootnote=\count315
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count316
+\c@bookmark@seq@number=\count317
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks39
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks40
+\ex@=\dimen292
+)
+\athelp@=\toks41
+\minaw@=\dimen293
+\bigaw@=\dimen294
+\minCDarrowwidth=\dimen295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box67
+\UL@hyphenbox=\box68
+\UL@skip=\skip59
+\UL@hook=\toks42
+\UL@height=\dimen296
+\UL@pe=\count318
+\UL@pixel=\dimen297
+\ULC@box=\box69
+Package: ulem 2019/11/18
+\ULdepth=\dimen298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count319
+\Gm@cntv=\count320
+\c@Gm@tempcnt=\count321
+\Gm@bindingoffset=\dimen299
+\Gm@wd@mp=\dimen300
+\Gm@odd@mp=\dimen301
+\Gm@even@mp=\dimen302
+\Gm@layoutwidth=\dimen303
+\Gm@layoutheight=\dimen304
+\Gm@layouthoffset=\dimen305
+\Gm@layoutvoffset=\dimen306
+\Gm@dimlist=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen307
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count322
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count323
+\leftroot@=\count324
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count325
+\DOTSCASE@=\count326
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box70
+\strutbox@=\box71
+\big@size=\dimen308
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count327
+\c@MaxMatrixCols=\count328
+\dotsspace@=\muskip17
+\c@parentequation=\count329
+\dspbrk@lvl=\count330
+\tag@help=\toks44
+\row@=\count331
+\column@=\count332
+\maxfields@=\count333
+\andhelp@=\toks45
+\eqnshift@=\dimen309
+\alignsep@=\dimen310
+\tagshift@=\dimen311
+\tagwidth@=\dimen312
+\totwidth@=\dimen313
+\lineht@=\dimen314
+\@envbody=\toks46
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks47
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks48
+\thm@bodyfont=\toks49
+\thm@headfont=\toks50
+\thm@notefont=\toks51
+\thm@headpunct=\toks52
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks53
+)
+\c@Theorem=\count334
+\c@Fundamental Theorem=\count335
+
+Excluding 'warpHTML' comment. (./Sample_Lwarp_Xy-jax-split.aux)
+\openout1 = `Sample_Lwarp_Xy-jax-split.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+\openout4 = `lwarpmk.conf'.
+
+\openout4 = `Sample_Lwarp_Xy-jax-split.lwarpmkconf'.
+
+\LWR@colorminipagebox=\box72
+LaTeX Font Info:    Trying to load font information for U+msa on input line 168
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 168
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package xypdf Info: Line width: 0.47998pt on input line 168.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count336
+\scratchdimen=\dimen315
+\scratchbox=\box73
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen316
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks55
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 168.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count342
+)
+LaTeX Info: Redefining \ref on input line 168.
+LaTeX Info: Redefining \pageref on input line 168.
+LaTeX Info: Redefining \nameref on input line 168.
+
+(./Sample_Lwarp_Xy-jax-split.out) (./Sample_Lwarp_Xy-jax-split.out)
+\@outlinefile=\write7
+\openout7 = `Sample_Lwarp_Xy-jax-split.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 731.23584pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-58.0436pt
+* \headheight=28.45274pt
+* \headsep=28.45274pt
+* \topskip=12.0pt
+* \footskip=28.45274pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./Sample_Lwarp_Xy-jax-split.toc)
+\tf@toc=\write8
+\openout8 = `Sample_Lwarp_Xy-jax-split.toc'.
+
+ <xymatrix 4x2 335>
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+06.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+[2]
+Overfull \hbox (0.8554pt too wide) in paragraph at lines 250--251
+[]\T1/cmr/m/it/12 pdflatex Sample_Lwarp_Xy-jax.tex \T1/cmr/m/n/12 (pos-si-bly t
+wice) : cre-ates Sample_Lwarp_Xy-jax.pdf
+ []
+
+
+Overfull \hbox (46.58861pt too wide) in paragraph at lines 251--252
+[]\T1/cmr/m/it/12 lwarpmk html \T1/cmr/m/n/12 : con-verts Sample_Lwarp_Xy-jax_h
+tml.tex to Sample_Lwarp_Xy-jax_html.html.
+ []
+
+
+Overfull \hbox (105.39536pt too wide) detected at line 293
+[] \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E
+[]; x\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 E; x\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 B; b\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 E[]; x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ! [] [] \OML/cmm/m/it/12 ^^Y[]\
+OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E; x\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^^Y[
+]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B; b\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^^
+Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E[]\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 ^
+^Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 f\O
+T1/cmr/m/n/12 0\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 :
+ []
+
+[3] <xymatrix 3x2 156> <xymatrix 5x4 326> <xymatrix 1x4 18> <xymatrix 4x2 132>
+<xymatrix 1x5 22> <xymatrix 4x2 132> <xymatrix 1x5 22> <xymatrix 4x2 335>
+<xymatrix 4x3 202> [4] <xymatrix 5x3 244> [5] <xymatrix 4x2 167>
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
+
+ []
+
+
+Overfull \hbox (16.10347pt too wide) detected at line 398
+[]
+ []
+
+
+Overfull \hbox (57.80145pt too wide) in paragraph at lines 408--409
+[]\T1/cmr/bx/n/12 pdf \T1/cmr/m/n/12 and \T1/cmr/bx/n/12 HTML \T1/cmr/m/n/12 au
+-to-mat-i-cally co-ex-ist: here is the pdf ver-sion of this HTML file []Sample_
+Lwarp_Xy-
+ []
+
+[6] [7]
+<Stasheff.png, id=213, 454.69875pt x 443.6575pt>
+File: Stasheff.png Graphic file (type png)
+<use Stasheff.png>
+Package pdftex.def Info: Stasheff.png  used on input line 468.
+(pdftex.def)             Requested size: 145.11053pt x 141.58742pt.
+ [8 <./Stasheff.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+[9]
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 564.
+
+<xymatrix 4x2 167>
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
+
+ []
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 620.
+
+[10] <xymatrix 4x2 157> <xymatrix 6x2 214>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 670.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 670.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 670.
+
+[11] <xymatrix 5x4 326> <xymatrix 5x4 326> [12] [13]
+(./Sample_Lwarp_Xy-jax-split.aux)
+Package rerunfilecheck Info: File `Sample_Lwarp_Xy-jax-split.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 2E23068D010BC9AAE9EA8555F67BBE93;4488.
+ ) 
+Here is how much of TeX's memory you used:
+ 28927 strings out of 478287
+ 524542 string characters out of 5849290
+ 868615 words of memory out of 5000000
+ 46304 multiletter control sequences out of 15000+600000
+ 495069 words of font info for 106 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 103i,19n,115p,3251b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/xypic/xybsql10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on Sample_Lwarp_Xy-jax-split.pdf (13 pages, 521984 bytes).
+PDF statistics:
+ 405 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+

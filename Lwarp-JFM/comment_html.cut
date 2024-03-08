@@ -1,0 +1,25 @@
+\CustomizeMathJax{\newcommand{\C}{ \mathbb{C} }}
+\CustomizeMathJax{\newcommand{\Cc}{ \mathcal{D} }}
+\CustomizeMathJax{\newcommand{\Dc}{ \mathcal{D} }}
+
+\CustomizeMathJax{\newcommand{\Z}{ \mathbb{Z} }}
+\CustomizeMathJax{\newcommand{\ra}[1]{\xrightarrow{#1}}}
+\CustomizeMathJax{\DeclareMathOperator{\Sym}{Sym}}
+\CustomizeMathJax{\def \id {\mathrm{id}}}
+\CustomizeMathJax{\newcommand{\Q}{\mathbb{Q}}}
+\CustomizeMathJax{\renewcommand{\a}{{\alpha}}}
+\CustomizeMathJax{\renewcommand{\b}{{\beta}}}
+\CustomizeMathJax{\def \g {\gamma}}
+\CustomizeMathJax{\def \w {\omega}}
+\CustomizeMathJax{\def \e {\epsilon}}
+\CustomizeMathJax{\def \z {\zeta}}
+\CustomizeMathJax{\def \d {\partial}}
+
+\CustomizeMathJax{\newcommand{\tHpb}[3]{{\mathbf{\overline{2H}}^{#1}_{(#2,#3)}}}}
+\CustomizeMathJax{\newcommand{\Hpb}{\mathbf{\overline{H}}}}
+
+
+\CustomizeMathJax{\def \red{\textcolor{red}}}
+
+\CustomizeMathJax{\def \green{\textcolor{green}}}
+\CustomizeMathJax{\def \blue{\textcolor{blue}}}

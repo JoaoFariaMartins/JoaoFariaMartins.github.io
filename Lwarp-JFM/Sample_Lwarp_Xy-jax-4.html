@@ -1,0 +1,817 @@
+
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+<meta charset="UTF-8" />
+<meta name="generator" content="LaTeX Lwarp package" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>Lwarp-xyJax — More general notes</title>
+<link rel="stylesheet" type="text/css" href="my_file_split.css" />
+
+<!-- Joao Faria Martins, 1st Nov 2022:
+Original file called
+lwarp_mathjax.txt
+provided by lwarpmk: v0.902.
+File tweaked by Joao Faria Martins, 7 January 2022 and 8 January 2022.
+Additions to Lwarp_mathjax.txt:
+Two lines were added to the script, as shown,            in order that browsers can find Xy-Jaxv3, hopefully without breaking the MathJax emulation code.
+In particular these additions to the original configuration do not seem to break the equation numbering.
+
+
+Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3 and
+in "40.11 lwarp_mathjax.txt" in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+--
+
+
+This modification in the Lwarp configuration file was produced under items 5 and 6 of the licence https://www.ctan.org/license/lppl1.3
+and also the following paragraph in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+"40.11 lwarp_mathjax.txt custom script
+To generate a custom script, such as to use a local repository, copy lwarp_mathjax.txt to a new file, make changes while keeping lwarp-s adjustments for equation numbering and starred macros, and use \MathJaxFilename to select the new filename."
+-->
+
+
+
+
+<script>
+// Lwarp MathJax emulation code
+//
+// Based on code by Davide P. Cervone.
+// Equation numbering: https://github.com/mathjax/MathJax/issues/2427
+// Starred and ifnextchar macros: https://github.com/mathjax/MathJax/issues/2428
+// \left, \right delimiters: https://github.com/mathjax/MathJax/issues/2535
+//
+// Modified by Brian Dunn to adjust equation numbering and add subequations.
+//
+// LaTeX can use \seteqnumber{subequations?}{section}{number} before each equation.
+// subequations? is 0 usually, 1 if inside subequations.
+// section is a string printed as-is, or empty.
+// number is auto-incremented by MathJax between equations.
+//
+// Tweaks by Joao Faria Martins (08/01/2022) in order that Xy-jaxv3 can be found. Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3
+// added by Joao Faria Martins: 07 Jan 2022 '[custom]/xypic.js',            paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+
+
+
+MathJax = {
+      subequations: "0",
+      section: "",
+      loader: {
+             load: ['[tex]/tagformat', '[tex]/textmacros', '[custom]/xypic.js'],
+             paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+      },
+      startup: {
+             ready() {
+                  //           These would be replaced by import commands if you wanted to make
+                  //           a proper extension.
+                  const Configuration = MathJax._.input.tex.Configuration.Configuration;
+                  const CommandMap = MathJax._.input.tex.SymbolMap.CommandMap;
+                  const Macro = MathJax._.input.tex.Symbol.Macro;
+                  const TexError = MathJax._.input.tex.TexError.default;
+                  const ParseUtil = MathJax._.input.tex.ParseUtil.default;
+                  const expandable = MathJax._.util.Options.expandable;
+
+
+
+                  //           Insert the replacement string into the TeX string, and check
+                  //           that there haven't been too many maxro substitutions (prevents
+                  //           infinite loops).
+                  const useArgument = (parser, text) => {
+                          parser.string = ParseUtil.addArgs(parser, text, parser.string.slice(parser.i));
+                          parser.i = 0;
+                          if (++parser.macroCount > parser.configuration.options.maxMacros) {
+                               throw new TexError('MaxMacroSub1',
+                               'MathJax maximum macro substitution count exceeded; ' +
+                               'is there a recursive macro call?');
+                          }
+                  }
+
+
+
+                  //           Create the command map for:
+                  //                 \ifstar, \ifnextchar, \ifblank, \ifstrequal, \seteqnumber
+                  new CommandMap('Lwarp-macros', {
+                          ifstar: 'IfstarFunction',
+                          ifnextchar: 'IfnextcharFunction',
+                          ifblank: 'IfblankFunction',
+                          ifstrequal: 'IfstrequalFunction',
+                          seteqnumber: 'SeteqnumberFunction'
+                  }, {
+                          //        This function implements an ifstar macro.
+                          IfstarFunction(parser, name) {
+                               const resultstar = parser.GetArgument(name);
+                               const resultnostar = parser.GetArgument(name);
+                               const star = parser.GetStar();                           // true if there is a *
+                               useArgument(parser, star ? resultstar : resultnostar);
+                          },
+
+
+
+                          //        This function implements an ifnextchar macro.
+                          IfnextcharFunction(parser, name) {
+                               let whichchar = parser.GetArgument(name);
+                               if (whichchar.match(/^(?:0x[0-9A-F]+|[0-9]+)$/i)) {
+                                    // $ syntax highlighting
+                                    whichchar = String.fromCodePoint(parseInt(whichchar));
+                               }
+                               const resultnextchar = parser.GetArgument(name);
+                               const resultnotnextchar = parser.GetArgument(name);
+                               const gotchar = (parser.GetNext() === whichchar);
+                               useArgument(parser, gotchar ? resultnextchar : resultnotnextchar);
+                          },
+
+
+
+                          // This function implements an ifblank macro.
+                          IfblankFunction(parser, name) {
+                               const blankarg = parser.GetArgument(name);
+                               const resultblank = parser.GetArgument(name);
+                               const resultnotblank = parser.GetArgument(name);
+                               const isblank = (blankarg.trim() == "");
+                               useArgument(parser, isblank ? resultblank : resultnotblank);
+                          },
+
+
+
+                          // This function implements an ifstrequal macro.
+                          IfstrequalFunction(parser, name) {
+                               const strequalfirst = parser.GetArgument(name);
+                               const strequalsecond = parser.GetArgument(name);
+                               const resultequal = parser.GetArgument(name);
+                               const resultnotequal = parser.GetArgument(name);
+                               const isequal = (strequalfirst == strequalsecond);
+                               useArgument(parser, isequal ? resultequal : resultnotequal);
+                          },
+
+
+
+                          //        This function modifies the equation numbers.
+                          SeteqnumberFunction(parser, name) {
+                                    //    Get the macro parameters
+                                    const star = parser.GetStar();                        // true if there is a *
+                                    const optBrackets = parser.GetBrackets(name);          // contents of optional brackets
+                                    const newsubequations = parser.GetArgument(name);        // the subequations argument
+                                    const neweqsection = parser.GetArgument(name);        // the eq section argument
+                                    const neweqnumber = parser.GetArgument(name);          // the eq number argument
+                                    MathJax.config.subequations=newsubequations ;         // a string with boolean meaning
+                                    MathJax.config.section=neweqsection ;                 // a string with numeric meaning
+                                    parser.tags.counter = parser.tags.allCounter = neweqnumber ;
+                          }
+
+
+
+                  });
+
+
+
+                  //           Create the Lwarp-macros package
+                  Configuration.create('Lwarp-macros', {
+                          handler: {macro: ['Lwarp-macros']}
+                  });
+
+
+
+                  MathJax.startup.defaultReady();
+
+
+
+                  // For forward references:
+                  MathJax.startup.input[0].preFilters.add(({math}) => {
+                          if (math.inputData.recompile){
+                                    MathJax.config.subequations = math.inputData.recompile.subequations;
+                                    MathJax.config.section = math.inputData.recompile.section;
+                          }
+                  });
+                  MathJax.startup.input[0].postFilters.add(({math}) => {
+                          if (math.inputData.recompile){
+                                    math.inputData.recompile.subequations = MathJax.config.subequations;
+                                    math.inputData.recompile.section = MathJax.config.section;
+                          }
+                  });
+
+
+
+                          // For \left, \right with unicode-math:
+                          const {DelimiterMap} = MathJax._.input.tex.SymbolMap;
+                          const {Symbol} = MathJax._.input.tex.Symbol;
+                          const {MapHandler} = MathJax._.input.tex.MapHandler;
+                          const delimiter = MapHandler.getMap('delimiter');
+                          delimiter.add('\\lBrack', new Symbol('\\lBrack', '\u27E6'));
+                          delimiter.add('\\rBrack', new Symbol('\\rBrack', '\u27E7'));
+                          delimiter.add('\\lAngle', new Symbol('\\lAngle', '\u27EA'));
+                          delimiter.add('\\rAngle', new Symbol('\\rAngle', '\u27EB'));
+                          delimiter.add('\\lbrbrak', new Symbol('\\lbrbrak', '\u2772'));
+                          delimiter.add('\\rbrbrak', new Symbol('\\rbrbrak', '\u2773'));
+                          delimiter.add('\\lbag', new Symbol('\\lbag', '\u27C5'));
+                          delimiter.add('\\rbag', new Symbol('\\rbag', '\u27C6'));
+                          delimiter.add('\\llparenthesis', new Symbol('\\llparenthesis', '\u2987'));
+                          delimiter.add('\\rrparenthesis', new Symbol('\\rrparenthesis', '\u2988'));
+                          delimiter.add('\\llangle', new Symbol('\\llangle', '\u2989'));
+                          delimiter.add('\\rrangle', new Symbol('\\rrangle', '\u298A'));
+                          delimiter.add('\\Lbrbrak', new Symbol('\\Lbrbrak', '\u27EC'));
+                          delimiter.add('\\Rbrbrak', new Symbol('\\Rbrbrak', '\u27ED'));
+                          delimiter.add('\\lBrace', new Symbol('\\lBrace', '\u2983'));
+                          delimiter.add('\\rBrace', new Symbol('\\rBrace', '\u2984'));
+                          delimiter.add('\\lParen', new Symbol('\\lParen', '\u2985'));
+                          delimiter.add('\\rParen', new Symbol('\\rParen', '\u2986'));
+                          delimiter.add('\\lbrackubar', new Symbol('\\lbrackubar', '\u298B'));
+                          delimiter.add('\\rbrackubar', new Symbol('\\rbrackubar', '\u298C'));
+                          delimiter.add('\\lbrackultick', new Symbol('\\lbrackultick', '\u298D'));
+                          delimiter.add('\\rbracklrtick', new Symbol('\\rbracklrtick', '\u298E'));
+                          delimiter.add('\\lbracklltick', new Symbol('\\lbracklltick', '\u298F'));
+                          delimiter.add('\\rbrackurtick', new Symbol('\\rbrackurtick', '\u2990'));
+                          delimiter.add('\\langledot', new Symbol('\\langledot', '\u2991'));
+                         delimiter.add('\\rangledot', new Symbol('\\rangledot', '\u2992'));
+                         delimiter.add('\\lparenless', new Symbol('\\lparenless', '\u2993'));
+                         delimiter.add('\\rparengtr', new Symbol('\\rparengtr', '\u2994'));
+                         delimiter.add('\\Lparengtr', new Symbol('\\Lparengtr', '\u2995'));
+                         delimiter.add('\\Rparenless', new Symbol('\\Rparenless', '\u2996'));
+                         delimiter.add('\\lblkbrbrak', new Symbol('\\lblkbrbrak', '\u2997'));
+                         delimiter.add('\\rblkbrbrak', new Symbol('\\rblkbrbrak', '\u2998'));
+                         delimiter.add('\\lvzigzag', new Symbol('\\lvzigzag', '\u29D8'));
+                         delimiter.add('\\rvzigzag', new Symbol('\\rvzigzag', '\u29D9'));
+                         delimiter.add('\\Lvzigzag', new Symbol('\\Lvzigzag', '\u29DA'));
+                         delimiter.add('\\Rvzigzag', new Symbol('\\Rvzigzag', '\u29DB'));
+                         delimiter.add('\\lcurvyangle', new Symbol('\\lcurvyangle', '\u29FC'));
+                         delimiter.add('\\rcurvyangle', new Symbol('\\rcurvyangle', '\u29FD'));
+                         delimiter.add('\\Vvert', new Symbol('\\Vvert', '\u2980'));
+             }           // ready
+      },                // startup
+
+
+//xypic added: Joao Faria Martins (8 Jan 2022)
+      tex: {
+             packages: {'[+]': ['tagformat', 'Lwarp-macros', 'textmacros', 'xypic']},
+             tags: "ams",
+                         tagformat: {
+                                    number: function (n) {
+                                          if(MathJax.config.subequations==0)
+                                                  return(MathJax.config.section + n);
+                                          else
+                                                  return(MathJax.config.section + String.fromCharCode(96+n));
+                                    },
+                         },
+      }
+}
+</script>
+
+
+
+<script
+             id="MathJax-script"
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+
+
+
+</head>
+<body>
+
+
+<a id="Sample_Lwarp_Xy-jax-split-autopage-27"></a>
+<nav class="topnavigation"><a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
+Home</a></nav>
+
+
+<div class="bodyandsidetoc">
+<div class="sidetoccontainer">
+
+
+<nav class="sidetoc">
+
+
+<div class="sidetoctitle">
+
+<p>
+<span class="sidetocthetitle">Sample HTML file: produced with lwarp, with mathematical formulae displayed with MathJax, and xymatrix commutative diagrams displayed with XyJax-v3</span>
+</p>
+
+<p>
+Contents
+</p>
+</div>
+
+
+<div class="sidetoccontents">
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
+Home</a>
+</p>
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-1.html#autosec-5" class="tocsection" >
+<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-2.html#autosec-13" class="tocsection" >
+<span class="sectionnumber">2</span>&#x2003;Examples: xymatrix diagrams displayed with Xy-Jaxv3 using Lwarp</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-3.html#autosec-16" class="tocsection" >
+<span class="sectionnumber">3</span>&#x2003;Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-4.html#autosec-28" class="tocsection" >
+<span class="sectionnumber">4</span>&#x2003;More general notes</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-5.html#autosec-46" class="tocsection" >
+<span class="sectionnumber">5</span>&#x2003;Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-5.html#autosec-47" class="tocsubsection" >
+<span class="sectionnumber">5.1</span>&#x2003;An xymatrix diagram compiled as an image with alt text</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-6.html#autosec-51" class="tocsubsection" >
+<span class="sectionnumber">5.2</span>&#x2003;A tikz image compiled as an image with alt text:</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-7.html#autosec-56" class="tocsubsection" >
+<span class="sectionnumber">5.3</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-8.html#autosec-61" class="tocsubsection" >
+<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-9.html#autosec-65" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-9.html#autosec-66" class="tocsubsection" >
+<span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-72" class="tocsubsection" >
+<span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
+</p>
+
+
+</div>
+
+</nav>
+
+</div>
+
+
+<main class="bodycontainer">
+
+
+<section class="textbody">
+
+<h1>Sample HTML file: produced with lwarp, with mathematical formulae displayed with MathJax, and xymatrix commutative diagrams displayed with XyJax-v3</h1>
+
+<!--MathJax customizations:-->
+
+
+<div class="hidden">
+
+\(\newcommand{\footnotename}{footnote}\)
+
+\(\def \LWRfootnote {1}\)
+
+\(\newcommand {\footnote }[2][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\newcommand {\footnotemark }[1][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\let \LWRorighspace \hspace \)
+
+\(\renewcommand {\hspace }{\ifstar \LWRorighspace \LWRorighspace }\)
+
+\(\newcommand {\mathnormal }[1]{{#1}}\)
+
+\(\newcommand \ensuremath [1]{#1}\)
+
+\(\newcommand {\LWRframebox }[2][]{\fbox {#2}} \newcommand {\framebox }[1][]{\LWRframebox } \)
+
+\(\newcommand {\setlength }[2]{}\)
+
+\(\newcommand {\addtolength }[2]{}\)
+
+\(\newcommand {\setcounter }[2]{}\)
+
+\(\newcommand {\addtocounter }[2]{}\)
+
+\(\newcommand {\arabic }[1]{}\)
+
+\(\newcommand {\number }[1]{}\)
+
+\(\newcommand {\noalign }[1]{\text {#1}\notag \\}\)
+
+\(\newcommand {\cline }[1]{}\)
+
+\(\newcommand {\directlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\luatexdirectlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\protect }{}\)
+
+\(\def \LWRabsorbnumber #1 {}\)
+
+\(\def \LWRabsorbquotenumber &quot;#1 {}\)
+
+\(\newcommand {\LWRabsorboption }[1][]{}\)
+
+\(\newcommand {\LWRabsorbtwooptions }[1][]{\LWRabsorboption }\)
+
+\(\def \mathchar {\ifnextchar &quot;\LWRabsorbquotenumber \LWRabsorbnumber }\)
+
+\(\def \mathcode #1={\mathchar }\)
+
+\(\let \delcode \mathcode \)
+
+\(\let \delimiter \mathchar \)
+
+\(\def \oe {\unicode {x0153}}\)
+
+\(\def \OE {\unicode {x0152}}\)
+
+\(\def \ae {\unicode {x00E6}}\)
+
+\(\def \AE {\unicode {x00C6}}\)
+
+\(\def \aa {\unicode {x00E5}}\)
+
+\(\def \AA {\unicode {x00C5}}\)
+
+\(\def \o {\unicode {x00F8}}\)
+
+\(\def \O {\unicode {x00D8}}\)
+
+\(\def \l {\unicode {x0142}}\)
+
+\(\def \L {\unicode {x0141}}\)
+
+\(\def \ss {\unicode {x00DF}}\)
+
+\(\def \SS {\unicode {x1E9E}}\)
+
+\(\def \dag {\unicode {x2020}}\)
+
+\(\def \ddag {\unicode {x2021}}\)
+
+\(\def \P {\unicode {x00B6}}\)
+
+\(\def \copyright {\unicode {x00A9}}\)
+
+\(\def \pounds {\unicode {x00A3}}\)
+
+\(\let \LWRref \ref \)
+
+\(\renewcommand {\ref }{\ifstar \LWRref \LWRref }\)
+
+\( \newcommand {\multicolumn }[3]{#3}\)
+
+\(\require {textcomp}\)
+
+\(\newcommand {\intertext }[1]{\text {#1}\notag \\}\)
+
+\(\let \Hat \hat \)
+
+\(\let \Check \check \)
+
+\(\let \Tilde \tilde \)
+
+\(\let \Acute \acute \)
+
+\(\let \Grave \grave \)
+
+\(\let \Dot \dot \)
+
+\(\let \Ddot \ddot \)
+
+\(\let \Breve \breve \)
+
+\(\let \Bar \bar \)
+
+\(\let \Vec \vec \)
+
+\(\newcommand {\C }{ \mathbb {C} }\)
+
+\(\newcommand {\Cc }{ \mathcal {C} }\)
+
+\(\newcommand {\Dc }{ \mathcal {D} }\)
+
+\(\newcommand {\Z }{ \mathbb {Z} }\)
+
+\(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
+
+\(\DeclareMathOperator {\Sym }{Sym}\)
+
+\(\def \id {\mathrm {id}}\)
+
+\(\newcommand {\Q }{\mathbb {Q}}\)
+
+\(\renewcommand {\a }{{\alpha }}\)
+
+\(\renewcommand {\b }{{\beta }}\)
+
+\(\def \g {\gamma }\)
+
+\(\def \w {\omega }\)
+
+\(\def \e {\epsilon }\)
+
+\(\def \z {\zeta }\)
+
+\(\def \d {\partial }\)
+
+\(\newcommand {\tHpb }[3]{{\mathbf {\overline {2H}}^{#1}_{(#2,#3)}}}\)
+
+\(\newcommand {\Hpb }{\mathbf {\overline {H}}}\)
+
+\(\def \red {\textcolor {red}}\)
+
+\(\def \green {\textcolor {green}}\)
+
+\(\def \blue {\textcolor {blue}}\)
+
+</div>
+
+<p>
+<!--................................-->
+<h4 id="autosec-28"><span class="sectionnumber">4&#x2003;</span>More general notes</h4>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-28"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autofile-4"></a> <ul style="list-style-type:none">
+
+<li>
+<p>
+• <b>pdf</b> and <b>HTML</b> automatically coexist: here is the pdf version of this HTML file <a href="Sample_Lwarp_Xy-jax.pdf" target="_blank" >Sample_Lwarp_Xy-jax.pdf</a>
+</p>
+</li>
+<li>
+
+
+<p>
+• It is possible to split an HTML page into sub-pages: credit <a href="https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html" target="_blank" >https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html</a>. Instructions
+can be seen in the source latex file of this HTML file <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>.
+</p>
+</li>
+<li>
+
+
+<p>
+• Additions are required in the .tex file in order that <b>MathJax</b> displays commands, macros and definitions correctly. E.g. write:
+</p>
+<pre class="verbatim">
+\DeclareMathOperator{\Sym}{Sym}
+\def \Mon {{\mathbf{Mon}}}
+\newcommand{\Q}{\mathbb{Q}}
+</pre>
+<p>
+and then:
+</p>
+<pre class="verbatim">
+\begin{warpHTML}
+  \CustomizeMathJax{\DeclareMathOperator{\Sym}{Sym}}
+  \CustomizeMathJax{\def \Mon {{\mathbf{Mon}}}}
+  \CustomizeMathJax{\newcommand{\Q}{\mathbb{Q}}}
+\end{warpHTML}
+</pre>
+<p>
+This means that you can use slightly different versions of commands for pdf and for html.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• If using Xy-pic diagrams (if displayed as Xy-jax) put in the preamble of the tex file:
+</p>
+<pre class="verbatim">
+\MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+</pre>
+<p>
+You will also need this configuration file: <a href="lwarp-with-Xy-jax_v3.txt" target="_blank" >lwarp-with-Xy-jax_v3.txt</a>. (Explanation is in Section <a href="Sample_Lwarp_Xy-jax-1.html#Context">1</a>.)
+</p>
+</li>
+<li>
+
+
+<p>
+• Sample use of Xy-pic compatible with lwarp (so that the resulting xymatrix code is readable by Xy-Jax): E.g.:
+</p>
+<pre class="verbatim">
+\[
+\xymatrix
+{
+&& \Q\\ & \Q(\w) \ar@{<-}[ur] \\
+& & \Q(\g)\ar@{<-}[uu] & \Q(\b)\ar@{<-}[uul] & \Q(\a)\ar@{<-}[uull]\\
+&&\Q(\a,\b,\g)\ar@{<-}[uul]\ar@{<-}[u] \ar@{<-}[ur] \ar@{<-}[urr]
+}
+\],
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+\displaymathnormal{$$
+\xymatrix{
+&S_3 \ar@{^{(}->}[r]^f \ar[dr]_{g}^{\cong} &S_4 \ar@{->>}[d]^\pi
+\\ &&S_4/V,
+}
+$$}.
+</pre>
+</li>
+<li>
+
+
+<p>
+• Figures, with alternative text, can be included like this:
+</p>
+<pre class="verbatim">
+\includegraphics[width = 0.4\textwidth,
+alt={Type your alternative text here}]{Stasheff.png}
+</pre>
+<div class="center">
+<p>
+
+
+<a href="Stasheff.png" target="_blank" ><img
+      src="Stasheff.png"
+      style="
+      width:130pt;
+      "
+      class="inlineimage"
+      alt="(This figure shows Stasheff’s Polytope.           The top face is a pentagon, the bottom face is a pentagon ...)"
+></a>
+</p>
+</div>
+</li>
+<li>
+
+
+<p>
+• Figures, including <b>tikz</b> and <b>tikz-cd figures</b>, can be compiled as figures with <b>Alt Text</b>. (The same option is also available for xymatrix diagrams, and may be preferable to Xy-Jaxv3, in the cases when it
+is sensible to provide a comprehensive alternative text to the figure/diagram, instead of relying mainly on the availability of the latex code, for accessibility.)<br />
+<b>Warning:</b> In some operating systems, issues seem to exist with the conversion of tikz figures to svg: e.g. figures may be incorrectly cropped for the web-page.<br />
+Size of xymatrix figures and tikz-cd figures seemingly then must be adjusted manually.
+</p>
+</li>
+<li>
+
+
+<p>
+• When using <b>tikz</b> pictures use (note the Alt Text option):
+</p>
+<pre class="verbatim">
+\begin{figure}\ThisAltText{Alt text to your diagram}
+\begin{tikzpicture}
+
+
+\end{tikzpicture}
+\end{figure}
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+\begin{center}\ThisAltText{Alt text to your diagram}
+\begin{tikzpicture}
+
+
+\end{tikzpicture}
+\end{center}
+</pre>
+<p>
+Examples can be found towards the end of this file.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• When using <b>tikz-cd</b> use:
+</p>
+<pre class="verbatim">
+{\displaymathother
+    \ThisAltText{ Alt text to your commutative diagram }
+\[
+       \begin{tikzcd} F(A) \arrow{r}{F(f)}& F(B) \\
+       G(A)\arrow{r}[swap]{G(f)} \arrow{u}{\eta_A} & G(B)
+       \arrow{u}[right]{\eta_B}
+       \end{tikzcd}
+\]
+}
+</pre>
+</li>
+<li>
+
+
+<p>
+• It is possible to compile an <b>Xy-pic diagram</b> as a <b>figure with alt text</b>. Use:
+</p>
+<pre class="verbatim">
+{
+\displaymathother
+\ThisAltText{Write some alt text here.}
+$$ \xymatrix{ } $$
+}
+</pre>
+<p>
+Examples can be found towards the end of this file.
+</p>
+</li>
+<li>
+
+
+<p>
+• <b>To select your own .CSS files use:</b>
+</p>
+<pre class="verbatim">
+\CSSFilename{your_file.css}
+</pre>
+</li>
+<li>
+
+
+<p>
+• Avoid good old Tex commands like
+</p>
+<pre class="verbatim">
+{\bf }, {\it }.
+</pre>
+<p>
+It seems that lwarp does not deal with them properly. Instead use:
+</p>
+<pre class="verbatim">
+\textbf{ }, \textit{ }.
+</pre>
+<p>
+(In fact better to avoid <i>italics</i> altogether for accessibility reasons: use <b>bold</b>.)
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Lwarp gives errors messages when compiling Xy-pic diagrams inside
+</p>
+<pre class="verbatim">
+\begin{equation} \end{equation}
+</pre>
+<p>
+Use instead:
+</p>
+<pre class="verbatim">
+\[\xymatrix{} \]
+or
+\[\begin{xy} \xymatrix{} \end{xy}\]
+</pre>
+<p>
+Or use <em>lwarpmk pdftohtml</em> if there are compilation errors.
+</p>
+</li>
+<li>
+
+
+<p>
+• Figures created with tikz and xymatrix frequently have issues: e.g. they may be too small (so size needs to be adjusted), or incorrectly cropped. Seems to depend on operating system.
+</p>
+</li>
+</ul>
+
+</section>
+
+</main>
+
+</div>
+
+
+<nav class="botnavigation"><a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
+Home</a></nav>
+
+</body>
+</html>

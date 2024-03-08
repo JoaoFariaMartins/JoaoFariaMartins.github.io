@@ -1,0 +1,12 @@
+@import url("lwarp.css");
+
+section.textbody{
+   max-width: 1000px;
+    margin: auto;
+   /* font-family: Sans-Serif;*/
+}
+<!-- Credit: https://people.bath.ac.uk/feb/lwarp/lwarp-intro.css
+and  https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
+-->
+
+<!-- Credit https://css-tricks.com/sans-serif/-->

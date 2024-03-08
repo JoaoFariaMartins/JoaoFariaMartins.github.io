@@ -1,0 +1,13 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}{\ignorespaces Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax\relax }}{4}{}%
+\contentsline {section}{\numberline {2}{\ignorespaces Examples: lwarp with MathJax and Xy-Jaxv3\relax }}{11}{}%
+\contentsline {section}{\numberline {3}{\ignorespaces Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams\relax }}{13}{}%
+\contentsline {section}{\numberline {4}{\ignorespaces More general notes\relax }}{24}{}%
+\contentsline {section}{\numberline {5}{\ignorespaces Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text\relax }}{41}{}%
+\contentsline {subsection}{\numberline {5.1}{\ignorespaces An xymatrix diagram compiled as an image with alt text\relax }}{42}{}%
+\contentsline {subsection}{\numberline {5.2}{\ignorespaces A tikz image compiled as an image with alt text:\relax }}{45}{}%
+\contentsline {subsection}{\numberline {5.3}{\ignorespaces A tikz image compiled to an image with alt text, outside a float environment\relax }}{49}{}%
+\contentsline {subsection}{\numberline {5.4}{\ignorespaces A tikz-cd diagram compiled into a figure with alt text: \relax }}{53}{}%
+\contentsline {section}{\numberline {6}{\ignorespaces Sample mathematics\relax }}{56}{}%
+\contentsline {subsection}{\numberline {6.1}{\ignorespaces Adjoint functors and coadjoint functors via universal arrows\relax }}{57}{}%
+\contentsline {subsection}{\numberline {6.2}{\ignorespaces The Galois correspondence for $f(t)=t^3-2$, over the rational field\relax }}{62}{}%

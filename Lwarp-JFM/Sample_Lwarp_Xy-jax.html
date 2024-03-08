@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+<meta charset="UTF-8" />
+<meta name="generator" content="LaTeX Lwarp package" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>Sample_Lwarp_Xy-jax</title>
+<link rel="stylesheet" type="text/css" href="my_file_stand-alone.css" />
+
+<!-- Joao Faria Martins, 1st Nov 2022:
+Original file called
+lwarp_mathjax.txt
+provided by lwarpmk: v0.902.
+File tweaked by Joao Faria Martins, 7 January 2022 and 8 January 2022.
+Additions to Lwarp_mathjax.txt:
+Two lines were added to the script, as shown,            in order that browsers can find Xy-Jaxv3, hopefully without breaking the MathJax emulation code.
+In particular these additions to the original configuration do not seem to break the equation numbering.
+
+
+Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3 and
+in "40.11 lwarp_mathjax.txt" in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+--
+
+
+This modification in the Lwarp configuration file was produced under items 5 and 6 of the licence https://www.ctan.org/license/lppl1.3
+and also the following paragraph in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+"40.11 lwarp_mathjax.txt custom script
+To generate a custom script, such as to use a local repository, copy lwarp_mathjax.txt to a new file, make changes while keeping lwarp-s adjustments for equation numbering and starred macros, and use \MathJaxFilename to select the new filename."
+-->
+
+
+
+
+<script>
+// Lwarp MathJax emulation code
+//
+// Based on code by Davide P. Cervone.
+// Equation numbering: https://github.com/mathjax/MathJax/issues/2427
+// Starred and ifnextchar macros: https://github.com/mathjax/MathJax/issues/2428
+// \left, \right delimiters: https://github.com/mathjax/MathJax/issues/2535
+//
+// Modified by Brian Dunn to adjust equation numbering and add subequations.
+//
+// LaTeX can use \seteqnumber{subequations?}{section}{number} before each equation.
+// subequations? is 0 usually, 1 if inside subequations.
+// section is a string printed as-is, or empty.
+// number is auto-incremented by MathJax between equations.
+//
+// Tweaks by Joao Faria Martins (08/01/2022) in order that Xy-jaxv3 can be found. Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3
+// added by Joao Faria Martins: 07 Jan 2022 '[custom]/xypic.js',            paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+
+
+
+MathJax = {
+      subequations: "0",
+      section: "",
+      loader: {
+             load: ['[tex]/tagformat', '[tex]/textmacros', '[custom]/xypic.js'],
+             paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+      },
+      startup: {
+             ready() {
+                  //           These would be replaced by import commands if you wanted to make
+                  //           a proper extension.
+                  const Configuration = MathJax._.input.tex.Configuration.Configuration;
+                  const CommandMap = MathJax._.input.tex.SymbolMap.CommandMap;
+                  const Macro = MathJax._.input.tex.Symbol.Macro;
+                  const TexError = MathJax._.input.tex.TexError.default;
+                  const ParseUtil = MathJax._.input.tex.ParseUtil.default;
+                  const expandable = MathJax._.util.Options.expandable;
+
+
+
+                  //           Insert the replacement string into the TeX string, and check
+                  //           that there haven't been too many maxro substitutions (prevents
+                  //           infinite loops).
+                  const useArgument = (parser, text) => {
+                          parser.string = ParseUtil.addArgs(parser, text, parser.string.slice(parser.i));
+                          parser.i = 0;
+                          if (++parser.macroCount > parser.configuration.options.maxMacros) {
+                               throw new TexError('MaxMacroSub1',
+                               'MathJax maximum macro substitution count exceeded; ' +
+                               'is there a recursive macro call?');
+                          }
+                  }
+
+
+
+                  //           Create the command map for:
+                  //                 \ifstar, \ifnextchar, \ifblank, \ifstrequal, \seteqnumber
+                  new CommandMap('Lwarp-macros', {
+                          ifstar: 'IfstarFunction',
+                          ifnextchar: 'IfnextcharFunction',
+                          ifblank: 'IfblankFunction',
+                          ifstrequal: 'IfstrequalFunction',
+                          seteqnumber: 'SeteqnumberFunction'
+                  }, {
+                          //        This function implements an ifstar macro.
+                          IfstarFunction(parser, name) {
+                               const resultstar = parser.GetArgument(name);
+                               const resultnostar = parser.GetArgument(name);
+                               const star = parser.GetStar();                           // true if there is a *
+                               useArgument(parser, star ? resultstar : resultnostar);
+                          },
+
+
+
+                          //        This function implements an ifnextchar macro.
+                          IfnextcharFunction(parser, name) {
+                               let whichchar = parser.GetArgument(name);
+                               if (whichchar.match(/^(?:0x[0-9A-F]+|[0-9]+)$/i)) {
+                                    // $ syntax highlighting
+                                    whichchar = String.fromCodePoint(parseInt(whichchar));
+                               }
+                               const resultnextchar = parser.GetArgument(name);
+                               const resultnotnextchar = parser.GetArgument(name);
+                               const gotchar = (parser.GetNext() === whichchar);
+                               useArgument(parser, gotchar ? resultnextchar : resultnotnextchar);
+                          },
+
+
+
+                          // This function implements an ifblank macro.
+                          IfblankFunction(parser, name) {
+                               const blankarg = parser.GetArgument(name);
+                               const resultblank = parser.GetArgument(name);
+                               const resultnotblank = parser.GetArgument(name);
+                               const isblank = (blankarg.trim() == "");
+                               useArgument(parser, isblank ? resultblank : resultnotblank);
+                          },
+
+
+
+                          // This function implements an ifstrequal macro.
+                          IfstrequalFunction(parser, name) {
+                               const strequalfirst = parser.GetArgument(name);
+                               const strequalsecond = parser.GetArgument(name);
+                               const resultequal = parser.GetArgument(name);
+                               const resultnotequal = parser.GetArgument(name);
+                               const isequal = (strequalfirst == strequalsecond);
+                               useArgument(parser, isequal ? resultequal : resultnotequal);
+                          },
+
+
+
+                          //        This function modifies the equation numbers.
+                          SeteqnumberFunction(parser, name) {
+                                    //    Get the macro parameters
+                                    const star = parser.GetStar();                       // true if there is a *
+                                    const optBrackets = parser.GetBrackets(name);          // contents of optional brackets
+                                    const newsubequations = parser.GetArgument(name);         // the subequations argument
+                                    const neweqsection = parser.GetArgument(name);        // the eq section argument
+                                    const neweqnumber = parser.GetArgument(name);          // the eq number argument
+                                    MathJax.config.subequations=newsubequations ;         // a string with boolean meaning
+                                    MathJax.config.section=neweqsection ;                 // a string with numeric meaning
+                                    parser.tags.counter = parser.tags.allCounter = neweqnumber ;
+                          }
+
+
+
+                  });
+
+
+
+                  //           Create the Lwarp-macros package
+                  Configuration.create('Lwarp-macros', {
+                          handler: {macro: ['Lwarp-macros']}
+                  });
+
+
+
+                  MathJax.startup.defaultReady();
+
+
+
+                  // For forward references:
+                  MathJax.startup.input[0].preFilters.add(({math}) => {
+                          if (math.inputData.recompile){
+                                    MathJax.config.subequations = math.inputData.recompile.subequations;
+                                    MathJax.config.section = math.inputData.recompile.section;
+                          }
+                  });
+                  MathJax.startup.input[0].postFilters.add(({math}) => {
+                          if (math.inputData.recompile){
+                                    math.inputData.recompile.subequations = MathJax.config.subequations;
+                                    math.inputData.recompile.section = MathJax.config.section;
+                          }
+                  });
+
+
+
+                          // For \left, \right with unicode-math:
+                          const {DelimiterMap} = MathJax._.input.tex.SymbolMap;
+                          const {Symbol} = MathJax._.input.tex.Symbol;
+                          const {MapHandler} = MathJax._.input.tex.MapHandler;
+                          const delimiter = MapHandler.getMap('delimiter');
+                          delimiter.add('\\lBrack', new Symbol('\\lBrack', '\u27E6'));
+                          delimiter.add('\\rBrack', new Symbol('\\rBrack', '\u27E7'));
+                          delimiter.add('\\lAngle', new Symbol('\\lAngle', '\u27EA'));
+                          delimiter.add('\\rAngle', new Symbol('\\rAngle', '\u27EB'));
+                          delimiter.add('\\lbrbrak', new Symbol('\\lbrbrak', '\u2772'));
+                          delimiter.add('\\rbrbrak', new Symbol('\\rbrbrak', '\u2773'));
+                          delimiter.add('\\lbag', new Symbol('\\lbag', '\u27C5'));
+                          delimiter.add('\\rbag', new Symbol('\\rbag', '\u27C6'));
+                          delimiter.add('\\llparenthesis', new Symbol('\\llparenthesis', '\u2987'));
+                          delimiter.add('\\rrparenthesis', new Symbol('\\rrparenthesis', '\u2988'));
+                          delimiter.add('\\llangle', new Symbol('\\llangle', '\u2989'));
+                          delimiter.add('\\rrangle', new Symbol('\\rrangle', '\u298A'));
+                          delimiter.add('\\Lbrbrak', new Symbol('\\Lbrbrak', '\u27EC'));
+                          delimiter.add('\\Rbrbrak', new Symbol('\\Rbrbrak', '\u27ED'));
+                          delimiter.add('\\lBrace', new Symbol('\\lBrace', '\u2983'));
+                          delimiter.add('\\rBrace', new Symbol('\\rBrace', '\u2984'));
+                          delimiter.add('\\lParen', new Symbol('\\lParen', '\u2985'));
+                          delimiter.add('\\rParen', new Symbol('\\rParen', '\u2986'));
+                          delimiter.add('\\lbrackubar', new Symbol('\\lbrackubar', '\u298B'));
+                          delimiter.add('\\rbrackubar', new Symbol('\\rbrackubar', '\u298C'));
+                          delimiter.add('\\lbrackultick', new Symbol('\\lbrackultick', '\u298D'));
+                          delimiter.add('\\rbracklrtick', new Symbol('\\rbracklrtick', '\u298E'));
+                          delimiter.add('\\lbracklltick', new Symbol('\\lbracklltick', '\u298F'));
+                          delimiter.add('\\rbrackurtick', new Symbol('\\rbrackurtick', '\u2990'));
+                          delimiter.add('\\langledot', new Symbol('\\langledot', '\u2991'));
+                         delimiter.add('\\rangledot', new Symbol('\\rangledot', '\u2992'));
+                         delimiter.add('\\lparenless', new Symbol('\\lparenless', '\u2993'));
+                         delimiter.add('\\rparengtr', new Symbol('\\rparengtr', '\u2994'));
+                         delimiter.add('\\Lparengtr', new Symbol('\\Lparengtr', '\u2995'));
+                         delimiter.add('\\Rparenless', new Symbol('\\Rparenless', '\u2996'));
+                         delimiter.add('\\lblkbrbrak', new Symbol('\\lblkbrbrak', '\u2997'));
+                         delimiter.add('\\rblkbrbrak', new Symbol('\\rblkbrbrak', '\u2998'));
+                         delimiter.add('\\lvzigzag', new Symbol('\\lvzigzag', '\u29D8'));
+                         delimiter.add('\\rvzigzag', new Symbol('\\rvzigzag', '\u29D9'));
+                         delimiter.add('\\Lvzigzag', new Symbol('\\Lvzigzag', '\u29DA'));
+                         delimiter.add('\\Rvzigzag', new Symbol('\\Rvzigzag', '\u29DB'));
+                         delimiter.add('\\lcurvyangle', new Symbol('\\lcurvyangle', '\u29FC'));
+                         delimiter.add('\\rcurvyangle', new Symbol('\\rcurvyangle', '\u29FD'));
+                         delimiter.add('\\Vvert', new Symbol('\\Vvert', '\u2980'));
+             }           // ready
+      },                // startup
+
+
+//xypic added: Joao Faria Martins (8 Jan 2022)
+      tex: {
+             packages: {'[+]': ['tagformat', 'Lwarp-macros', 'textmacros', 'xypic']},
+             tags: "ams",
+                         tagformat: {
+                                    number: function (n) {
+                                          if(MathJax.config.subequations==0)
+                                                  return(MathJax.config.section + n);
+                                          else
+                                                  return(MathJax.config.section + String.fromCharCode(96+n));
+                                    },
+                         },
+      }
+}
+</script>
+
+
+
+<script
+             id="MathJax-script"
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+
+
+
+</head>
+<body>
+
+
+<div class="bodywithoutsidetoc">
+
+
+<main class="bodycontainer">
+
+
+<section class="textbody">
+
+<a id="Sample_Lwarp_Xy-jax-autofile-0"></a>
+
+<!--MathJax customizations:-->
+
+
+<div class="hidden">
+
+\(\newcommand{\footnotename}{footnote}\)
+
+\(\def \LWRfootnote {1}\)
+
+\(\newcommand {\footnote }[2][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\newcommand {\footnotemark }[1][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\let \LWRorighspace \hspace \)
+
+\(\renewcommand {\hspace }{\ifstar \LWRorighspace \LWRorighspace }\)
+
+\(\newcommand {\mathnormal }[1]{{#1}}\)
+
+\(\newcommand \ensuremath [1]{#1}\)
+
+\(\newcommand {\LWRframebox }[2][]{\fbox {#2}} \newcommand {\framebox }[1][]{\LWRframebox } \)
+
+\(\newcommand {\setlength }[2]{}\)
+
+\(\newcommand {\addtolength }[2]{}\)
+
+\(\newcommand {\setcounter }[2]{}\)
+
+\(\newcommand {\addtocounter }[2]{}\)
+
+\(\newcommand {\arabic }[1]{}\)
+
+\(\newcommand {\number }[1]{}\)
+
+\(\newcommand {\noalign }[1]{\text {#1}\notag \\}\)
+
+\(\newcommand {\cline }[1]{}\)
+
+\(\newcommand {\directlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\luatexdirectlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\protect }{}\)
+
+\(\def \LWRabsorbnumber #1 {}\)
+
+\(\def \LWRabsorbquotenumber &quot;#1 {}\)
+
+\(\newcommand {\LWRabsorboption }[1][]{}\)
+
+\(\newcommand {\LWRabsorbtwooptions }[1][]{\LWRabsorboption }\)
+
+\(\def \mathchar {\ifnextchar &quot;\LWRabsorbquotenumber \LWRabsorbnumber }\)
+
+\(\def \mathcode #1={\mathchar }\)
+
+\(\let \delcode \mathcode \)
+
+\(\let \delimiter \mathchar \)
+
+\(\def \oe {\unicode {x0153}}\)
+
+\(\def \OE {\unicode {x0152}}\)
+
+\(\def \ae {\unicode {x00E6}}\)
+
+\(\def \AE {\unicode {x00C6}}\)
+
+\(\def \aa {\unicode {x00E5}}\)
+
+\(\def \AA {\unicode {x00C5}}\)
+
+\(\def \o {\unicode {x00F8}}\)
+
+\(\def \O {\unicode {x00D8}}\)
+
+\(\def \l {\unicode {x0142}}\)
+
+\(\def \L {\unicode {x0141}}\)
+
+\(\def \ss {\unicode {x00DF}}\)
+
+\(\def \SS {\unicode {x1E9E}}\)
+
+\(\def \dag {\unicode {x2020}}\)
+
+\(\def \ddag {\unicode {x2021}}\)
+
+\(\def \P {\unicode {x00B6}}\)
+
+\(\def \copyright {\unicode {x00A9}}\)
+
+\(\def \pounds {\unicode {x00A3}}\)
+
+\(\let \LWRref \ref \)
+
+\(\renewcommand {\ref }{\ifstar \LWRref \LWRref }\)
+
+\( \newcommand {\multicolumn }[3]{#3}\)
+
+\(\require {textcomp}\)
+
+\(\newcommand {\intertext }[1]{\text {#1}\notag \\}\)
+
+\(\let \Hat \hat \)
+
+\(\let \Check \check \)
+
+\(\let \Tilde \tilde \)
+
+\(\let \Acute \acute \)
+
+\(\let \Grave \grave \)
+
+\(\let \Dot \dot \)
+
+\(\let \Ddot \ddot \)
+
+\(\let \Breve \breve \)
+
+\(\let \Bar \bar \)
+
+\(\let \Vec \vec \)
+
+\(\newcommand {\C }{ \mathbb {C} }\)
+
+\(\newcommand {\Cc }{ \mathcal {C} }\)
+
+\(\newcommand {\Dc }{ \mathcal {D} }\)
+
+\(\newcommand {\Z }{ \mathbb {Z} }\)
+
+\(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
+
+\(\DeclareMathOperator {\Sym }{Sym}\)
+
+\(\def \id {\mathrm {id}}\)
+
+\(\newcommand {\Q }{\mathbb {Q}}\)
+
+\(\renewcommand {\a }{{\alpha }}\)
+
+\(\renewcommand {\b }{{\beta }}\)
+
+\(\def \g {\gamma }\)
+
+\(\def \w {\omega }\)
+
+\(\def \e {\epsilon }\)
+
+\(\def \z {\zeta }\)
+
+\(\def \d {\partial }\)
+
+\(\newcommand {\tHpb }[3]{{\mathbf {\overline {2H}}^{#1}_{(#2,#3)}}}\)
+
+\(\newcommand {\Hpb }{\mathbf {\overline {H}}}\)
+
+\(\def \red {\textcolor {red}}\)
+
+\(\def \green {\textcolor {green}}\)
+
+\(\def \blue {\textcolor {blue}}\)
+
+</div>
+
+<a id="Sample_Lwarp_Xy-jax-autopage-1"></a>
+<div class="titlepage">
+
+<h1>Sample HTML file: produced with lwarp, with mathematical formulae displayed with MathJax, and xymatrix commutative diagrams displayed with XyJax-v3</h1>
+
+
+<div class="author">
+
+
+<div class="oneauthor">
+
+<p>
+Joa&#x0303;o Faria Martins
+</p>
+</div>
+
+</div>
+
+
+<div class="titledate">
+
+<p>
+Last modified: May 23, 2023
+</p>
+</div>
+
+</div>
+<!--................................-->
+<h4 id="autosec-3">Contents</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-3"></a>
+
+
+
+<nav class="toc">
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-4" class="tocsection" >
+<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-11" class="tocsection" >
+<span class="sectionnumber">2</span>&#x2003;Examples: xymatrix diagrams displayed with Xy-Jaxv3 using Lwarp</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-13" class="tocsection" >
+<span class="sectionnumber">3</span>&#x2003;Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-24" class="tocsection" >
+<span class="sectionnumber">4</span>&#x2003;More general notes</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-41" class="tocsection" >
+<span class="sectionnumber">5</span>&#x2003;Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-42" class="tocsubsection" >
+<span class="sectionnumber">5.1</span>&#x2003;An xymatrix diagram compiled as an image with alt text</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-45" class="tocsubsection" >
+<span class="sectionnumber">5.2</span>&#x2003;A tikz image compiled as an image with alt text:</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-49" class="tocsubsection" >
+<span class="sectionnumber">5.3</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-53" class="tocsubsection" >
+<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-56" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-57" class="tocsubsection" >
+<span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-62" class="tocsubsection" >
+<span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
+</p>
+</nav>
+
+<p>
+\[\xymatrix @R=30pt@C=60pt {&amp;A\ar [d]_{\iota _0^A} \ar [r]^f &amp; X\ar [d]_{\iota _0^X} \ar [r]^g &amp; B.\\ &amp; A \times I \ar
+@/_4pc/[rru]_&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;{H} \ar [r]^{f \times \id _I} &amp; X\times I \ar @{--&gt;}[ur]^{H&apos;} } \]
+</p>
+
+<p>
+The responsibility for this HTML file is <a href="http://www1.maths.leeds.ac.uk/~pmtjfa/index.html" target="_blank" >Joa&#x0303;o Faria Martins</a>’ only.<br />
+Corrections, suggestions, etc. are very welcome, and can be sent to: <a href="mailto:j.fariamartins@leeds.ac.uk" target="_blank" >j.fariamartins@leeds.ac.uk</a>.<br />
+<b>This is strictly a non-specialist experimental file.</b><br />
+
+</p>
+
+<p>
+See the links below for:
+</p>
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• <a href="Sample_Lwarp_Xy-jax.html" target="_blank" >“stand-alone” version of this webpage</a>,
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• <a href="Sample_Lwarp_Xy-jax-split-index.html" target="_blank" >“split” version of this webpage</a> (with sans serif fonts),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• <a href="Sample_Lwarp_Xy-jax.pdf" target="_blank" >pdf version of this page</a>,
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Latex source for the stand alone version of this page <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>,
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Latex source for the split version of this page, with sans serif fonts: <a href="Sample_Lwarp_Xy-jax-split.tex" target="_blank" >Sample_Lwarp_Xy-jax-split.tex</a>,
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• CSS files for the stand-alone version of this page: <a href="lwarp.css" target="_blank" >lwarp.css</a> (automatically provided by <em>lwarpmk</em>) and <a href="my_file_stand-alone.css" target="_blank"
+>my_file_stand-alone.css</a> (minor tweak to adjust margins),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• CSS files for the split version of this page: <a href="lwarp\protect \T1\textunderscore formal.css" target="_blank" >lwarp_formal.css</a> (automatically provided by <em>lwarpmk</em>) and <a
+href="my_file_split.css" target="_blank" >my_file_split.css</a> (minor tweak enforcing sans serif fonts).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Configuration file required for browsers to find Xy-Jaxv3, <a href="lwarp-with-Xy-jax_v3.txt" target="_blank" >lwarp-with-Xy-jax_v3.txt</a>. This script is essentially the original Lwarp MathJax emulation code, <a
+href="lwarp_mathjax.txt" target="_blank" >lwarp_mathjax.txt</a> (automatically created by lwarp v0.902), with two minimal additions, as shown.
+</p>
+</li>
+</ul>
+<!--................................-->
+<h4 id="autosec-4"><span class="sectionnumber">1&#x2003;</span>Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-4"></a>
+
+
+<a id="Context"></a>
+
+<p>
+This HTML file (that you are reading) was produced with the <a href="https://ctan.org/pkg/lwarp" target="_blank" >lwarp.sty package</a>, available with <b>TeXLive</b>. <sup>1</sup> In particular the preamble
+contains:
+</p>
+<pre class="verbatim">
+\documentclass[a4paper,12pt]{article}
+\usepackage[mathjax]{lwarp}
+
+</pre>
+
+<p>
+The version of the software was:
+</p>
+<pre class="verbatim">
+pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian)
+lwarpmk: v0.903   Automated make for the LaTeX Lwarp package.
+
+</pre>
+
+<p>
+The source latex file can be found here: <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>.
+</p>
+
+<p>
+
+</p>
+
+<p>
+This HTML file also makes use of the following configuration script, so that <b>Xy-pic</b> diagrams, particularly <a href="https://www.ctan.org/pkg/xymatrix" target="_blank" ><i>xymatrix</i></a> commmutative
+diagrams, can be displayed by using <b>Xy-Jax-v3</b>. (Or at least a good sample of them: there seem to be some compatibility issues.)<br />
+
+</p>
+<div class="center">
+
+<p>
+<a href="lwarp-with-Xy-jax_v3.txt" target="_blank" >lwarp-with-Xy-jax_v3.txt</a>.
+</p>
+</div>
+
+<p>
+This script file has minimal additions (two in total) in the original Lwarp MathJax emulation code, that is automatically created by lwarp v0.902), namely:
+</p>
+<div class="center">
+
+<p>
+<a href="lwarp_mathjax.txt" target="_blank" >lwarp_mathjax.txt</a>,
+</p>
+</div>
+
+<p>
+(Two lines were added to the script above, as shown, in order that browsers can find Xy-Jaxv3.)
+</p>
+
+<p>
+This modification was produced under items 5 and 6 of the licence <a href="https://www.ctan.org/license/lppl1.3" target="_blank" >https://www.ctan.org/license/lppl1.3</a> (The LATEX Project Public License
+1.3).<br />
+Credit is due to instructions in: <a href="https://github.com/sonoisa/XyJax-v3" target="_blank" >https://github.com/sonoisa/XyJax-v3</a> (the official Xy-Jaxv3 documentation) and in "40.11 lwarp_mathjax.txt" of the
+<a href="http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf" target="_blank" >official Lwarp documentation</a>.
+</p>
+
+<p>
+If using Xy-pic diagrams displayed with <b>XyJax-v3</b>, insert the following in the preamble of your latex file:
+</p>
+<pre class="verbatim">
+ \usepackage[all]{xy}
+ \MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+
+</pre>
+
+<p>
+<b>Compile .tex to .html using:</b>
+</p>
+
+<ul style="list-style-type:none">
+
+<li>
+<p>
+1. <em>pdflatex Sample_Lwarp_Xy-jax.tex</em> (possibly twice) : creates Sample_Lwarp_Xy-jax.pdf (usual pdf file, that can also be shared) and Sample_Lwarp_Xy-jax_html.tex. (And some other aux files.)
+</p>
+
+</li>
+<li>
+
+<p>
+2. <em>lwarpmk html</em> : converts Sample_Lwarp_Xy-jax_html.tex to Sample_Lwarp_Xy-jax_html.html. And then creates Sample_Lwarp_Xy-jax.html (possibly split into different HTML files if such option is chosen).
+</p>
+
+</li>
+<li>
+
+<p>
+&#x2003;&#x2003;<b>Note:</b> Use <em>lwarpmk html1</em> to force a recompile.
+</p>
+
+</li>
+<li>
+
+<p>
+&#x2003;&#x2003;<b>Note:</b> In case of error, with <em>lwarpmk html</em>, use <em>lwarpmk pdftohtml</em> to create HTML file.
+</p>
+
+</li>
+<li>
+
+<p>
+&#x2003;&#x2003;<b>Note:</b> When using <em>bibtex</em> files, then the following is required:
+</p>
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• bibtex Sample_Lwarp_Xy-jax_html.aux
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• <em>pdflatex</em> Sample_Lwarp_Xy-jax_html.tex
+</p>
+</li>
+</ul>
+</li>
+<li>
+
+<p>
+The following steps are only needed once (any time tikz figures change). Only needed with tikz.
+</p>
+
+</li>
+<li>
+
+<p>
+3. <em>lwarpmk limages</em> : If there are images done with tikz, tikz-cd, etc.
+</p>
+
+</li>
+<li>
+
+<p>
+4. Repeat 2 (now using <em>lwarpmk html1</em>) and 3 (to finish creating the images).
+</p>
+</li>
+</ul>
+<div role="note" class="footnotes">
+
+<a id="Sample_Lwarp_Xy-jax-autopage-10"></a>
+
+<p>
+<sup>1</sup>&nbsp;See also <a href="https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html" target="_blank" >https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html</a>, for a quick introduction on how to use
+Lwarp, and without which this explanation that you are reading would not have been written.
+</p>
+
+
+</div>
+
+
+
+<div class="amsthmbodyplain">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+
+
+<span class="amsthmnameplain">Note</span>. It is advisable to use a recent version of <em><b>TexLive</b>.</em>
+</p>
+
+</li>
+
+</ul>
+
+</div>
+
+<p>
+<b>Warnings:</b>
+</p>
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• The usage of <a href="https://github.com/sonoisa/XyJax-v3" target="_blank" ><b>XyJax-v3</b></a> software with <a href="https://ctan.org/pkg/lwarp" target="_blank" >lwarp</a> is experimental.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Not all accessibility features of commutative diagrams displayed with XyJax-v3 work.<br />
+Among the accessibility features that seem to work well are:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+1. View original latex source.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+2. Zoom maths expression.
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<!--................................-->
+<h4 id="autosec-11"><span class="sectionnumber">2&#x2003;</span>Examples: xymatrix diagrams displayed with Xy-Jaxv3 using Lwarp</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-11"></a>
+
+
+<a id="sec:context"></a>
+
+<p>
+This is an example of a HTML file with:
+</p>
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• Mathematical formulae displayed with <a href="https://www.mathjax.org/" target="_blank" ><b>MathJax</b></a>:
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{0}\)</span>
+<!--
+
+
+                                                                                                  x2 + y 2 = 1,                                                                   (1)--><a id="test"></a><!--
+
+-->
+<p>
+
+
+\begin{equation}
+\label {test} x^2+y^2=1,
+\end{equation}
+
+
+</p>
+<p>
+\[\big ( x \ra { \gamma } y\big ) \in \pi _1(X,X_0), \]
+</p>
+<p>
+\[ \dots \to \pi _i(E_b,x) \ra {\iota } \pi _i(E,x) \ra {\d } \pi _i(B,b) \ra {\delta } \pi _{i-1}(E_b,x) \to \dots \ra {\iota } \pi _1(E,x) \ra {\partial } \pi _1(B,b) \ra {\delta _x} \pi
+_0(E_b) \ra {\iota } \pi _0(E)=\{0\}.     \]
+</p>
+</li>
+<li>
+
+
+<p>
+• To see how lecture notes look like with Lwarp, see subsections <a href="Sample_Lwarp_Xy-jax.html#adjunctions">6.1</a> and <a href="Sample_Lwarp_Xy-jax.html#Galois">6.2</a>.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• This configuration is compatible with AMS-CD commutative diagrams, e.g. this diagram from the <a href="https://www.jmilne.org/not/Mamscd.pdf" target="_blank" >amscd package manual</a>:
+</p>
+<p>
+\[ \begin {CD} A @&gt;a&gt;b&gt; B\\ @VlVrV @AlArA\\ C @&lt;a&lt;b&lt; D \end {CD} \]
+</p>
+<blockquote>
+</blockquote>
+</li>
+<li>
+
+
+<p>
+• Commutative diagrams drawn with <a href="https://tug.org/applications/Xy-pic/" target="_blank" ><b>Xy-pic</b></a> displayed by using <a href="https://github.com/sonoisa/XyJax-v3" target="_blank"
+><b>XyJax-v3</b></a>.<br />
+E.g.
+</p>
+<p>
+\[\xymatrix @R=60pt@C=60pt{&amp;S_3 \ar @{^{(}-&gt;}[r]^f \ar [dr]_{g}^{\cong } &amp;S_4 \ar @{-&gt;&gt;}[d]^\pi \\ &amp;&amp;S_4/V, } \]
+</p>
+<p>
+\[ \xymatrix { &amp;&amp; \Q \\ &amp; \Q (\w ) \ar @{&lt;-}[ur] \\ &amp; &amp; \Q (\g )\ar @{&lt;-}[uu] &amp; \Q (\b )\ar @{&lt;-}[uul] &amp; \Q (\a ),\ar @{&lt;-}[uull]\\ &amp;&amp;\Q (\a ,\b
+,\g )\ar @{&lt;-}[uul]\ar @{&lt;-}[u] \ar @{&lt;-}[ur] \ar @{&lt;-}[urr] } \]
+</p>
+<p>
+\[\xymatrix @R=1pt{\\\\\\(123).}\xymatrix @R=39pt{ &amp; \red {\bullet }\ar @{-}[dr] \ar @{-}[rr] &amp;&amp; \blue {\star }\ar @{-}[dl] \\ &amp;&amp; \green {\square } }\qquad \xymatrix
+@R=1pt{\\\\\\\\ =} \xymatrix @R=39pt{ &amp; \blue {\star }\ar @{-}[dr] \ar @{-}[rr] &amp;&amp; \green {\square }\ar @{-}[dl] \\ &amp;&amp; \red {\bullet } } \xymatrix @R=1pt{\\\\\\\\ ,}\]
+</p>
+<p>
+\[\xymatrix @R=30pt@C=60pt {&amp;A\ar [d]_{{\iota _0}^A} \ar [r]^f &amp; X\ar [d]_{{\iota _0}^X} \ar [r]^g &amp; B,\\ &amp; A \times I \ar
+@/_4pc/[rru]_&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;{H} \ar [r]^{f \times \id _I} &amp; X\times I \ar @{--&gt;}[ur]^{H&apos;} } \]
+</p>
+<p>
+\[ \xymatrix { &amp; \displaystyle \bigoplus _{y \in H_0} \mathbf {H}_1(x,y)\otimes \mathbf {H}_1&apos;(y,z)\ar [dd]_{\displaystyle \bigoplus _{y \in H_0} \eta _{(x,y)} \otimes \eta
+&apos;_{(y,z)}} \ar [rr]^{\mathrm {proj}} &amp;&amp; \displaystyle \int ^{y \in H_0} \mathbf {H}_1(x,y)\otimes \mathbf {H}_1&apos;(y,z)\ar @{--&gt;}[dd]^{ \displaystyle \int ^{y \in Y} \eta
+_{(x,y)} \otimes \eta &apos;_{(y,z)} }\\ \\ &amp; \displaystyle \bigoplus _{y \in H_0} \mathbf {H}_2(x,y)\otimes \mathbf {H}_2&apos;(y,z) \ar [rr]_{\mathrm {proj}} &amp;&amp; \displaystyle
+\int ^{y \in H_0} \mathbf {H}_2(x,y)\otimes \mathbf {H}_2&apos;(y,z)\,\, , } \]
+</p>
+<p>
+\[\xymatrix { &amp;\displaystyle \int ^{y \in {Y}} \Hpb _{(X,Y)}^{M_1}(-,y) \otimes \Hpb _{(Y,Z)}^{M_2}(y,-)\ar @{=&gt;}[dd]|{\tHpb {\mathbf {W}_1}{X}{Y} \bullet \tHpb {\mathbf {W}_2}{Y}{Z}}
+\ar @{=&gt;}[rrr]^&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;{\eta _{(X,Y,Z)}^{M_1,M_2}}&amp;&amp;&amp; \Hpb _{(X,Z)}^{M_1\times _Y M_2} \ar @{=&gt;}[dd]|{\tHpb
+{\mathbf {W}_1\#_0 \mathbf {W}_2}{X}{Z}} \\\\ &amp;\displaystyle \int ^{y \in {Y}} \Hpb _{(X,Y)}^{N_1}(-, y) \otimes \Hpb _{(Y,Z)}^{N_2}(y,-)\ar
+@{=&gt;}[rrr]^&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;{\eta _{(X,Y,Z)}^{N_1,N_2}}&amp;&amp;&amp; \Hpb _{(X,Z)}^{N_1\times _Y N_2}\,.      } \]
+</p>
+<p>
+
+
+</p>
+</li>
+</ul>
+<!--................................-->
+<h4 id="autosec-13"><span class="sectionnumber">3&#x2003;</span>Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-13"></a>
+
+
+<p>
+Please do contact me if you know the solution to any of these issues. Remember: this is stricly a non-specialist file!
+</p>
+
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• The commands of the form:
+</p>
+<pre class="verbatim">
+\stackrel{(*)}{\implies}
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+\left ( x \xrightarrow{f} y\right)
+</pre>
+<p>
+do not seem to work well inside
+</p>
+<pre class="verbatim">
+\begin{equation} \end{equation}.
+</pre>
+<p>
+So use instead, for example,
+</p>
+<pre class="verbatim">
+$$ \stackrel{(*)}{\implies} $$
+</pre>
+<pre class="verbatim">
+$$ \left ( x \xrightarrow{f} y \right)$$
+</pre>
+<p>
+Here is how it looks:
+</p>
+<p>
+\[ \stackrel {(*)}{\implies }\]
+</p>
+<p>
+\[\left ( x \xrightarrow {f} y \right ) .\]
+</p>
+</li>
+<li>
+
+
+<p>
+• Sometimes there are errors if there are mathematical commands in the title of sections, subsections, etc.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Lwarpmk gives error messages if it finds <i>xymatrix</i> inside:
+</p>
+<pre class="verbatim">
+\begin{equation} \end{equation}.
+</pre>
+<p>
+(However a html file can still be produced with <i>lwarpmk pdftohtml</i>.)
+</p>
+<p>
+So avoid:
+</p>
+<pre class="verbatim">
+\begin{equation} \xymatrix{   } \end{equation},
+</pre>
+<p>
+and use instead:
+</p>
+<pre class="verbatim">
+\[ \xymatrix{   } \],
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+$$ \xymatrix{   } $$.
+</pre>
+</li>
+<li>
+
+
+<p>
+• The 2-cell option does not appear to work with Xy-Jaxv3. However xymatrix diagrams can still be compiled as svg figures, with alt text; see <a href="Sample_Lwarp_Xy-jax.html#xymatrix-with-alttext">5.1</a>.
+</p>
+<p>
+\[\xymatrixcolsep {0.5cm}\xymatrixrowsep {2cm}\hskip -0.5cm\xymatrix {&amp; T\times T\ar [drr]_{\sqcup } \ar [rr]^{ \tau } &amp;\drtwocell &lt;\omit &gt;{\,\,\, \mathbf {R}}&amp; T \times T \ar
+[d]^{\sqcup } \\ &amp;&amp;&amp; T.} \]
+</p>
+</li>
+<li>
+
+
+<p>
+• <b>Not all accessibility functions of MathJax work with Xy-Jaxv3, only some can be used, e.g. zoom and source latex code</b>.<br />
+Accessibility features of Xy-jax <a href="https://github.com/sonoisa/XyJax-v3" target="_blank" >are not officially supported</a>.<br />
+
+
+</p>
+</li>
+<li>
+
+
+<p>
+• References to section, chapters etc, have glitches <b>if inside mathematics environments</b>. For instance, the links provided do not appear to work well. E.g.
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{1}\)</span>
+<!--
+
+
+                                                                                              exp(x + yi) = ex cos(y) + i sin(y)                                                          (2)--><a id="Euler"></a><!--
+                                                                                                                                   
+
+-->
+<p>
+
+
+\begin{equation}
+\label {Euler} \exp (x+yi)=e^x\big (\cos (y)+i\sin (y) \big )
+\end{equation}
+
+
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{2}\)</span>
+
+
+<!--
+
+
+
+                                                                   eiπ + 1 = cos(π) + i sin(π) + 1,   using Equation (2). (Just for testing) equations (1), (3)
+                                                                                              
+
+                                                                          = 0.   A reference to second section 2
+
+
+
+-->
+
+
+<p>
+
+
+\begin{align*}
+e^{i\pi }+1&amp;=\big (\cos (\pi )+i\sin (\pi ) \big )+1, \quad \textrm { using Equation } \eqref {Euler}.                   \textrm { (Just for testing) equations } \eqref {test}, \eqref {xydiagram}\\
+&amp;=0.   \quad \textrm { A reference to second section } \protect \ref {sec:context}
+\end{align*}
+Outside maths environments all seems to work fine:
+</p>
+<blockquote>
+<p>
+Using Equation <span class="textup">(<a href="Sample_Lwarp_Xy-jax.html#Euler">2</a>)</span>. (Just for testing) equations <span class="textup">(<a href="Sample_Lwarp_Xy-jax.html#test">1</a>)</span>,
+<span class="textup">(<a href="Sample_Lwarp_Xy-jax.html#lateximage-Sample_Lwarp_Xy-jax-1">3</a>)</span><br />
+A reference to second section <a href="Sample_Lwarp_Xy-jax.html#sec:context">2</a>
+</p>
+</blockquote>
+</li>
+<li>
+
+
+<p>
+• When compiling xymatrix, or tikz, diagrams as sgv figures, with Alt-Text (which sometimes is necessary) it sometimes happens that the figure is not cropped correctly. This seems to depend stronly on the operating system being
+used.
+</p>
+</li>
+</ul>
+<!--................................-->
+<h4 id="autosec-24"><span class="sectionnumber">4&#x2003;</span>More general notes</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-24"></a>
+
+
+<ul style="list-style-type:none">
+
+<li>
+<p>
+• <b>pdf</b> and <b>HTML</b> automatically coexist: here is the pdf version of this HTML file <a href="Sample_Lwarp_Xy-jax.pdf" target="_blank" >Sample_Lwarp_Xy-jax.pdf</a>
+</p>
+</li>
+<li>
+
+
+<p>
+• It is possible to split an HTML page into sub-pages: credit <a href="https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html" target="_blank" >https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html</a>. Instructions
+can be seen in the source latex file of this HTML file <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>.
+</p>
+</li>
+<li>
+
+
+<p>
+• Additions are required in the .tex file in order that <b>MathJax</b> displays commands, macros and definitions correctly. E.g. write:
+</p>
+<pre class="verbatim">
+\DeclareMathOperator{\Sym}{Sym}
+\def \Mon {{\mathbf{Mon}}}
+\newcommand{\Q}{\mathbb{Q}}
+</pre>
+<p>
+and then:
+</p>
+<pre class="verbatim">
+\begin{warpHTML}
+  \CustomizeMathJax{\DeclareMathOperator{\Sym}{Sym}}
+  \CustomizeMathJax{\def \Mon {{\mathbf{Mon}}}}
+  \CustomizeMathJax{\newcommand{\Q}{\mathbb{Q}}}
+\end{warpHTML}
+</pre>
+<p>
+This means that you can use slightly different versions of commands for pdf and for html.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• If using Xy-pic diagrams (if displayed as Xy-jax) put in the preamble of the tex file:
+</p>
+<pre class="verbatim">
+\MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+</pre>
+<p>
+You will also need this configuration file: <a href="lwarp-with-Xy-jax_v3.txt" target="_blank" >lwarp-with-Xy-jax_v3.txt</a>. (Explanation is in Section <a href="Sample_Lwarp_Xy-jax.html#Context">1</a>.)
+</p>
+</li>
+<li>
+
+
+<p>
+• Sample use of Xy-pic compatible with lwarp (so that the resulting xymatrix code is readable by Xy-Jax): E.g.:
+</p>
+<pre class="verbatim">
+\[
+\xymatrix
+{
+&& \Q\\ & \Q(\w) \ar@{<-}[ur] \\
+& & \Q(\g)\ar@{<-}[uu] & \Q(\b)\ar@{<-}[uul] & \Q(\a)\ar@{<-}[uull]\\
+&&\Q(\a,\b,\g)\ar@{<-}[uul]\ar@{<-}[u] \ar@{<-}[ur] \ar@{<-}[urr]
+}
+\],
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+\displaymathnormal{$$
+\xymatrix{
+&S_3 \ar@{^{(}->}[r]^f \ar[dr]_{g}^{\cong} &S_4 \ar@{->>}[d]^\pi
+\\ &&S_4/V,
+}
+$$}.
+</pre>
+</li>
+<li>
+
+
+<p>
+• Figures, with alternative text, can be included like this:
+</p>
+<pre class="verbatim">
+\includegraphics[width = 0.4\textwidth,
+alt={Type your alternative text here}]{Stasheff.png}
+</pre>
+<div class="center">
+<p>
+
+
+<a href="Stasheff.png" target="_blank" ><img
+      src="Stasheff.png"
+      style="
+      width:130pt;
+      "
+      class="inlineimage"
+      alt="(This figure shows Stasheff’s Polytope.           The top face is a pentagon, the bottom face is a pentagon ...)"
+></a>
+</p>
+</div>
+</li>
+<li>
+
+
+<p>
+• Figures, including <b>tikz</b> and <b>tikz-cd figures</b>, can be compiled as figures with <b>Alt Text</b>. (The same option is also available for xymatrix diagrams, and may be preferable to Xy-Jaxv3, in the cases when it
+is sensible to provide a comprehensive alternative text to the figure/diagram, instead of relying mainly on the availability of the latex code, for accessibility.)<br />
+<b>Warning:</b> In some operating systems, issues seem to exist with the conversion of tikz figures to svg: e.g. figures may be incorrectly cropped for the web-page.<br />
+Size of xymatrix figures and tikz-cd figures seemingly then must be adjusted manually.
+</p>
+</li>
+<li>
+
+
+<p>
+• When using <b>tikz</b> pictures use (note the Alt Text option):
+</p>
+<pre class="verbatim">
+\begin{figure}\ThisAltText{Alt text to your diagram}
+\begin{tikzpicture}
+
+
+\end{tikzpicture}
+\end{figure}
+</pre>
+<p>
+or
+</p>
+<pre class="verbatim">
+\begin{center}\ThisAltText{Alt text to your diagram}
+\begin{tikzpicture}
+
+
+\end{tikzpicture}
+\end{center}
+</pre>
+<p>
+Examples can be found towards the end of this file.
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• When using <b>tikz-cd</b> use:
+</p>
+<pre class="verbatim">
+{\displaymathother
+    \ThisAltText{ Alt text to your commutative diagram }
+\[
+       \begin{tikzcd} F(A) \arrow{r}{F(f)}& F(B) \\
+       G(A)\arrow{r}[swap]{G(f)} \arrow{u}{\eta_A} & G(B)
+       \arrow{u}[right]{\eta_B}
+       \end{tikzcd}
+\]
+}
+</pre>
+</li>
+<li>
+
+
+<p>
+• It is possible to compile an <b>Xy-pic diagram</b> as a <b>figure with alt text</b>. Use:
+</p>
+<pre class="verbatim">
+{
+\displaymathother
+\ThisAltText{Write some alt text here.}
+$$ \xymatrix{ } $$
+}
+</pre>
+<p>
+Examples can be found towards the end of this file.
+</p>
+</li>
+<li>
+
+
+<p>
+• <b>To select your own .CSS files use:</b>
+</p>
+<pre class="verbatim">
+\CSSFilename{your_file.css}
+</pre>
+</li>
+<li>
+
+
+<p>
+• Avoid good old Tex commands like
+</p>
+<pre class="verbatim">
+{\bf }, {\it }.
+</pre>
+<p>
+It seems that lwarp does not deal with them properly. Instead use:
+</p>
+<pre class="verbatim">
+\textbf{ }, \textit{ }.
+</pre>
+<p>
+(In fact better to avoid <i>italics</i> altogether for accessibility reasons: use <b>bold</b>.)
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• Lwarp gives errors messages when compiling Xy-pic diagrams inside
+</p>
+<pre class="verbatim">
+\begin{equation} \end{equation}
+</pre>
+<p>
+Use instead:
+</p>
+<pre class="verbatim">
+\[\xymatrix{} \]
+or
+\[\begin{xy} \xymatrix{} \end{xy}\]
+</pre>
+<p>
+Or use <em>lwarpmk pdftohtml</em> if there are compilation errors.
+</p>
+</li>
+<li>
+
+
+<p>
+• Figures created with tikz and xymatrix frequently have issues: e.g. they may be too small (so size needs to be adjusted), or incorrectly cropped. Seems to depend on operating system.
+</p>
+</li>
+</ul>
+<!--................................-->
+<h4 id="autosec-41"><span class="sectionnumber">5&#x2003;</span>Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-41"></a>
+
+
+<p>
+As written in Section <a href="Sample_Lwarp_Xy-jax.html#sec:context">2</a>, it is possible to display xymatrix diagrams by using XyJax-v3. In some cases, it may however be preferable to compile xymatrix diagrams as
+figures with <b>Alt Text</b>. (E.g. it may be sensible to instead provide a comprehensive alternative text to the figure/diagram, instead of relying mainly on the availability of the latex code, for accessibility.)<br />
+
+</p>
+
+<p>
+This option (svg image with alternative text) is also available for tikz and tikz-cd figures. Examples are below.
+</p>
+<!--................................-->
+<h5 id="autosec-42"><span class="sectionnumber">5.1&#x2003;</span>An xymatrix diagram compiled as an image with alt text</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-42"></a>
+
+
+<a id="xymatrix-with-alttext"></a>
+
+<p>
+An <i>xymatrix</i> diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The 2-cell option can be used.<br />
+The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating system.
+</p>
+
+<div class="displaymathnumbered">
+
+<a id="autoid-1" ></a >
+
+<p>
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-1"
+    class="lateximagesource"
+><!--
+       τ
+T ×T            /   T ×T         (3)
+
+
+           t|                ⊔
+       ⊔            R
+                     !   
+                         T.
+--><img
+    src="Sample_Lwarp_Xy-jax-images/image-1.svg"
+    alt="(Write some alt text here.)"
+    role="math"
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--................................-->
+<h5 id="autosec-45"><span class="sectionnumber">5.2&#x2003;</span>A tikz image compiled as an image with alt text:</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-45"></a>
+
+
+<p>
+Size can be adjusted. Sometimes (depending on operating system, it seems) the image may be incorrectly cropped. See figure <a href="Sample_Lwarp_Xy-jax.html#fig:triangle">1</a>.
+</p>
+<div class="center">
+
+<figure id="autoid-2" class="figure ">
+
+<p>
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-2"
+    class="lateximagesource"
+><!--
+1       2
+
+
+
+
+    3
+--><img
+    src="Sample_Lwarp_Xy-jax-images/image-2.svg"
+    alt="(An equilateral triangle, with one of the edges horizontal.          Vertices are labelled 1, 2 and 3, clockwise, starting from the top left vertex.)"
+    style=""
+    class="lateximage"
+></span>
+</p>
+
+<div class="figurecaption">
+<p>
+Figure 1:&nbsp;An equilateral triangle with its vertices labeled 1, 2 and 3
+</p>
+</div>
+
+<a id="fig:triangle"></a>
+
+</figure>
+
+</div>
+<!--................................-->
+<h5 id="autosec-49"><span class="sectionnumber">5.3&#x2003;</span>A tikz image compiled to an image with alt text, outside a float environment</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-49"></a>
+<div class="center">
+
+<p>
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-3"
+    class="lateximagesource"
+><!--
+1   2
+
+
+
+
+3   4
+--><img
+    src="Sample_Lwarp_Xy-jax-images/image-3.svg"
+    alt="(This figure shows a rectangle, whose largest side is horizontal.   Is vertices are labelled 1, 2 (top edge) and 3 and 4.   (bottom edge), from left to right.)"
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--................................-->
+<h5 id="autosec-53"><span class="sectionnumber">5.4&#x2003;</span>A tikz-cd diagram compiled into a figure with alt text: </h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-53"></a>
+
+
+<p>
+Issues with size of diagrams created with tikz-cd. Sometimes (depending on operating system) the image may be incorrectly cropped.
+</p>
+
+<p>
+The following diagram commutes.<br />
+
+</p>
+
+
+<div class="displaymath">
+
+<a id="autoid-3" ></a >
+
+<p>
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-4"
+    class="lateximagesource"
+><!--
+        F (f )
+F (A)            F (B)
+ηA                 ηB
+
+G(A)             G(B)
+        G(f )
+--><img
+    src="Sample_Lwarp_Xy-jax-images/image-4.svg"
+    alt="(A diagram showing F (f ) ◦ ηA = ηB ◦ G(f ))"
+    role="math"
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--................................-->
+<h4 id="autosec-56"><span class="sectionnumber">6&#x2003;</span>Sample mathematics</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-56"></a>
+<!--................................-->
+<h5 id="autosec-57"><span class="sectionnumber">6.1&#x2003;</span>Adjoint functors and coadjoint functors via universal arrows</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-57"></a>
+
+
+<a id="adjunctions"></a>
+
+<p>
+Let \(\Cc \) and \(\Dc \) be categories. Let \(G\colon \Dc \to \Cc \) be a functor.
+</p>
+<div class="amsthmbodyplain">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<a id="Sample_Lwarp_Xy-jax-autopage-58"></a>
+<span class="amsthmnameplain">Definition</span><span class="amsthmnumberplain"> <span class="textup">1</span></span>. <a id="def:Uarrow"></a>Let \(A\) be an object of \(\Cc \). A <b>universal
+arrow</b> from \(A\) to \(G\colon \Dc \to \Cc \) is a pair:
+</p>
+
+<p>
+\[ \left (F_A, A \ra {\eta _A} G(F_A)\right ), \]
+</p>
+
+<p>
+where \(F_A\) is an object in \(\Dc \) and \(\eta _A\colon A \to G(F_A)\) is an arrow in \(\Cc \), such that the following universal property is satisfied:
+</p>
+
+<p>
+
+
+</p>
+<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:74pt ; ">
+
+<a id="Sample_Lwarp_Xy-jax-autopage-59"></a>
+
+</div>
+<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:421pt ; ">
+
+<a id="Sample_Lwarp_Xy-jax-autopage-60"></a>
+
+<p>
+For any object of \(B\) of \(\Dc \) and any arrow \(f\colon A \to G(B)\), in \(\Cc \), there exists a <b>unique</b> arrow \(\hat {f}\colon F_A \to B\), in \(\Dc \), that makes the following diagram, in \(\Cc \),
+commute:
+</p>
+
+<p>
+\[\xymatrix {&amp; A \ar [drr]_f\ar [rr]^{\eta _A} &amp;&amp; G(F_A) \ar @{--&gt;}[d]^{G(\hat {f})}\\ &amp;&amp;&amp; G(B)} \]
+</p>
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodyplain">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<a id="Sample_Lwarp_Xy-jax-autopage-61"></a>
+<span class="amsthmnameplain">Exercise</span><span class="amsthmnumberplain"> <span class="textup">2</span></span>. In the conditions of the previous definition, prove that if \(\left (F_A, A \ra {\eta _A}
+G(F_A)\right )\) is a universal arrow from \(A\) to \(G\), then we have a bijection:
+</p>
+
+<p>
+\[\phi _{A,B}\colon \hom _\Cc \big (A,G(B)\big ) \longrightarrow \hom _\Dc (F_A,B), \]
+</p>
+
+<p>
+such that
+</p>
+
+<p>
+\[ \big (f\colon A \to G(B)\big ) \stackrel {\phi _{(A,B)}}{\longmapsto } (\hat {f}\colon F_A \to B\big ).\]
+</p>
+
+<p>
+Moreover, prove that the bijection \(\phi _{A,B}\) is natural in \(B\). This means that given any arrow \(g\colon B \to C\), in \(\Dc \), the following diagram (in the category of sets) commutes:
+</p>
+
+<p>
+\[ \xymatrix { &amp; \hom _\Cc (A,G(B)) \ar [d]_{m\mapsto G(g)\circ m } \ar [rrrr]^{\phi _{A,B}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,B) \ar [d]^{n\mapsto g\circ n } \\ &amp; \hom _\Cc (A,G(C))
+\ar [rrrr]_{\phi _{A,C}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,C)\\ } \]
+</p>
+
+<p>
+
+
+</p>
+
+</li>
+
+</ul>
+
+</div>
+<!--................................-->
+<h5 id="autosec-62"><span class="sectionnumber">6.2&#x2003;</span>The Galois correspondence for \(f(t)=t^3-2\), over the rational field</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-62"></a>
+
+
+<a id="Galois"></a>
+
+<p>
+Let \(f(t)=t^3-2 \in \Q [t]\). Let \(\w =e^{\frac {2\pi i}{3}}\). Let \(\a =\sqrt [3]{2}\), \(\beta =\a \w \) and \(\gamma =\a \w ^2\). Hence the set of roots of \(f\) is \(\{\a ,\b ,\g \}\). The splitting field of
+\(f\), over \(\Q \) is:
+</p>
+
+<p>
+\[\Q (\a ,\b ,\g )=\Q (\a ,\w ).\]
+</p>
+
+<p>
+The monomorphism of groups,
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+
+<!--
+
+
+
+                                                                                        θ : Γ(f, Q) −→ Sym({α, β, γ})
+                                                                                                        {α, β, γ}−→{α, β, γ}
+                                                                                                                            !
+                                                                                                τ 7−→                           ,
+                                                                                                           a    7−→ τ (a)
+
+
+-->
+
+
+<p>
+
+\begin{align*}
+\theta \colon \Gamma (f,\Q ) &amp;\longrightarrow \Sym (\{\a ,\b ,\g \})\\ \tau &amp; \longmapsto \left ( \begin{CD} \{\a ,\b ,\g \} &amp;\longrightarrow &amp;\{\a ,\b ,\g \}\\ a
+&amp;\longmapsto &amp;\tau (a) \end {CD}\right ),
+\end{align*}
+is, in this case, an isomorphism. The diagram of subgroups of \(\Gamma (f,\Q ) \cong \Sym (\{\a ,\b ,\g \})\) is below (note that inclusions go in the direction of arrows):
+</p>
+
+<p>
+\[\xymatrix { &amp;&amp; \Sym (\{\a ,\b ,\gamma \} )\\ &amp; \{\id , (\a \b \g ), (\a \g \b )\} \ar [ur] \\ &amp; &amp; \{\id ,(\a \b )\}\ar [uu] &amp;\{\id ,(\a \g )\}\ar [uul] &amp;\{\id ,
+(\b \g )\}\ar [uull]\\ &amp;&amp; \{\id _R\}\ar [uul]\ar [u] \ar [ur] \ar [urr] } \]
+</p>
+
+<p>
+The corresponding diagram of intermediate fields \(\Q \subseteq L \subseteq \Q (\a ,\b ,\g )\) is:
+</p>
+
+<p>
+\[\xymatrix { &amp;&amp; \Q \\ &amp; \Q (\w ) \ar @{&lt;-}[ur] \\ &amp; &amp; \Q (\g )\ar @{&lt;-}[uu] &amp; \Q (\b )\ar @{&lt;-}[uul] &amp; \Q (\a )\ar @{&lt;-}[uull]\\ &amp;&amp;\Q (\a ,\b
+,\g )\ar @{&lt;-}[uul]\ar @{&lt;-}[u] \ar @{&lt;-}[ur] \ar @{&lt;-}[urr] } \]
+</p>
+
+<p>
+Also note that \(\{\id _R\}\), \(\Sym (R)\) and \({\{\id , (\a \b \g ), (\a \g \b )\}}\cong A_3\) are the only normal subgroups of \(\Sym (R)\). So, respectively,
+</p>
+
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+<!--
+
+
+                                                   Q(α, β, γ) : Q,   Q:Q    and   Q(ω) : Q                                                   (4)                                     --><a id="normalext"></a><!--
+
+-->
+
+<p>
+
+\begin{equation}
+\label {normalext} \Q (\a ,\b ,\g ):\Q ,\qquad \Q :\Q \quad \textrm { and } \quad \Q (\w ):\Q
+\end{equation}
+
+</p>
+
+<p>
+are the only normal extensions of \(\Q \) contained in \(\Q (\a ,\b ,\g )\). Note that the fact that the extensions in <span class="textup">(<a href="Sample_Lwarp_Xy-jax.html#normalext">4</a>)</span> are are
+normal also follows from the fact that they are the splitting fields of \(p(t)=t^3-2\), \(q(t)=t\) and \(r(t)=t^2+t+1\) (which has \(\w \) and \(\w ^2\) as roots), over \(\Q \).
+</p>
+<div class="amsthmbodyplain">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<a id="Sample_Lwarp_Xy-jax-autopage-63"></a>
+<span class="amsthmnameplain">Remark</span><span class="amsthmnumberplain"> <span class="textup">3</span></span>. Also note that we have a series of subfields of \(\C \) (we use \(\leq \) to denote subfield):
+</p>
+
+<p>
+\[\Q \leq \Q (\w ) \leq \Q (\a ,\b \,\g )=\Q (\a ,\w ).\]
+</p>
+
+<p>
+Note that:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+• \(\Q (\w ):    \Q \) is a normal extension (since it is the splitting field of \(t^2+t+1\), over \(\Q \)).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• \(\Q (\w ,\a ):\Q (\w )\) is also a normal extension. This is because \(\Q (\w ,\a )\) is the splitting field of \(t^3-2\) over \(\Q (\w )\).
+</p>
+</li>
+</ul>
+
+<p>
+And then it follows that:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+• \(\Gamma \big (\Q (\w ,\a ),\Q (\w )\big )\) is normal in \(\Gamma (\Q (\w ,\a ):                \Q )\),
+</p>
+</li>
+<li>
+
+
+<p>
+• we have a series of subgroups of \(\Gamma \big ( \Q (\w ,\a ):         \Q \big )\):
+</p>
+<p>
+\[\{e\}=\Gamma \big ( \Q (\w ,a):         \Q (\w ,\a ) \big )\trianglelefteq \Gamma \big ( \Q (\w ,\a ):              \Q (\w ) \big ) \trianglelefteq \Gamma \big ( \Q (\w ,\a ):       \Q \big ),\]
+</p>
+</li>
+<li>
+
+
+<p>
+• The quotient groups can be explicitly determined:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+– \(\Gamma \big ( \Q (\w ,\a ):        \Q \big ) / \Gamma \big ( \Q (\w ,a):            \Q (\w ) \big ) \cong \Gamma \big (\Q (\w ):       \Q )\cong \Z _2\).
+</p>
+<p>
+Where the last equation follows since \(\Q (\w ):           \Q \) is a normal extension of degree 2, since it is the splitting field of the irreducible polynomial \(t^2+t+1\), over \(\Q \). This \(\Z _2\) is an
+abelian group.
+</p>
+</li>
+<li>
+
+
+<p>
+– \(\Gamma \big ( \Q (\w ,\a ):        \Q (\w ) \big ) / \Gamma \big ( \Q (\w ,\a ):              \Q (\w ,\a ) \big ) \cong \Gamma \big (\Q (\w ,\a ):     \Q (\w ))\cong \Z _3.   \)
+</p>
+<p>
+Where the last equation follows since \(\Q (\w ,\a ):            \Q (\w )\) is a normal extension of degree 3. This is because it is the splitting field of the polynomial \(t^3-2\), which is irreducible over \(\Q
+(\w )\). This is an abelian group.
+</p>
+</li>
+</ul>
+<p>
+What was just shown is a general patern that exists any time we compute the splitting field of a polynomial that is soluble by radicals.
+</p>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+</div>
+
+<a id="Sample_Lwarp_Xy-jax-autofile-last"></a>
+</section>
+
+</main>
+
+</div>
+
+</body>
+</html>

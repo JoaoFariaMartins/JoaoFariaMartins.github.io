@@ -1,0 +1,6 @@
+pdfseparate -f %1 -l %1 %4_html.pdf Sample_Lwarp_Xy-jax-images/lateximagetemp-%%d.pdf
+pdfcrop --hires Sample_Lwarp_Xy-jax-images/lateximagetemp-%1.pdf Sample_Lwarp_Xy-jax-images/%3.pdf
+pdftocairo -svg -noshrink Sample_Lwarp_Xy-jax-images/%3.pdf Sample_Lwarp_Xy-jax-images/%3.svg
+del Sample_Lwarp_Xy-jax-images/%3.pdf
+del Sample_Lwarp_Xy-jax-images/lateximagetemp-%1.pdf
+exit
