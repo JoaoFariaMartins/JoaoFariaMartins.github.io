@@ -8,7 +8,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<title>Lwarp-xyJax — The Galois correspondence for , over the rational field</title>
+<title>Lwarp-xyJax — Sample mathematics</title>
 <link rel="stylesheet" type="text/css" href="my_file_split.css" />
 
 <!-- Joao Faria Martins, 1st Nov 2022:
@@ -270,7 +270,7 @@ MathJax = {
 <body>
 
 
-<a id="Sample_Lwarp_Xy-jax-split-autopage-71"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-69"></a>
 <nav class="topnavigation"><a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
 Home</a></nav>
 
@@ -303,7 +303,7 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-1.html#autosec-5" class="tocsection" >
-<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+<span class="sectionnumber">1</span>&#x2003;Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
 </p>
 
 
@@ -351,24 +351,30 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-8.html#autosec-61" class="tocsubsection" >
-<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
-</p>
-
-
-<p>
-<a href="Sample_Lwarp_Xy-jax-9.html#autosec-65" class="tocsection" >
-<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+<span class="sectionnumber">5.4</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment, and with a caption</a>
 </p>
 
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-9.html#autosec-66" class="tocsubsection" >
+<span class="sectionnumber">5.5</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-70" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-71" class="tocsubsection" >
 <span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
 </p>
 
 
 <p>
-<a href="Sample_Lwarp_Xy-jax-10.html#autosec-72" class="tocsubsection" >
+<a href="Sample_Lwarp_Xy-jax-11.html#autosec-77" class="tocsubsection" >
 <span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
 </p>
 
@@ -518,6 +524,8 @@ Home</a>
 
 \(\newcommand {\Dc }{ \mathcal {D} }\)
 
+\( \newcommand {\Grp }{ \mathrm {Grp} } \)
+
 \(\newcommand {\Z }{ \mathbb {Z} }\)
 
 \(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
@@ -555,87 +563,23 @@ Home</a>
 </div>
 
 <p>
-<!--................................-->
-<h5 id="autosec-72"><span class="sectionnumber">6.2&#x2003;</span>The Galois correspondence for \(f(t)=t^3-2\), over the rational field</h5>
-<a id="Sample_Lwarp_Xy-jax-split-autopage-72"></a>
-<a id="Sample_Lwarp_Xy-jax-split-autofile-10"></a> <a id="Galois"></a>
-
-<p>
-Let \(f(t)=t^3-2 \in \Q [t]\). Let \(\w =e^{\frac {2\pi i}{3}}\). Let \(\a =\sqrt [3]{2}\), \(\beta =\a \w \) and \(\gamma =\a \w ^2\). Hence the set of roots of \(f\) is \(\{\a ,\b ,\g \}\). The splitting field of
-\(f\), over \(\Q \) is:
-</p>
-
-<p>
-\[\Q (\a ,\b ,\g )=\Q (\a ,\w ).\]
-</p>
-
-<p>
-The monomorphism of groups,
-</p>
-<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
-
-
 <!--
-
-
-
-                                                                                        θ : Γ(f, Q) −→ Sym({α, β, γ})
-                                                                                                        {α, β, γ}−→{α, β, γ}
-                                                                                                                            !
-                                                                                                τ 7−→                           ,
-                                                                                                             a   7−→ τ (a)
-
-
+...... section Sample mathematics ......
 -->
-
-
-<p>
-
-\begin{align*}
-\theta \colon \Gamma (f,\Q ) &amp;\longrightarrow \Sym (\{\a ,\b ,\g \})\\ \tau &amp; \longmapsto \left ( \begin{CD} \{\a ,\b ,\g \} &amp;\longrightarrow &amp;\{\a ,\b ,\g \}\\ a
-&amp;\longmapsto &amp;\tau (a) \end {CD}\right ),
-\end{align*}
-is, in this case, an isomorphism. The diagram of subgroups of \(\Gamma (f,\Q ) \cong \Sym (\{\a ,\b ,\g \})\) is below (note that inclusions go in the direction of arrows):
-</p>
-
-<p>
-\[\xymatrix { &amp;&amp; \Sym (\{\a ,\b ,\gamma \} )\\ &amp; \{\id , (\a \b \g ), (\a \g \b )\} \ar [ur] \\ &amp; &amp; \{\id ,(\a \b )\}\ar [uu] &amp;\{\id ,(\a \g )\}\ar [uul] &amp;\{\id ,
-(\b \g )\}\ar [uull]\\ &amp;&amp; \{\id _R\}\ar [uul]\ar [u] \ar [ur] \ar [urr] } \]
-</p>
-
-<p>
-The corresponding diagram of intermediate fields \(\Q \subseteq L \subseteq \Q (\a ,\b ,\g )\) is:
-</p>
-
-<p>
-\[\xymatrix { &amp;&amp; \Q \\ &amp; \Q (\w ) \ar @{&lt;-}[ur] \\ &amp; &amp; \Q (\g )\ar @{&lt;-}[uu] &amp; \Q (\b )\ar @{&lt;-}[uul] &amp; \Q (\a )\ar @{&lt;-}[uull]\\ &amp;&amp;\Q (\a ,\b
-,\g )\ar @{&lt;-}[uul]\ar @{&lt;-}[u] \ar @{&lt;-}[ur] \ar @{&lt;-}[urr] } \]
-</p>
-
-<p>
-Also note that \(\{\id _R\}\), \(\Sym (R)\) and \({\{\id , (\a \b \g ), (\a \g \b )\}}\cong A_3\) are the only normal subgroups of \(\Sym (R)\). So, respectively,
-</p>
-
-<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
-
+<h4 id="autosec-70"><span class="sectionnumber">6&#x2003;</span>Sample mathematics</h4>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-70"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autofile-10"></a>
 <!--
-
-
-                                                   Q(α, β, γ) : Q,   Q:Q    and   Q(ω) : Q                                                   (4)                                     --><a id="normalext"></a><!--
-
+...... subsection Adjoint functors and coadjoint functors via universal arrows ......
 -->
+<h5 id="autosec-71"><span class="sectionnumber">6.1&#x2003;</span>Adjoint functors and coadjoint functors via universal arrows</h5>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-71"></a>
+
+
+<a id="adjunctions"></a>
 
 <p>
-
-\begin{equation}
-\label {normalext} \Q (\a ,\b ,\g ):\Q ,\qquad \Q :\Q \quad \textrm { and } \quad \Q (\w ):\Q
-\end{equation}
-
-</p>
-
-<p>
-are the only normal extensions of \(\Q \) contained in \(\Q (\a ,\b ,\g )\). Note that the fact that the extensions in <span class="textup">(<a href="Sample_Lwarp_Xy-jax-10.html#normalext">4</a>)</span> are are
-normal also follows from the fact that they are the splitting fields of \(p(t)=t^3-2\), \(q(t)=t\) and \(r(t)=t^2+t+1\) (which has \(\w \) and \(\w ^2\) as roots), over \(\Q \).
+Let \(\Cc \) and \(\Dc \) be categories. Let \(G\colon \Dc \to \Cc \) be a functor.
 </p>
 <div class="amsthmbodyplain">
 
@@ -644,92 +588,85 @@ normal also follows from the fact that they are the splitting fields of \(p(t)=t
 
 <li>
 <p>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-72"></a>
+<span class="amsthmnameplain">Definition</span><span class="amsthmnumberplain"> <span class="textup">1</span></span>. <a id="def:Uarrow"></a>Let \(A\) be an object of \(\Cc \). A <b>universal
+arrow</b> from \(A\) to \(G\colon \Dc \to \Cc \) is a pair:
+</p>
+
+<p>
+\[ \left (F_A, A \ra {\eta _A} G(F_A)\right ), \]
+</p>
+
+<p>
+where \(F_A\) is an object in \(\Dc \) and \(\eta _A\colon A \to G(F_A)\) is an arrow in \(\Cc \), such that the following universal property is satisfied:
+</p>
+
+<p>
+
+
+</p>
+<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:74pt ; ">
+
 <a id="Sample_Lwarp_Xy-jax-split-autopage-73"></a>
-<span class="amsthmnameplain">Remark</span><span class="amsthmnumberplain"> <span class="textup">3</span></span>. Also note that we have a series of subfields of \(\C \) (we use \(\leq \) to denote subfield):
+
+</div>
+<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:421pt ; ">
+
+<a id="Sample_Lwarp_Xy-jax-split-autopage-74"></a>
+
+<p>
+For any object of \(B\) of \(\Dc \) and any arrow \(f\colon A \to G(B)\), in \(\Cc \), there exists a <b>unique</b> arrow \(\hat {f}\colon F_A \to B\), in \(\Dc \), that makes the following diagram, in \(\Cc \),
+commute:
 </p>
 
 <p>
-\[\Q \leq \Q (\w ) \leq \Q (\a ,\b \,\g )=\Q (\a ,\w ).\]
+\[\xymatrix {&amp; A \ar [drr]_f\ar [rr]^{\eta _A} &amp;&amp; G(F_A) \ar @{--&gt;}[d]^{G(\hat {f})}\\ &amp;&amp;&amp; G(B)} \]
 </p>
 
-<p>
-Note that:
-</p>
+</div>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodyplain">
+
 <ul style="list-style-type:none">
 
 
 <li>
 <p>
-• \(\Q (\w ):    \Q \) is a normal extension (since it is the splitting field of \(t^2+t+1\), over \(\Q \)).
+<a id="Sample_Lwarp_Xy-jax-split-autopage-75"></a>
+<span class="amsthmnameplain">Exercise</span><span class="amsthmnumberplain"> <span class="textup">2</span></span>. In the conditions of the previous definition, prove that if \(\left (F_A, A \ra {\eta _A}
+G(F_A)\right )\) is a universal arrow from \(A\) to \(G\), then we have a bijection:
 </p>
-
-
-</li>
-<li>
-
 
 <p>
-• \(\Q (\w ,\a ):\Q (\w )\) is also a normal extension. This is because \(\Q (\w ,\a )\) is the splitting field of \(t^3-2\) over \(\Q (\w )\).
+\[\phi _{A,B}\colon \hom _\Cc \big (A,G(B)\big ) \longrightarrow \hom _\Dc (F_A,B), \]
 </p>
-</li>
-</ul>
 
 <p>
-And then it follows that:
+such that
 </p>
-<ul style="list-style-type:none">
-
-
-<li>
-<p>
-• \(\Gamma \big (\Q (\w ,\a ),\Q (\w )\big )\) is normal in \(\Gamma (\Q (\w ,\a ):                \Q )\),
-</p>
-</li>
-<li>
-
 
 <p>
-• we have a series of subgroups of \(\Gamma \big ( \Q (\w ,\a ):         \Q \big )\):
+\[ \big (f\colon A \to G(B)\big ) \stackrel {\phi _{(A,B)}}{\longmapsto } (\hat {f}\colon F_A \to B\big ).\]
 </p>
-<p>
-\[\{e\}=\Gamma \big ( \Q (\w ,a):         \Q (\w ,\a ) \big )\trianglelefteq \Gamma \big ( \Q (\w ,\a ):              \Q (\w ) \big ) \trianglelefteq \Gamma \big ( \Q (\w ,\a ):       \Q \big ),\]
-</p>
-</li>
-<li>
-
 
 <p>
-• The quotient groups can be explicitly determined:
+Moreover, prove that the bijection \(\phi _{A,B}\) is natural in \(B\). This means that given any arrow \(g\colon B \to C\), in \(\Dc \), the following diagram (in the category of sets) commutes:
 </p>
-<ul style="list-style-type:none">
-
-
-<li>
-<p>
-– \(\Gamma \big ( \Q (\w ,\a ):        \Q \big ) / \Gamma \big ( \Q (\w ,a):            \Q (\w ) \big ) \cong \Gamma \big (\Q (\w ):       \Q )\cong \Z _2\).
-</p>
-<p>
-Where the last equation follows since \(\Q (\w ):           \Q \) is a normal extension of degree 2, since it is the splitting field of the irreducible polynomial \(t^2+t+1\), over \(\Q \). This \(\Z _2\) is an
-abelian group.
-</p>
-</li>
-<li>
-
 
 <p>
-– \(\Gamma \big ( \Q (\w ,\a ):        \Q (\w ) \big ) / \Gamma \big ( \Q (\w ,\a ):              \Q (\w ,\a ) \big ) \cong \Gamma \big (\Q (\w ,\a ):     \Q (\w ))\cong \Z _3.   \)
+\[ \xymatrix { &amp; \hom _\Cc (A,G(B)) \ar [d]_{m\mapsto G(g)\circ m } \ar [rrrr]^{\phi _{A,B}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,B) \ar [d]^{n\mapsto g\circ n } \\ &amp; \hom _\Cc (A,G(C))
+\ar [rrrr]_{\phi _{A,C}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,C)\\ } \]
 </p>
+
 <p>
-Where the last equation follows since \(\Q (\w ,\a ):            \Q (\w )\) is a normal extension of degree 3. This is because it is the splitting field of the polynomial \(t^3-2\), which is irreducible over \(\Q
-(\w )\). This is an abelian group.
+
+
 </p>
-</li>
-</ul>
-<p>
-What was just shown is a general patern that exists any time we compute the splitting field of a polynomial that is soluble by radicals.
-</p>
-</li>
-</ul>
 
 </li>
 
@@ -737,7 +674,6 @@ What was just shown is a general patern that exists any time we compute the spli
 
 </div>
 
-<a id="Sample_Lwarp_Xy-jax-split-autofile-last"></a>
 </section>
 
 </main>

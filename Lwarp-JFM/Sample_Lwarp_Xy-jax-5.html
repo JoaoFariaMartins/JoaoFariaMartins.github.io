@@ -303,7 +303,7 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-1.html#autosec-5" class="tocsection" >
-<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+<span class="sectionnumber">1</span>&#x2003;Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
 </p>
 
 
@@ -351,24 +351,30 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-8.html#autosec-61" class="tocsubsection" >
-<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
-</p>
-
-
-<p>
-<a href="Sample_Lwarp_Xy-jax-9.html#autosec-65" class="tocsection" >
-<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+<span class="sectionnumber">5.4</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment, and with a caption</a>
 </p>
 
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-9.html#autosec-66" class="tocsubsection" >
+<span class="sectionnumber">5.5</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-70" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-71" class="tocsubsection" >
 <span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
 </p>
 
 
 <p>
-<a href="Sample_Lwarp_Xy-jax-10.html#autosec-72" class="tocsubsection" >
+<a href="Sample_Lwarp_Xy-jax-11.html#autosec-77" class="tocsubsection" >
 <span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
 </p>
 
@@ -518,6 +524,8 @@ Home</a>
 
 \(\newcommand {\Dc }{ \mathcal {D} }\)
 
+\( \newcommand {\Grp }{ \mathrm {Grp} } \)
+
 \(\newcommand {\Z }{ \mathbb {Z} }\)
 
 \(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
@@ -555,7 +563,9 @@ Home</a>
 </div>
 
 <p>
-<!--................................-->
+<!--
+...... section Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text ......
+-->
 <h4 id="autosec-46"><span class="sectionnumber">5&#x2003;</span>Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text</h4>
 <a id="Sample_Lwarp_Xy-jax-split-autopage-46"></a>
 <a id="Sample_Lwarp_Xy-jax-split-autofile-5"></a>
@@ -569,7 +579,9 @@ figures with <b>Alt Text</b>. (E.g. it may be sensible to instead provide a comp
 <p>
 This option (svg image with alternative text) is also available for tikz and tikz-cd figures. Examples are below.
 </p>
-<!--................................-->
+<!--
+...... subsection An xymatrix diagram compiled as an image with alt text ......
+-->
 <h5 id="autosec-47"><span class="sectionnumber">5.1&#x2003;</span>An xymatrix diagram compiled as an image with alt text</h5>
 <a id="Sample_Lwarp_Xy-jax-split-autopage-47"></a>
 
@@ -577,8 +589,8 @@ This option (svg image with alternative text) is also available for tikz and tik
 <a id="xymatrix-with-alttext"></a>
 
 <p>
-An <i>xymatrix</i> diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The 2-cell option can be used.<br />
-The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating system.
+An <i>xymatrix</i> diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating
+system.
 </p>
 
 <div class="displaymathnumbered">
@@ -590,17 +602,19 @@ The size of the svg image must be adjusted. Sometimes the image is not correctly
     id="lateximage-Sample_Lwarp_Xy-jax-split-1"
     class="lateximagesource"
 ><!--
-       τ
-T ×T            /   T ×T         (3)
+T ×T
+           τ        /   T ×T       (3)
 
+               s{              ⊔
+       ⊔                R
 
-           t|                ⊔
-       ⊔            R
-                     !   
-                         T.
+                          
+                            T.
 --><img
     src="Sample_Lwarp_Xy-jax-split-images/image-1.svg"
-    alt="(Write some alt text here.)"
+    alt="(This diagram shows a right triangular, diagram, with the top side horizontal, being a cathet, and containing an arrow τ , from T × T to T × T . From the right-hand-end of the cathet,
+there is vertical downwards arrow (also a cathet), ⊔ : T × T → T . From the left-hand-side of the initial cathet, there is the hypothese downwards arrow marked with ⊔ : T × T → T . There is a
+2-cell from the composition of the two cathets to the hypothese, marked with boldface R)"
     role="math"
     style=""
     class="lateximage"

@@ -8,7 +8,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<title>Lwarp-xyJax — Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</title>
+<title>Lwarp-xyJax — Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</title>
 <link rel="stylesheet" type="text/css" href="my_file_split.css" />
 
 <!-- Joao Faria Martins, 1st Nov 2022:
@@ -150,9 +150,9 @@ MathJax = {
                           //        This function modifies the equation numbers.
                           SeteqnumberFunction(parser, name) {
                                     //    Get the macro parameters
-                                    const star = parser.GetStar();                       // true if there is a *
+                                    const star = parser.GetStar();                        // true if there is a *
                                     const optBrackets = parser.GetBrackets(name);          // contents of optional brackets
-                                    const newsubequations = parser.GetArgument(name);         // the subequations argument
+                                    const newsubequations = parser.GetArgument(name);        // the subequations argument
                                     const neweqsection = parser.GetArgument(name);        // the eq section argument
                                     const neweqnumber = parser.GetArgument(name);          // the eq number argument
                                     MathJax.config.subequations=newsubequations ;         // a string with boolean meaning
@@ -303,7 +303,7 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-1.html#autosec-5" class="tocsection" >
-<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+<span class="sectionnumber">1</span>&#x2003;Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
 </p>
 
 
@@ -351,24 +351,30 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-8.html#autosec-61" class="tocsubsection" >
-<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
-</p>
-
-
-<p>
-<a href="Sample_Lwarp_Xy-jax-9.html#autosec-65" class="tocsection" >
-<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+<span class="sectionnumber">5.4</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment, and with a caption</a>
 </p>
 
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-9.html#autosec-66" class="tocsubsection" >
+<span class="sectionnumber">5.5</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-70" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-71" class="tocsubsection" >
 <span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
 </p>
 
 
 <p>
-<a href="Sample_Lwarp_Xy-jax-10.html#autosec-72" class="tocsubsection" >
+<a href="Sample_Lwarp_Xy-jax-11.html#autosec-77" class="tocsubsection" >
 <span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
 </p>
 
@@ -518,6 +524,8 @@ Home</a>
 
 \(\newcommand {\Dc }{ \mathcal {D} }\)
 
+\( \newcommand {\Grp }{ \mathrm {Grp} } \)
+
 \(\newcommand {\Z }{ \mathbb {Z} }\)
 
 \(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
@@ -555,8 +563,10 @@ Home</a>
 </div>
 
 <p>
-<!--................................-->
-<h4 id="autosec-5"><span class="sectionnumber">1&#x2003;</span>Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</h4>
+<!--
+...... section Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax ......
+-->
+<h4 id="autosec-5"><span class="sectionnumber">1&#x2003;</span>Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</h4>
 <a id="Sample_Lwarp_Xy-jax-split-autopage-5"></a>
 <a id="Sample_Lwarp_Xy-jax-split-autofile-1"></a><a id="Context"></a>
 
@@ -574,13 +584,15 @@ contains:
 The version of the software was:
 </p>
 <pre class="verbatim">
-pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian)
-lwarpmk: v0.903   Automated make for the LaTeX Lwarp package.
+pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+lwarpmk: lwarpmk: v0.910   Automated make for the LaTeX Lwarp package.
 
 </pre>
 
 <p>
-The source latex file can be found here: <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>.
+The source latex file can be found here: <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a> or here <a href="Sample_Lwarp_Xy-jax-split.tex" target="_blank"
+>Sample_Lwarp_Xy-jax-split.tex</a>, depending whether you are seeing the <a href="Sample_Lwarp_Xy-jax.html" target="_blank" >“stand-alone” version of this webpage</a>, or the <a
+href="Sample_Lwarp_Xy-jax-split-index.html" target="_blank" >“split” version of this webpage</a>.
 </p>
 
 <p>
@@ -621,7 +633,7 @@ Credit is due to instructions in: <a href="https://github.com/sonoisa/XyJax-v3" 
 </p>
 
 <p>
-If using Xy-pic diagrams displayed with <b>XyJax-v3</b>, insert the following in the preamble of your latex file:
+If using XY-pic diagrams displayed with <b>XyJax-v3</b>, insert the following in the preamble of your latex file:
 </p>
 <pre class="verbatim">
  \usepackage[all]{xy}

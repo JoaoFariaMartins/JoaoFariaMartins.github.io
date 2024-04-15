@@ -8,7 +8,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<title>Lwarp-xyJax — A tikz image compiled to an image with alt text, outside a float environment, and with a caption</title>
+<title>Lwarp-xyJax — The Galois correspondence for , over the rational field</title>
 <link rel="stylesheet" type="text/css" href="my_file_split.css" />
 
 <!-- Joao Faria Martins, 1st Nov 2022:
@@ -270,7 +270,7 @@ MathJax = {
 <body>
 
 
-<a id="Sample_Lwarp_Xy-jax-split-autopage-60"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-76"></a>
 <nav class="topnavigation"><a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
 Home</a></nav>
 
@@ -564,38 +564,190 @@ Home</a>
 
 <p>
 <!--
-...... subsection A tikz image compiled to an image with alt text, outside a float environment, and with a caption ......
+...... subsection The Galois correspondence for , over the rational field ......
 -->
-<h5 id="autosec-61"><span class="sectionnumber">5.4&#x2003;</span>A tikz image compiled to an image with alt text, outside a float environment, and with a caption</h5>
-<a id="Sample_Lwarp_Xy-jax-split-autopage-61"></a>
-<a id="Sample_Lwarp_Xy-jax-split-autofile-8"></a>
-<div class="center">
+<h5 id="autosec-77"><span class="sectionnumber">6.2&#x2003;</span>The Galois correspondence for \(f(t)=t^3-2\), over the rational field</h5>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-77"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autofile-11"></a> <a id="Galois"></a>
 
 <p>
-<span
-    id="lateximage-Sample_Lwarp_Xy-jax-split-4"
-    class="lateximagesource"
-><!--
-    x
-    •
-    C
-        B
-A
---><img
-    src="Sample_Lwarp_Xy-jax-split-images/image-4.svg"
-    alt="(The figure shows two disks, A and B, of the same radius, centered at points, on a horizontal line. The radii are smaller than the distance between the center points, but greater
-than half of the distance. The intersection of the two disks is called C. There is a point x ∈ A ∩ B, and another disk, D, centered in x and contaned in A ∩ B. )"
-    style=""
-    class="lateximage"
-></span>
+Let \(f(t)=t^3-2 \in \Q [t]\). Let \(\w =e^{\frac {2\pi i}{3}}\). Let \(\a =\sqrt [3]{2}\), \(\beta =\a \w \) and \(\gamma =\a \w ^2\). Hence the set of roots of \(f\) is \(\{\a ,\b ,\g \}\). The splitting field of
+\(f\), over \(\Q \) is:
 </p>
 
-<div class="figurecaption">
-<a id="autoid-3" ></a >
-Figure 2: Given any \(A,B \in \mathcal {F}\), if \(x \in A \cap B\) there exists \(C \in \mathcal {F}\) such that \(x\in C\subseteq A \cap B\). <a id="fig:basis"></a>
-</div>
+<p>
+\[\Q (\a ,\b ,\g )=\Q (\a ,\w ).\]
+</p>
+
+<p>
+The monomorphism of groups,
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+
+<!--
+
+
+
+                                                                                        θ : Γ(f, Q) −→ Sym({α, β, γ})
+                                                                                                         {α, β, γ}−→{α, β, γ}
+                                                                                                                             !
+                                                                                                 τ 7−→                           ,
+                                                                                                             a   7−→ τ (a)
+
+
+-->
+
+
+<p>
+
+\begin{align*}
+\theta \colon \Gamma (f,\Q ) &amp;\longrightarrow \Sym (\{\a ,\b ,\g \})\\ \tau &amp; \longmapsto \left ( \begin{CD} \{\a ,\b ,\g \} &amp;\longrightarrow &amp;\{\a ,\b ,\g \}\\ a
+&amp;\longmapsto &amp;\tau (a) \end {CD}\right ),
+\end{align*}
+is, in this case, an isomorphism. The diagram of subgroups of \(\Gamma (f,\Q ) \cong \Sym (\{\a ,\b ,\g \})\) is below (note that inclusions go in the direction of arrows):
+</p>
+
+<p>
+\[\xymatrix { &amp;&amp; \Sym (\{\a ,\b ,\gamma \} )\\ &amp; \{\id , (\a \b \g ), (\a \g \b )\} \ar [ur] \\ &amp; &amp; \{\id ,(\a \b )\}\ar [uu] &amp;\{\id ,(\a \g )\}\ar [uul] &amp;\{\id ,
+(\b \g )\}\ar [uull]\\ &amp;&amp; \{\id _R\}\ar [uul]\ar [u] \ar [ur] \ar [urr] } \]
+</p>
+
+<p>
+The corresponding diagram of intermediate fields \(\Q \subseteq L \subseteq \Q (\a ,\b ,\g )\) is:
+</p>
+
+<p>
+\[\xymatrix { &amp;&amp; \Q \\ &amp; \Q (\w ) \ar @{&lt;-}[ur] \\ &amp; &amp; \Q (\g )\ar @{&lt;-}[uu] &amp; \Q (\b )\ar @{&lt;-}[uul] &amp; \Q (\a )\ar @{&lt;-}[uull]\\ &amp;&amp;\Q (\a ,\b
+,\g )\ar @{&lt;-}[uul]\ar @{&lt;-}[u] \ar @{&lt;-}[ur] \ar @{&lt;-}[urr] } \]
+</p>
+
+<p>
+Also note that \(\{\id _R\}\), \(\Sym (R)\) and \({\{\id , (\a \b \g ), (\a \g \b )\}}\cong A_3\) are the only normal subgroups of \(\Sym (R)\). So, respectively,
+</p>
+
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+<!--
+
+
+                                                   Q(α, β, γ) : Q,   Q:Q    and    Q(ω) : Q                                                   (4)                                    --><a id="normalext"></a><!--
+
+-->
+
+<p>
+
+\begin{equation}
+\label {normalext} \Q (\a ,\b ,\g ):\Q ,\qquad \Q :\Q \quad \textrm { and } \quad \Q (\w ):\Q
+\end{equation}
+
+</p>
+
+<p>
+are the only normal extensions of \(\Q \) contained in \(\Q (\a ,\b ,\g )\). Note that the fact that the extensions in <span class="textup">(<a href="Sample_Lwarp_Xy-jax-11.html#normalext">4</a>)</span> are are
+normal also follows from the fact that they are the splitting fields of \(p(t)=t^3-2\), \(q(t)=t\) and \(r(t)=t^2+t+1\) (which has \(\w \) and \(\w ^2\) as roots), over \(\Q \).
+</p>
+<div class="amsthmbodyplain">
+
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-78"></a>
+<span class="amsthmnameplain">Remark</span><span class="amsthmnumberplain"> <span class="textup">3</span></span>. Also note that we have a series of subfields of \(\C \) (we use \(\leq \) to denote subfield):
+</p>
+
+<p>
+\[\Q \leq \Q (\w ) \leq \Q (\a ,\b \,\g )=\Q (\a ,\w ).\]
+</p>
+
+<p>
+Note that:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+• \(\Q (\w ):    \Q \) is a normal extension (since it is the splitting field of \(t^2+t+1\), over \(\Q \)).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+• \(\Q (\w ,\a ):\Q (\w )\) is also a normal extension. This is because \(\Q (\w ,\a )\) is the splitting field of \(t^3-2\) over \(\Q (\w )\).
+</p>
+</li>
+</ul>
+
+<p>
+And then it follows that:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+• \(\Gamma \big (\Q (\w ,\a ),\Q (\w )\big )\) is normal in \(\Gamma (\Q (\w ,\a ):                \Q )\),
+</p>
+</li>
+<li>
+
+
+<p>
+• we have a series of subgroups of \(\Gamma \big ( \Q (\w ,\a ):         \Q \big )\):
+</p>
+<p>
+\[\{e\}=\Gamma \big ( \Q (\w ,a):         \Q (\w ,\a ) \big )\trianglelefteq \Gamma \big ( \Q (\w ,\a ):              \Q (\w ) \big ) \trianglelefteq \Gamma \big ( \Q (\w ,\a ):       \Q \big ),\]
+</p>
+</li>
+<li>
+
+
+<p>
+• The quotient groups can be explicitly determined:
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+– \(\Gamma \big ( \Q (\w ,\a ):        \Q \big ) / \Gamma \big ( \Q (\w ,a):            \Q (\w ) \big ) \cong \Gamma \big (\Q (\w ):       \Q )\cong \Z _2\).
+</p>
+<p>
+Where the last equation follows since \(\Q (\w ):           \Q \) is a normal extension of degree 2, since it is the splitting field of the irreducible polynomial \(t^2+t+1\), over \(\Q \). This \(\Z _2\) is an
+abelian group.
+</p>
+</li>
+<li>
+
+
+<p>
+– \(\Gamma \big ( \Q (\w ,\a ):        \Q (\w ) \big ) / \Gamma \big ( \Q (\w ,\a ):              \Q (\w ,\a ) \big ) \cong \Gamma \big (\Q (\w ,\a ):     \Q (\w ))\cong \Z _3.   \)
+</p>
+<p>
+Where the last equation follows since \(\Q (\w ,\a ):            \Q (\w )\) is a normal extension of degree 3. This is because it is the splitting field of the polynomial \(t^3-2\), which is irreducible over \(\Q
+(\w )\). This is an abelian group.
+</p>
+</li>
+</ul>
+<p>
+What was just shown is a general patern that exists any time we compute the splitting field of a polynomial that is soluble by radicals.
+</p>
+</li>
+</ul>
+
+</li>
+
+</ul>
+
 </div>
 
+<a id="Sample_Lwarp_Xy-jax-split-autofile-last"></a>
 </section>
 
 </main>

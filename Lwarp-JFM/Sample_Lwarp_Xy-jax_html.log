@@ -1,15 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.20)  15 DEC 2022 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  15 APR 2024 10:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Sample_Lwarp_Xy-jax_html
 (./Sample_Lwarp_Xy-jax_html.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (./Sample_Lwarp_Xy-jax.tex
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-07> (./Sample_Lwarp_Xy-jax.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,93 +22,111 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp.sty
-Package: lwarp 2022/02/01 v0.903 Allows LaTeX to directly produce HTML5 output.
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp.sty
+Package: lwarp 2023/01/03 v0.910 Allows LaTeX to directly produce HTML5 output.
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifptex/ifptex.sty
-Package: ifptex 2021/07/01 v2.1 pTeX checker
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/ifptex/ifptex.sty
+Package: ifptex 2022/04/03 v2.2 pTeX checker
 )
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count193
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/xpatch/xpatch.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-07 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count194
-\l__pdf_internal_box=\box50
+\l__pdf_internal_box=\box51
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 
 Package ifplatform Warning: 
     shell escape is disabled, so I can only detect \ifwindows.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 )
-
-Package newunicodechar Warning: Redefining Unicode character on input line 858.
-
-
 
 Package newunicodechar Warning: Redefining Unicode character on input line 859.
 
@@ -130,124 +151,141 @@ Package newunicodechar Warning: Redefining Unicode character on input line 863.
 Package newunicodechar Warning: Redefining Unicode character on input line 864.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+
+Package newunicodechar Warning: Redefining Unicode character on input line 865.
+
+
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
-\LWR@templengthone=\skip49
-\LWR@templengthtwo=\skip50
-\LWR@templengththree=\skip51
+\LWR@templengthone=\skip50
+\LWR@templengthtwo=\skip51
+\LWR@templengththree=\skip52
 \c@LWR@tempcountone=\count195
 \c@LWR@texboxdepth=\count196
 
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-Package lwarp Info: Using option 'warpHTML' on input line 1175.
-Package lwarp Info: Using option 'mathjax' on input line 1175.
+Package lwarp Info: Using option 'warpHTML' on input line 1186.
+Package lwarp Info: Using option 'mathjax' on input line 1186.
 
-(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/comment/comment.sty
 \CommentStream=\write3
+ Excluding comment 'comment')
+Lwarp: Including comment 'warpall' Lwarp: Including comment 'warpHTML'
+Lwarp: Excluding comment 'warpprint' Excluding 'warpprint' comment.
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
 
-Excluding comment 'comment') Lwarp: Including comment 'warpall'
-Lwarp: Including comment 'warpHTML' Lwarp: Excluding comment 'warpprint'
+ Straight input of comment_html.cut.
+(./comment_html.cut Lwarp: Including comment 'warpMathJax')
 Excluding 'warpprint' comment. Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-Lwarp: Including comment 'warpMathJax') Excluding 'warpprint' comment.
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut Lwarp: Excluding comment 'warpsvg')
+Lwarp: Excluding comment 'warpsvg')
 Lwarp: Excluding comment 'LWRcreatelwarpmk' Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/microtype.sty
+Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
 \MT@toks=\toks19
+\MT@tempbox=\box52
 \MT@count=\count197
-\MT@tempbox=\box51
-LaTeX Info: Redefining \leftprotrusion on input line 1010.
-LaTeX Info: Redefining \rightprotrusion on input line 1018.
-LaTeX Info: Redefining \textls on input line 1173.
-\MT@outer@kern=\dimen139
-LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
+LaTeX Info: Redefining \leftprotrusion on input line 1046.
+LaTeX Info: Redefining \rightprotrusion on input line 1056.
+LaTeX Info: Redefining \textls on input line 1234.
+\MT@outer@kern=\dimen141
+LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 \MT@listname@count=\count198
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2022/06/23 v3.0f Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 897.
-LaTeX Info: Redefining \lslig on input line 897.
-\MT@outer@space=\skip52
+LaTeX Info: Redefining \lsstyle on input line 900.
+LaTeX Info: Redefining \lslig on input line 900.
+\MT@outer@space=\skip53
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
-)))
-Including 'warpHTML' comment.
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
+))) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+
+Straight input of comment_html.cut. (./comment_html.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count199
 \Gm@cntv=\count266
 \c@Gm@tempcnt=\count267
-\Gm@bindingoffset=\dimen140
-\Gm@wd@mp=\dimen141
-\Gm@odd@mp=\dimen142
-\Gm@even@mp=\dimen143
-\Gm@layoutwidth=\dimen144
-\Gm@layoutheight=\dimen145
-\Gm@layouthoffset=\dimen146
-\Gm@layoutvoffset=\dimen147
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks20
-))
-Including 'warpall' comment.
+)) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
- Straight input of comment_all.cut.
-(./comment_all.cut (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+
+Straight input of comment_all.cut. (./comment_all.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count268
 \calc@Bcount=\count269
-\calc@Adimen=\dimen148
-\calc@Bdimen=\dimen149
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count270
-\calc@Cskip=\skip55
-))
-Including 'warpHTML' comment.
+\calc@Cskip=\skip56
+)) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+
+Straight input of comment_html.cut. (./comment_html.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 ))
 Including 'warpall' comment.
@@ -259,99 +297,64 @@ Including 'warpall' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks21
 \verbatim@line=\toks22
 \verbatim@in@stream=\read2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
-))
-Including 'warpall' comment.
+)) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
- Straight input of comment_all.cut.
-(./comment_all.cut
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+
+Straight input of comment_all.cut. (./comment_all.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xstring/xstring.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xstring/xstring.tex
 \integerpart=\count271
 \decimalpart=\count272
 )
-Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks23
-))
-Including 'warpHTML' comment.
+)) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/latex/printlen/printlen.sty
+
+Straight input of comment_html.cut. (./comment_html.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/printlen/printlen.sty
 Package: printlen 2009/09/03 v1.1a print lengths with units
-))
-Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
- Straight input of comment_all.cut.
-(./comment_all.cut) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut)
-Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
- Straight input of comment_all.cut.
-(./comment_all.cut
-\LWR@quickfile=\write4
-) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut
-\LWR@lateximagesfile=\write5
-)
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut
-\LWR@copyoutfile=\write6
-\LWR@copyinfile=\read3
-)
-Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
- Straight input of comment_all.cut.
-(./comment_all.cut) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut)
-Excluding 'warpprint' comment. Including 'warpall' comment.
+)) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
 
@@ -360,7 +363,20 @@ Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
  Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
+(./comment_html.cut) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut
+\LWR@quickfile=\write4
+)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut
+\LWR@lateximagesfile=\write5
+) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
@@ -369,19 +385,19 @@ Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
  Straight input of comment_html.cut.
-(./comment_html.cut) Lwarp: Excluding comment 'LWRwriteconf'
-Excluding 'warpprint' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
-Excluding 'LWRwriteconf' comment. Excluding 'LWRcreatelwarpmk' comment.
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
+(./comment_html.cut
+\LWR@copyoutfile=\write6
+\LWR@copyinfile=\read3
+) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
@@ -390,7 +406,46 @@ Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
  Straight input of comment_all.cut.
-(./comment_all.cut) Including 'warpall' comment.
+(./comment_all.cut) Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+
+Straight input of comment_html.cut. (./comment_html.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut) Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+
+Straight input of comment_html.cut. (./comment_html.cut)
+Lwarp: Excluding comment 'LWRwriteconf' Excluding 'warpprint' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRwriteconf' comment. Excluding 'LWRwriteconf' comment.
+Excluding 'LWRcreatelwarpmk' comment. Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+
+Straight input of comment_html.cut. (./comment_html.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
 
@@ -546,8 +601,8 @@ Including 'warpall' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-\LWR@footnotebox=\box52
-\LWR@mpfootnotes=\box53
+\LWR@footnotebox=\box53
+\LWR@mpfootnotes=\box54
 )
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
@@ -677,15 +732,15 @@ Including 'warpHTML' comment.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-\HTMLvleftskip=\skip56
-\HTMLleftmargini=\skip57
+\HTMLvleftskip=\skip57
+\HTMLleftmargini=\skip58
 )
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
  Straight input of comment_all.cut.
 (./comment_all.cut
-\VerbatimHTMLWidth=\skip58
+\VerbatimHTMLWidth=\skip59
 ) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
@@ -733,10 +788,10 @@ Excluding 'warpprint' comment. Including 'warpHTML' comment.
 
 Straight input of comment_html.cut. (./comment_html.cut
 \rownum=\count301
-\LWR@heavyrulewidth=\skip59
-\LWR@lightrulewidth=\skip60
-\LWR@cmidrulewidth=\skip61
-\LWR@thiscmidrulewidth=\skip62
+\LWR@heavyrulewidth=\skip60
+\LWR@lightrulewidth=\skip61
+\LWR@cmidrulewidth=\skip62
+\LWR@thiscmidrulewidth=\skip63
 \c@LWR@lastmulticolumn=\count302
 \c@LWR@tabhtmlcolindex=\count303
 \c@LWR@tabhtmlcolend=\count304
@@ -797,40 +852,45 @@ Straight input of comment_html.cut. (./comment_html.cut
 \c@LWR@nextautoid=\count308
 \c@LWR@nextautopage=\count309
 
-(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/capt-of/capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
-))
-Including 'warpHTML' comment.
+)) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpall' comment.
+
+Straight input of comment_html.cut. (./comment_html.cut)
+Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
-
-Straight input of comment_all.cut. (./comment_all.cut
+ Straight input of comment_all.cut.
+(./comment_all.cut
 \c@SideTOCDepth=\count310
+) Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+
+Straight input of comment_html.cut. (./comment_html.cut
+\c@lofdepth=\count311
+\c@lotdepth=\count312
 )
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
  Straight input of comment_html.cut.
 (./comment_html.cut
-\c@lofdepth=\count311
-\c@lotdepth=\count312
-) Including 'warpHTML' comment.
+\c@LWR@autoindex=\count313
+\c@LWR@autoglossary=\count314
+) Excluding 'warpprint' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
-Straight input of comment_html.cut. (./comment_html.cut
-\c@LWR@autoindex=\count313
-\c@LWR@autoglossary=\count314
-)
-Excluding 'warpprint' comment. Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
-
-Straight input of comment_all.cut. (./comment_all.cut)
+Straight input of comment_html.cut. (./comment_html.cut)
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
@@ -840,40 +900,6 @@ Including 'warpHTML' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut)
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
-
-Straight input of comment_all.cut. (./comment_all.cut)
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut
-\c@LWR@externalfilecnt=\count315
-\LWR@singledollarwidth=\skip63
-\LWR@singledollarheight=\skip64
-\LWR@singledollardepth=\skip65
-\LWR@singledollarbox=\box54
-\c@LWR@nextequation=\count316
-) Excluding 'warpprint' comment.
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut
-\c@LWR@lateximagenumber=\count317
-\c@LWR@lateximagedepth=\count318
-\c@LWR@LIpage=\count319
-)
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
@@ -883,7 +909,12 @@ Including 'warpall' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-\c@LWR@startingequation=\count320
+\c@LWR@externalfilecnt=\count315
+\LWR@singledollarwidth=\skip64
+\LWR@singledollarheight=\skip65
+\LWR@singledollardepth=\skip66
+\LWR@singledollarbox=\box55
+\c@LWR@nextequation=\count316
 )
 Excluding 'warpprint' comment. Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
@@ -894,11 +925,36 @@ Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
  Straight input of comment_html.cut.
+(./comment_html.cut
+\c@LWR@lateximagenumber=\count317
+\c@LWR@lateximagedepth=\count318
+\c@LWR@LIpage=\count319
+) Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut
+\c@LWR@startingequation=\count320
+) Excluding 'warpprint' comment.
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
 (./comment_html.cut) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
 Straight input of comment_html.cut. (./comment_html.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut) Excluding 'warpprint' comment.
 Excluding 'warpprint' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
@@ -923,8 +979,8 @@ Including 'warpHTML' comment.
 
  Straight input of comment_html.cut.
 (./comment_html.cut
-\LWR@minipagewidth=\skip66
-\LWR@minipageheight=\skip67
+\LWR@minipagewidth=\skip67
+\LWR@minipageheight=\skip68
 \c@LWR@virtualpagedepth=\count321
 ) Excluding 'warpprint' comment.
 Including 'warpHTML' comment.
@@ -934,7 +990,7 @@ Including 'warpHTML' comment.
 (./comment_html.cut
 \c@LWR@minipage@depth=\count322
 \c@LWR@mpfootnote@store=\count323
-\LWR@atleastonept=\skip68
+\LWR@atleastonept=\skip69
 ) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
@@ -949,7 +1005,7 @@ Including 'warpHTML' comment.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-\LWR@fminipagebox=\box55
+\LWR@fminipagebox=\box56
 )
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
@@ -972,9 +1028,9 @@ Including 'warpHTML' comment.
 
  Straight input of comment_html.cut.
 (./comment_html.cut
-\LWR@tempwidth=\skip69
-\LWR@tempheight=\skip70
-\LWR@tempraise=\skip71
+\LWR@tempwidth=\skip70
+\LWR@tempheight=\skip71
+\LWR@tempraise=\skip72
 ) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
@@ -998,37 +1054,49 @@ Including 'warpHTML' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-array.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-array.sty
 Package lwarp Info: Using package `array',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 23.
 Package: lwarp-array 2018/12/30
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen150
-\ar@mcellbox=\box56
-\extrarowheight=\dimen151
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen152
+\ar@mcellbox=\box57
+\extrarowheight=\dimen153
 \NC@list=\toks24
-\extratabsurround=\skip72
-\backup@length=\skip73
-\ar@cellbox=\box57
-)))
-Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
- Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
+\extratabsurround=\skip73
+\backup@length=\skip74
+\ar@cellbox=\box58
+))) Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
 
 Straight input of comment_html.cut. (./comment_html.cut)
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-textcomp.sty
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-textcomp.sty
 Package lwarp Info: Using package `textcomp',
 (lwarp)             and adding lwarp modifications, including options,
-(lwarp)              on input line 20.
+(lwarp)              on input line 21.
 Package: lwarp-textcomp 2017/04/05
-)
+) Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+
+Straight input of comment_html.cut. (./comment_html.cut)
+Including 'warpHTML' comment.
+\openout3 = `comment_html.cut'.
+
+ Straight input of comment_html.cut.
+(./comment_html.cut) Excluding 'warpprint' comment.
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
@@ -1038,11 +1106,6 @@ Including 'warpHTML' comment.
 
 
 Straight input of comment_html.cut. (./comment_html.cut)
-Excluding 'warpprint' comment. Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut)
 Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
@@ -1056,70 +1119,71 @@ Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
  Straight input of comment_html.cut.
-(./comment_html.cut) Including 'warpHTML' comment.
-\openout3 = `comment_html.cut'.
-
-
-Straight input of comment_html.cut. (./comment_html.cut))
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-xy.sty
+(./comment_html.cut))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-xy.sty
 Package lwarp Info: Using package `xy',
 (lwarp)             and adding lwarp modifications, including options,
-(lwarp)              on input line 19.
+(lwarp)              on input line 20.
 Package: lwarp-xy 2013/10/06
 
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
-catcodes, docmode, (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrecat.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyidioms.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xy.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes, docmode,
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyrecat.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen152
-\Y@c=\dimen153
-\U@c=\dimen154
-\D@c=\dimen155
-\L@c=\dimen156
-\R@c=\dimen157
+\X@c=\dimen154
+\Y@c=\dimen155
+\U@c=\dimen156
+\D@c=\dimen157
+\L@c=\dimen158
+\R@c=\dimen159
 \Edge@c=\toks25
-\X@p=\dimen158
-\Y@p=\dimen159
-\U@p=\dimen160
-\D@p=\dimen161
-\L@p=\dimen162
-\R@p=\dimen163
+\X@p=\dimen160
+\Y@p=\dimen161
+\U@p=\dimen162
+\D@p=\dimen163
+\L@p=\dimen164
+\R@p=\dimen165
 \Edge@p=\toks26
-\X@origin=\dimen164
-\Y@origin=\dimen165
-\X@xbase=\dimen166
-\Y@xbase=\dimen167
-\X@ybase=\dimen168
-\Y@ybase=\dimen169
-\X@min=\dimen170
-\Y@min=\dimen171
-\X@max=\dimen172
-\Y@max=\dimen173
-\lastobjectbox@=\box58
-\zerodotbox@=\box59
-\almostz@=\dimen174
+\X@origin=\dimen166
+\Y@origin=\dimen167
+\X@xbase=\dimen168
+\Y@xbase=\dimen169
+\X@ybase=\dimen170
+\Y@ybase=\dimen171
+\X@min=\dimen172
+\Y@min=\dimen173
+\X@max=\dimen174
+\Y@max=\dimen175
+\lastobjectbox@=\box59
+\zerodotbox@=\box60
+\almostz@=\dimen176
  direction,
-\d@X=\dimen175
-\d@Y=\dimen176
+\d@X=\dimen177
+\d@Y=\dimen178
 \K@=\count325
 \KK@=\count326
 \Direction=\count327
-\K@dXdY=\dimen177
-\K@dYdX=\dimen178
+\K@dXdY=\dimen179
+\K@dYdX=\dimen180
 \xyread@=\read4
 \xywrite@=\write7
 \csp@=\count328
-\quotPTK@=\dimen179
+\quotPTK@=\dimen181
 
 utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks27
-\connectobjectbox@@=\box60
+\connectobjectbox@@=\box61
  objects,
 \styletoks@=\toks28
  decorations;
@@ -1127,36 +1191,43 @@ kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyall.tex
- Xy-pic option: All features v.3.8
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycurve.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyall.tex  Xy-pic option: All features v.3.8
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count329
 \crvpts@=\toks29
-\splinebox@=\box61
-\splineval@=\dimen180
-\splinedepth@=\dimen181
-\splinetol@=\dimen182
-\splinelength@=\dimen183
+\splinebox@=\box62
+\splineval@=\dimen182
+\splinedepth@=\dimen183
+\splinetol@=\dimen184
+\splinelength@=\dimen185
  circles,
-\L@=\dimen184
+\L@=\dimen186
  loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyframe.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycmtip.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xytips.tex
- Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyline.tex
- Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen185
- loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrotate.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xytips.tex  Xy-pic option: More Tips extension v.3.11
+loaded) loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyline.tex  Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen187
+
+loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycolor.tex
- Xy-pic option: Colour extension v.3.11 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xymatrix.tex
- Xy-pic option: Matrix feature v.3.14
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xycolor.tex  Xy-pic option: Colour extension v.3.11
+loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xymatrix.tex  Xy-pic option: Matrix feature v.3.14
 \Row=\count330
 \Col=\count331
 \queue@=\toks30
@@ -1164,108 +1235,138 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 \qcount@=\count332
 \qcount@@=\count333
 \matrixsize@=\count334
- loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyarrow.tex
- Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xygraph.tex
- Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy2cell.tex
- Xy-pic option: Two-cell feature v.3.7 two-cells, loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyknot.tex
- Xy-pic option: Knots and Links feature v.3.9 knots and links, loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf.tex
- Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
+
+loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyarrow.tex  Xy-pic option: Arrow and Path feature v.3.9
+path, \ar, loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xygraph.tex  Xy-pic option: Graph feature v.3.11 loaded)
+loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xy2cell.tex  Xy-pic option: Two-cell feature v.3.7
+two-cells, loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xyknot.tex  Xy-pic option: Knots and Links feature v.3.9
+knots and links, loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf.tex  Xy-pic option: PDF driver v.1.7
+Xy-pic pdf driver: `color' extension support
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf-co.tex loaded)
 Xy-pic pdf driver: `curve' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf-cu.tex loaded)
 Xy-pic pdf driver: `frame' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf-fr.tex loaded)
 Xy-pic pdf driver: `line' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded)))
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-tikz.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/xypic/xypdf-ro.tex loaded) loaded)))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-tikz.sty
 Package lwarp Info: Using package `tikz',
 (lwarp)             and adding lwarp modifications, including options,
-(lwarp)              on input line 19.
+(lwarp)              on input line 20.
 Package: lwarp-tikz 2015/08/07
 
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/frontendlayer/tikz.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/basiclayer/pgf.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/utilities/pgfrcs.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen186
-\pgfutil@tempdimb=\dimen187
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box62
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-graphicx.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-graphicx.sty
 Package lwarp Info: Using package `graphicx',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 20.
 Package: lwarp-graphicx 2020/09/09
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-graphics.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-graphics.sty
 Package lwarp Info: Using package `graphics',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 20.
 Package: lwarp-graphics 2020/08/30
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\LWR@igwidth=\skip74
-\LWR@igheight=\skip75
-\LWR@imagesizebox=\box63
+\LWR@igwidth=\skip75
+\LWR@igheight=\skip76
+\LWR@imagesizebox=\box64
 )
-\Gin@req@height=\dimen188
-\Gin@req@width=\dimen189
+\Gin@req@height=\dimen190
+\Gin@req@width=\dimen191
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks33
 \pgfkeys@temptoks=\toks34
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen190
-\pgf@y=\dimen191
-\pgf@xa=\dimen192
-\pgf@ya=\dimen193
-\pgf@xb=\dimen194
-\pgf@yb=\dimen195
-\pgf@xc=\dimen196
-\pgf@yc=\dimen197
-\pgf@xd=\dimen198
-\pgf@yd=\dimen199
+\pgf@x=\dimen192
+\pgf@y=\dimen193
+\pgf@xa=\dimen194
+\pgf@ya=\dimen195
+\pgf@xb=\dimen196
+\pgf@yb=\dimen197
+\pgf@xc=\dimen198
+\pgf@yc=\dimen199
+\pgf@xd=\dimen256
+\pgf@yd=\dimen257
 \w@pgf@writea=\write8
 \r@pgf@reada=\read5
 \c@pgf@counta=\count335
@@ -1276,300 +1377,346 @@ ex
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
 \pgf@sys@id@count=\count339
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count340
 \pgfsyssoftpath@bigbuffer@items=\count341
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-xcolor.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-xcolor.sty
 Package lwarp Info: Using package `xcolor',
 (lwarp)             and adding lwarp modifications, including options,
-(lwarp)              on input line 20.
+(lwarp)              on input line 21.
 Package: lwarp-xcolor 2016/05/11
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen256
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmath.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen258
 \pgfmath@count=\count342
-\pgfmath@box=\box64
+\pgfmath@box=\box65
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count343
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
-x
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen257
-\pgf@picmaxx=\dimen258
-\pgf@picminy=\dimen259
-\pgf@picmaxy=\dimen260
-\pgf@pathminx=\dimen261
-\pgf@pathmaxx=\dimen262
-\pgf@pathminy=\dimen263
-\pgf@pathmaxy=\dimen264
-\pgf@xx=\dimen265
-\pgf@xy=\dimen266
-\pgf@yx=\dimen267
-\pgf@yy=\dimen268
-\pgf@zx=\dimen269
-\pgf@zy=\dimen270
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfint.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen259
+\pgf@picmaxx=\dimen260
+\pgf@picminy=\dimen261
+\pgf@picmaxy=\dimen262
+\pgf@pathminx=\dimen263
+\pgf@pathmaxx=\dimen264
+\pgf@pathminy=\dimen265
+\pgf@pathmaxy=\dimen266
+\pgf@xx=\dimen267
+\pgf@xy=\dimen268
+\pgf@yx=\dimen269
+\pgf@yy=\dimen270
+\pgf@zx=\dimen271
+\pgf@zy=\dimen272
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen271
-\pgf@path@lasty=\dimen272
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen273
+\pgf@path@lasty=\dimen274
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
-.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen273
-\pgf@shorten@start@additional=\dimen274
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen275
+\pgf@shorten@start@additional=\dimen276
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box65
-\pgf@hbox=\box66
-\pgf@layerbox@main=\box67
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
 \pgf@picture@serial@count=\count344
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen275
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen277
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen276
-\pgf@pt@y=\dimen277
-\pgf@pt@temp=\dimen278
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen278
+\pgf@pt@y=\dimen279
+\pgf@pt@temp=\dimen280
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
-.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen279
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen281
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen280
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen282
 \pgf@sys@shading@range@num=\count345
 \pgf@shadingcount=\count346
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
-tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box68
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box69
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box69
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box70
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
-.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen281
-\pgf@nodesepend=\dimen282
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
-.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen283
-\pgffor@skip=\dimen284
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen283
+\pgf@nodesepend=\dimen284
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/utilities/pgffor.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/utilities/pgfkeys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/pgf/math/pgfmath.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/math/pgfmath.code.tex))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen285
+\pgffor@skip=\dimen286
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
-.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count347
-\pgfplotmarksize=\dimen285
+\pgfplotmarksize=\dimen287
 )
-\tikz@lastx=\dimen286
-\tikz@lasty=\dimen287
-\tikz@lastxsaved=\dimen288
-\tikz@lastysaved=\dimen289
-\tikz@lastmovetox=\dimen290
-\tikz@lastmovetoy=\dimen291
-\tikzleveldistance=\dimen292
-\tikzsiblingdistance=\dimen293
-\tikz@figbox=\box70
-\tikz@figbox@bg=\box71
-\tikz@tempbox=\box72
-\tikz@tempbox@bg=\box73
+\tikz@lastx=\dimen288
+\tikz@lasty=\dimen289
+\tikz@lastxsaved=\dimen290
+\tikz@lastysaved=\dimen291
+\tikz@lastmovetox=\dimen292
+\tikz@lastmovetoy=\dimen293
+\tikzleveldistance=\dimen294
+\tikzsiblingdistance=\dimen295
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
 \tikztreelevel=\count348
 \tikznumberofchildren=\count349
 \tikznumberofcurrentchild=\count350
 \tikz@fig@count=\count351
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count352
 \pgfmatrixcurrentcolumn=\count353
 \pgf@matrix@numberofcolumns=\count354
 )
 \tikz@expandcount=\count355
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarybabel.code.tex
-File: tikzlibrarybabel.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
+File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
 
-(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
-code.tex
-File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen294
-\pgfarrowlength=\dimen295
-\pgfarrowwidth=\dimen296
-\pgfarrowlinewidth=\dimen297
-))) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen296
+\pgfarrowlength=\dimen297
+\pgfarrowwidth=\dimen298
+\pgfarrowlinewidth=\dimen299
+)))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count356
-\U@D=\dimen298
+\U@D=\dimen300
 \l@unhyphenated=\language87
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read6
 \bbl@dirlevel=\count357
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language37). Reported on input line 105.
+(babel)             (\language21). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language37). Reported on input line 108.
+(babel)             (\language21). Reported on input line 108.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-hyperref.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-hyperref.sty
 Package lwarp Info: Using the lwarp HTML version of package `hyperref',
 (lwarp)             and discarding options except backref, pagebackref.
 (lwarp)             (Not using \ProvidesPackage, so that other packages
 (lwarp)             do not attempt to patch lwarp's version of `hyperref'.)
 (lwarp)              on input line 25.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks44
 \symAMSa=\mathgroup4
@@ -1578,177 +1725,246 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks45
-\ex@=\dimen299
+\ex@=\dimen301
 )
 \athelp@=\toks46
-\minaw@=\dimen300
-\bigaw@=\dimen301
-\minCDarrowwidth=\dimen302
+\minaw@=\dimen302
+\bigaw@=\dimen303
+\minCDarrowwidth=\dimen304
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-ulem.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-caption.sty
+---
+Packages lwarp and caption:
+If a ``Missing \begin{document}'' error occurs here,
+try using:  \usepackage{caption} \captionsetup{options}
+instead of: \usepackage[options]{caption}.
+---
+Package lwarp Info: Using package `caption',
+(lwarp)             and adding lwarp modifications, including options,
+(lwarp)              on input line 27.
+Package: lwarp-caption 2020/10/26
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-caption3.sty
+Package lwarp Info: Using package `caption3',
+(lwarp)             and adding lwarp modifications, including options,
+(lwarp)              on input line 19.
+Package: lwarp-caption3 2020/10/21
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen305
+\captionmargin=\dimen306
+\caption@leftmargin=\dimen307
+\caption@rightmargin=\dimen308
+\caption@width=\dimen309
+\caption@indent=\dimen310
+\caption@parindent=\dimen311
+\caption@hangindent=\dimen312
+Package caption Info: Standard document class detected.
+))
+
+LaTeX Warning: You have requested, on input line 50, version
+               `2022/01/07' of package lwarp-caption3,
+               but only version
+               `2020/10/21'
+               is available.
+
+\c@caption@flags=\count358
+\c@continuedfloat=\count359
+))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-ulem.sty
 Package lwarp Info: Using package `ulem',
 (lwarp)             and adding lwarp modifications, including options,
-(lwarp)              on input line 18.
+(lwarp)              on input line 19.
 Package: lwarp-ulem 2012/05/18
 
-(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box74
-\UL@hyphenbox=\box75
-\UL@skip=\skip76
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/generic/ulem/ulem.sty
+\UL@box=\box75
+\UL@hyphenbox=\box76
+\UL@skip=\skip77
 \UL@hook=\toks47
-\UL@height=\dimen303
-\UL@pe=\count358
-\UL@pixel=\dimen304
-\ULC@box=\box76
+\UL@height=\dimen313
+\UL@pe=\count360
+\UL@pixel=\dimen314
+\ULC@box=\box77
 Package: ulem 2019/11/18
-\ULdepth=\dimen305
+\ULdepth=\dimen315
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-geometry.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-geometry.sty
 Package lwarp Info: Replacing package `geometry' with the lwarp version,
 (lwarp)             and discarding options, on input line 20.
 Package: lwarp-geometry 2018/04/16
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-amsmath.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-amsmath.sty
 Package lwarp Info: Using package `amsmath',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 18.
 Package: lwarp-amsmath 2017/09/02
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip77
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip78
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen306
+\pmbraise@=\dimen316
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count359
+\inf@bad=\count361
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count360
-\leftroot@=\count361
+\uproot@=\count362
+\leftroot@=\count363
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count362
-\DOTSCASE@=\count363
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count364
+\DOTSCASE@=\count365
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box77
-\strutbox@=\box78
-\big@size=\dimen307
+\Mathstrutbox@=\box78
+\strutbox@=\box79
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen317
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count364
-\c@MaxMatrixCols=\count365
+\macc@depth=\count366
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count367
 \dotsspace@=\muskip16
-\c@parentequation=\count366
-\dspbrk@lvl=\count367
+\c@parentequation=\count368
+\dspbrk@lvl=\count369
 \tag@help=\toks48
-\row@=\count368
-\column@=\count369
-\maxfields@=\count370
+\row@=\count370
+\column@=\count371
+\maxfields@=\count372
 \andhelp@=\toks49
-\eqnshift@=\dimen308
-\alignsep@=\dimen309
-\tagshift@=\dimen310
-\tagwidth@=\dimen311
-\totwidth@=\dimen312
-\lineht@=\dimen313
+\eqnshift@=\dimen318
+\alignsep@=\dimen319
+\tagshift@=\dimen320
+\tagwidth@=\dimen321
+\totwidth@=\dimen322
+\lineht@=\dimen323
 \@envbody=\toks50
-\multlinegap=\skip78
-\multlinetaggap=\skip79
+\multlinegap=\skip79
+\multlinetaggap=\skip80
 \mathdisplay@stack=\toks51
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
-\c@LWR@amsmathdepth=\count371
-\c@LWR@maxfields@=\count372
-
-Including 'warpMathJax' comment.
+\c@LWR@amsmathdepth=\count373
+\c@LWR@maxfields@=\count374
+ Including 'warpMathJax' comment.
 \openout3 = `comment_mathjax.cut'.
 
- Straight input of comment_mathjax.cut.
-(./comment_mathjax.cut))
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-amsthm.sty
+
+Straight input of comment_mathjax.cut. (./comment_mathjax.cut))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-amsthm.sty
 Package lwarp Info: Using package `amsthm',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 35.
 Package: lwarp-amsthm 2017/10/31
 
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks52
 \thm@bodyfont=\toks53
 \thm@headfont=\toks54
 \thm@notefont=\toks55
 \thm@headpunct=\toks56
-\thm@preskip=\skip80
-\thm@postskip=\skip81
-\thm@headsep=\skip82
+\thm@preskip=\skip81
+\thm@postskip=\skip82
+\thm@headsep=\skip83
 \dth@everypar=\toks57
 )
 LaTeX Info: Redefining \qed on input line 178.
 )
-\c@Theorem=\count373
-\c@Fundamental Theorem=\count374
-
-Including 'warpHTML' comment.
+\c@Theorem=\count375
+\c@Fundamental Theorem=\count376
+ Including 'warpHTML' comment.
 \openout3 = `comment_html.cut'.
 
- Straight input of comment_html.cut.
-(./comment_html.cut)
-\LWR@userspaperwidth=\skip83
-\LWR@userspaperheight=\skip84
-\LWR@usersmarginparwidth=\skip85
-\LWR@userstextwidth=\skip86
-\LWR@userstextheight=\skip87
 
-(/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-cleveref.sty
+Straight input of comment_html.cut. (./comment_html.cut)
+\LWR@userspaperwidth=\skip84
+\LWR@userspaperheight=\skip85
+\LWR@usersmarginparwidth=\skip86
+\LWR@userstextwidth=\skip87
+\LWR@userstextheight=\skip88
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-cleveref.sty
 Package lwarp Info: Using package `cleveref',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 18.
 Package: lwarp-cleveref 2018/03/27
 
-(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `amsthm' support loaded on input line 3026.
-))
-(./Sample_Lwarp_Xy-jax_html.aux)
+)) (./Sample_Lwarp_Xy-jax_html.aux)
 \openout1 = `Sample_Lwarp_Xy-jax_html.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Info: Redefining \microtypecontext on input line 168.
-Package microtype Info: Applying patch `item' on input line 168.
-Package microtype Info: Applying patch `toc' on input line 168.
-Package microtype Info: Applying patch `eqnum' on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Info: Redefining \microtypecontext on input line 171.
+Package microtype Info: Applying patch `item' on input line 171.
+Package microtype Info: Applying patch `toc' on input line 171.
+Package microtype Info: Applying patch `eqnum' on input line 171.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 168.
+Package microtype Warning: Unable to apply patch `footnote' on input line 171.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: No character protrusion.
@@ -1756,7 +1972,9 @@ Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -1794,7 +2012,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\LWR@colorminipagebox=\box79
+\LWR@colorminipagebox=\box80
 
 Package lwarp Info: Babel has been loaded. Lwarp also uses cleveref.
 (lwarp)             See the cleveref documentation regarding
@@ -1815,65 +2033,78 @@ Package lwarp Warning: Lwarp does not provide MathJax support for xy.
 (lwarp)                Or, use SVG math for all expressions by removing
 (lwarp)                the mathjax option for the lwarp package.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 168
+LaTeX Font Info:    Trying to load font information for U+msa on input line 171
 .
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 168
+LaTeX Font Info:    Trying to load font information for U+msb on input line 171
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 168.
+Package xypdf Info: Line width: 0.47998pt on input line 171.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count375
-\scratchdimen=\dimen314
-\scratchbox=\box80
-\nofMPsegments=\count376
-\nofMParguments=\count377
+\scratchcounter=\count377
+\scratchdimen=\dimen324
+\scratchbox=\box81
+\nofMPsegments=\count378
+\nofMParguments=\count379
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count378
-\MPscratchDim=\dimen315
-\MPnumerator=\count379
-\makeMPintoPDFobject=\count380
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen325
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
 \everyMPtoPDFconversion=\toks59
-) (/usr/share/texlive/texmf-dist/tex/latex/lwarp/lwarp-epstopdf-base.sty
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/lwarp/lwarp-epstopdf-base.sty
 Package lwarp Info: Using package `epstopdf-base',
 (lwarp)             and adding lwarp modifications, including options,
 (lwarp)              on input line 18.
 Package: lwarp-epstopdf-base 2020-01-24
 
-(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-Package lwarp Info: Removing background hook on input line 168.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package lwarp Info: Removing background hook on input line 171.
 \openout5 = `Sample_Lwarp_Xy-jax-images.txt'.
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-68.
+71.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 File: "lwarp-with-Xy-jax_v3.txt"  (verbatim)
 
-Overfull \hbox (29.22021pt too wide) in paragraph at lines 168--168
+Overfull \hbox (29.22021pt too wide) in paragraph at lines 171--171
 []\T1/cmtt/m/n/8 To generate a custom script, such as to use a local repository
 , copy lwarp_mathjax.txt to a new file, make changes while keeping lwarp-s adju
 stments for equation numbering and starred macros, and use \MathJaxFilename to 
@@ -1881,9 +2112,11 @@ select the new filename."[]
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-168.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+171.
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
+ist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 ---
 Package lwarp:
@@ -1894,65 +2127,82 @@ Done.
 ---
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-v
+ar/fonts/map/pdftex/updmap/pdftex.map}]
 \openout6 = `Sample_Lwarp_Xy-jax_html.sidetoc'.
 
- [2]
-(./Sample_Lwarp_Xy-jax_html.toc)
+ [2] (./Sample_Lwarp_Xy-jax_html.toc)
 \tf@toc=\write9
 \openout9 = `Sample_Lwarp_Xy-jax_html.toc'.
 
- [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-[13] [14] [15] [16] [17]
 
-LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 365.
+[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 437.
 
 [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32]
-[33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
+[33] [34] [35] [36] [37] [38] [39] [40] [41] [42] <xymatrix 4x2 167> [43]
+[44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 560.
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 700.
 
-<xymatrix 4x2 167> [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 616.
-
-[54] [55] [56] [57] [58] [59] [60] [61] [62]
+[58] [59] [60] [61] [62] [63] [64] [65] [66]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 722.
- [63]
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 806.
+ [67]
 (./Sample_Lwarp_Xy-jax_html.aux) ) ) 
 Here is how much of TeX's memory you used:
- 30289 strings out of 478287
- 591322 string characters out of 5849289
- 1157586 words of memory out of 5000000
- 47498 multiletter control sequences out of 15000+600000
- 494438 words of font info for 107 fonts, out of 8000000 for 9000
+ 31831 strings out of 476029
+ 644508 string characters out of 5766719
+ 2008346 words of memory out of 5000000
+ 51262 multiletter control sequences out of 15000+600000
+ 537470 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 153i,19n,166p,3320b,1506s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/
-cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfit1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
-000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt10
-00.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on Sample_Lwarp_Xy-jax_html.pdf (63 pages, 385642 bytes).
+ 153i,19n,166p,3320b,1506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/localhome/home/pmtjfa/local-texlive/insta
+ll-tl-20230216/local-texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf
+-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</localhome/home/pmtjfa/local-t
+exlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx8.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></localhome/home/pm
+tjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-202
+30216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></loca
+lhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb></localhome/home/pmtjfa/local-texlive/in
+stall-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></localhome/home/pmtjfa/local
+-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local
+-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></localhome/home/p
+mtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></localhome/home/pmtjfa/local-texlive/install-tl-2023
+0216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></local
+home/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></localhome/home/pmtjfa/local-texlive/ins
+tall-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texli
+ve/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></localhome/home/pmtjfa/
+local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/c
+m-super/sfbx1000.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/
+local-texlive/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></localhome/h
+ome/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></localhome/home/pmtjfa/local-texlive/install-t
+l-20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
+localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dis
+t/fonts/type1/public/cm-super/sfti1000.pfb></localhome/home/pmtjfa/local-texliv
+e/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sftt
+0800.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texliv
+e/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></localhome/home/pmtjfa/l
+ocal-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/xy
+pic/xyatip10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/loca
+l-texlive/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on Sample_Lwarp_Xy-jax_html.pdf (67 pages, 413130 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
+ 348 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

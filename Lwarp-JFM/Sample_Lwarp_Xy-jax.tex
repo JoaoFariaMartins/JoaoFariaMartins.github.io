@@ -86,6 +86,8 @@
 
 \usepackage{amscd}
 
+\usepackage{caption}
+
 \usepackage[normalem]{ulem}
 
 
@@ -115,6 +117,7 @@
 \newcommand{\C}{ \mathbb{C} }
 \newcommand{\Cc}{ \mathcal{C} }
 \newcommand{\Dc}{ \mathcal{D} }
+\newcommand{\Grp}{ \mathrm{Grp} }
 
 \newcommand{\Z}{ \mathbb{Z} }
 \newcommand{\ra}[1]{\xrightarrow{#1}}
@@ -141,7 +144,7 @@
 \CustomizeMathJax{\newcommand{\C}{ \mathbb{C} }}
 \CustomizeMathJax{\newcommand{\Cc}{ \mathcal{C} }}
 \CustomizeMathJax{\newcommand{\Dc}{ \mathcal{D} }}
-
+\CustomizeMathJax{ \newcommand{\Grp}{ \mathrm{Grp} } }
 \CustomizeMathJax{\newcommand{\Z}{ \mathbb{Z} }}
 \CustomizeMathJax{\newcommand{\ra}[1]{\xrightarrow{#1}}}
 \CustomizeMathJax{\DeclareMathOperator{\Sym}{Sym}}
@@ -170,15 +173,19 @@
 \title{Sample HTML file: produced with  lwarp, with mathematical formulae displayed with  MathJax, and  xymatrix commutative  diagrams displayed  with XyJax-v3}
 \author{Jo\~{a}o Faria Martins}
 \affiliation{University of Leeds}
-\date{Last modified: May 23, 2023}
+\date{Last modified: April 15, 2024}
 \maketitle
 
 \tableofcontents
 $$\xymatrix@R=30pt@C=60pt
 {&A\ar[d]_{\iota_0^A}  \ar[r]^f & X\ar[d]_{\iota_0^X} \ar[r]^g & B.\\
             & A \times I  \ar@/_4pc/[rru]_<<<<<<<<<<<{H} \ar[r]^{f \times \id_I} & X\times I \ar@{-->}[ur]^{H'} } $$
+  $$\hskip-0.5cm\xymatrix@C=25pt@R=30pt{& T\times T\ar[drr]_{\sqcup} \ar[rr]^{  \tau} &\drtwocell\omit{\,\,\, \mathbf{R}}& T \times T \ar[d]^{\sqcup} \\
+ &&& T.}
+ $$
 
-\noindent The responsibility for this HTML file is \href{http://www1.maths.leeds.ac.uk/~pmtjfa/index.html}{Jo\~{a}o Faria Martins}' only.\\ 
+
+\noindent The responsibility for this HTML file is \href{https://joaofariamartins.github.io/}{Jo\~{a}o Faria Martins}' only.\\
 Corrections, suggestions, etc. are very welcome, and can be sent to:
 \href{mailto:j.fariamartins@leeds.ac.uk}{j.fariamartins@leeds.ac.uk}.\\
 \textbf{This is strictly a non-specialist experimental file.} \\
@@ -198,7 +205,7 @@ See the links below for:
 \end{itemize}
 
 
-\section{Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax}\label{Context}
+\section{Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax}\label{Context}
 
 \noindent This HTML file (that you are reading) was produced with the
 \href{https://ctan.org/pkg/lwarp}{lwarp.sty package}, available with \textbf{TeXLive}.
@@ -214,11 +221,13 @@ In particular the preamble contains:
 \medskip
 The version of the software was:
 \begin{verbatim}
- pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian)
- lwarpmk: v0.903  Automated make for the LaTeX Lwarp package.
+ pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+ lwarpmk: lwarpmk: v0.910  Automated make for the LaTeX Lwarp package.
 \end{verbatim}
 
-The source latex file can be found here: \href{Sample_Lwarp_Xy-jax.tex}{Sample\_Lwarp\_Xy-jax.tex}.
+The source latex file can be found here: \href{Sample_Lwarp_Xy-jax.tex}{Sample\_Lwarp\_Xy-jax.tex}  or here \href{Sample_Lwarp_Xy-jax-split.tex}{Sample\_Lwarp\_Xy-jax-split.tex}, depending whether you are seeing the  \href{Sample_Lwarp_Xy-jax.html}{``stand-alone'' version of this webpage}, or the
+   \href{Sample_Lwarp_Xy-jax-split-index.html}{``split'' version of this webpage}.
+
 
 \
 
@@ -237,7 +246,7 @@ Credit is  due to instructions in: \url{https://github.com/sonoisa/XyJax-v3} (th
 
 \bigskip
 
- If using Xy-pic diagrams displayed with {\textbf{XyJax-v3}}, insert the following in the preamble of your latex file:
+ If using \Xy-pic diagrams displayed with {\textbf{XyJax-v3}}, insert the following in the preamble of your latex file:
 \begin{verbatim}
   \usepackage[all]{xy}
   \MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
@@ -306,6 +315,22 @@ C @<a<b< D
   \end{quotation}
 
 \item  Commutative diagrams drawn with \href{https://tug.org/applications/Xy-pic/}{\textbf{Xy-pic}} displayed by using \href{https://github.com/sonoisa/XyJax-v3}{\textbf{XyJax-v3}}.\\
+For a good introduction to typeseting diagrams with Xy-pic see e.g.
+\begin{itemize}
+ \item \url{https://www.math.purdue.edu/~adebray/lecture_notes/using_xy.pdf} (Arun Debray
+Using \Xy\ to typeset automata.
+July 5, 2016.)
+
+
+\item \url{https://web.math.ku.dk/~holm/download/xyrefer.pdf} (Kristoffer H. Rose \&
+Ross Moore: \Xy-pic Reference Manual, Version 3.7 1999/02/16.)
+
+\item See also the more recent \href{https://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/generic/diagrams/xypic/doc/xyguide.pdf}{user guide} (Kristoffer H. Rose,
+Version 3.8.9, October 6, 2013) in the official page of \href{https://ctan.org/pkg/xymatrix?lang=en}{xymatrix – Commutative diagrams using XY-pic
+}
+\end{itemize}
+
+
 E.g.$$\xymatrix@R=60pt@C=60pt{&S_3 \ar@{^{(}->}[r]^f \ar[dr]_{g}^{\cong} &S_4 \ar@{->>}[d]^\pi \\
 &&S_4/V,
 }
@@ -345,6 +370,53 @@ $$
 
 
 
+        $$\xymatrix{ &\Cc\rtwocell^F_{F'}{\eta} &\Dc } $$
+
+
+$$\hskip-0.5cm\xymatrix@C=25pt@R=30pt{& T\times T\ar[drr]_{\sqcup} \ar[rr]^{  \tau} &\drtwocell\omit{\,\,\, \mathbf{R}}& T \times T \ar[d]^{\sqcup} \\
+ &&& T.}
+ $$
+
+  $$\xymatrix@C=45pt{&\Cc \sqcup \Cc' \rtwocell\omit{\quad \,\, \langle\eta,\eta'\rangle}
+  \ar@/^1.5pc/[r]^{T_b\circ \langle f, f' \rangle}
+    \ar@/_1.5pc/[r]_{\langle T,T'\rangle} & \Grp.  }$$
+
+$$
+\xymatrix@C=60pt{\Cc\ruppertwocell^F{\eta}
+\rlowertwocell_{F''}{\eta'}
+\ar[r]|{F''} & \Dc  & = &\Cc\ar@/^1.5pc/[r]^{F}\ar@/_1.5pc/[r]_{F''}\rtwocell\omit{\quad\,\,\,\,\eta\#_1\eta'}
+  & \Dc &}
+$$
+ $$
+\hskip-2cm\xymatrix@C=60pt{ &\big( \mathbf{Cob}^{(n,n+1,n+2)}\big)^3
+\ar[d]_{\id\times \sqcup}\ar[dr]^{\sqcup\times \id}
+ \drrtwocell
+ \omit
+ {\qquad \boldsymbol{\chi}'\times \mathcal{F}_{\mathbf{B}}}
+ \ddtwocell\omit{<-13> \alpha}
+\ar[rr]^{\mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}}}
+&& \big(\mathbf{Prof} \big)^3\ar[d]^{\otimes \times \id}\\
+&\big( \mathbf{Cob}^{(n,n+1,n+2)})^2 \ar[d]_{\sqcup}
+& \big( \mathbf{Cob}^{(n,n+1,n+2)})^2 \ar[dl]^{\sqcup}
+ \dtwocell
+ \omit
+ { \boldsymbol{\chi}'}
+\ar[r]^{\mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}}}
+&  \big(\mathbf{Prof} \big)^2
+\ar[dl]^{\otimes}
+\\
+& \big(\mathbf{Cob}^{(n,n+1,n+2)}\big) \ar[r]_{\mathcal{F}_{\mathbf{B}}}& \mathbf{Prof}\\
+& \ar@3[r]_{\boldsymbol{\omega}'} & \\ &\big( \mathbf{Cob}^{(n,n+1,n+2)}\big)^3
+\ar[d]_{\id\times \sqcup} \drrtwocell\omit{\quad \qquad \mathcal{F}_{\mathbf{B}}\times \boldsymbol{\chi}' }\ar[rr]^{\mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}}} && \big(\mathbf{Prof} \big)^3\ddltwocell\omit{\alpha}
+\ar[d]^{\otimes \times \id}\ar[dl]^{\id\times \otimes}\\
+&\big( \mathbf{Cob}^{(n,n+1,n+2)})^2 \ar[d]_{\sqcup} \drtwocell\omit{\,\,\boldsymbol{\chi}' } \ar[r]^{\mathcal{F}_{\mathbf{B}} \times \mathcal{F}_{\mathbf{B}}}   & \big( \mathbf{Prof})^2
+   \ar[d]^{\otimes}
+ &  \big(\mathbf{Prof} \big)^2\ar[dl]^{\otimes}\\
+& \big(\mathbf{Cob}^{(n,n+1,n+2)}\big) \ar[r]_{\mathcal{F}_{\mathbf{B}}}& \mathbf{Prof}.
+}
+$$
+
+
 \end{itemize}
 
 
@@ -380,12 +452,8 @@ and use instead:
  or
   \begin{verbatim} $$ \xymatrix{   } $$. \end{verbatim}
 
-\item The 2-cell option does not appear to work with Xy-Jaxv3. However xymatrix diagrams can still be compiled as svg figures, with alt text; see \ref{xymatrix-with-alttext}.
 
-$$\xymatrixcolsep{0.5cm}\xymatrixrowsep{2cm}\hskip-0.5cm\xymatrix{& T\times T\ar[drr]_{\sqcup} \ar[rr]^{  \tau} &\drtwocell<\omit>{\,\,\, \mathbf{R}}& T \times T \ar[d]^{\sqcup} \\
- &&& T.}
- $$
-\item  \textbf{Not all accessibility functions of MathJax work with Xy-Jaxv3, only some can be used, e.g. zoom and source latex code}.\\
+  \item  \textbf{Not all accessibility functions of MathJax work with Xy-Jaxv3, only some can be used, e.g. zoom and source latex code}.\\
 Accessibility features of  Xy-jax \href{https://github.com/sonoisa/XyJax-v3}{are not  officially supported}.\\
 
 \item References to section, chapters etc, have glitches \textbf{if inside mathematics environments}. For instance, the links provided do not appear to work well. E.g.
@@ -556,15 +624,12 @@ As written in Section \ref{sec:context}, it is possible to display xymatrix diag
 This option (svg image with alternative text) is also available for tikz and tikz-cd figures. Examples are below.
 
 \subsection{An xymatrix diagram compiled as an image with alt text}\label{xymatrix-with-alttext}
-An \textit{xymatrix} diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The 2-cell option can be used.\\
-The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating system.
+An \textit{xymatrix} diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating system.
 {\displaymathother
- \ThisAltText{Write some alt text here.}
+ \ThisAltText{This diagram shows a right triangular, diagram, with the top side horizontal, being a cathet, and containing an arrow $\tau$, from $T\times T$ to $T\times T$. From the right-hand-end of the cathet,  there is vertical downwards arrow (also a cathet), $\sqcup\colon T\times T \to T$. From the left-hand-side of the initial cathet, there is the hypothese downwards arrow marked with $\sqcup\colon T\times T \to T$. There is a 2-cell from the composition of the two cathets to the hypothese, marked with boldface $R$}
 \begin{equation}\label{xydiagram}
-{\Large
 \xymatrixcolsep{0.5cm}\xymatrixrowsep{2cm}\hskip-0.5cm\xymatrix{& T\times T\ar[drr]_{\sqcup} \ar[rr]^{  \tau} &\drtwocell<\omit>{\,\,\, \,\,\,\mathbf{R}}& T \times T \ar[d]^{\sqcup} \\
  &&& T.}
-}
 \end{equation}
 }
 
@@ -588,13 +653,12 @@ Size can be adjusted.  Sometimes (depending on operating system, it seems) the i
 \label{fig:triangle}
 \end{figure}
  \end{center}
-\subsection{A tikz image compiled to an image with alt text, outside a float environment}
+ \subsection{A tikz image compiled to an image with alt text, outside a float environment}
 
 \begin{center}
  \ThisAltText{This figure shows a rectangle, whose largest side is horizontal.
  Is vertices are labelled  1, 2 (top edge) and  3 and 4. (bottom edge), from left to right.}
 \begin{tikzpicture}[scale=0.7]
-\draw[blue, ultra thin] (4,0.5) rectangle (16,-5); %Inserted to avoid some operating systems incorrectly cropping figure.
 \draw[-][very thick] (5,0)  -- (15,0);
 \draw[-][very thick] (5,0)  -- (5,-4);
 \draw[-][very thick]  (5,-4) -- (15,-4);
@@ -606,6 +670,22 @@ Size can be adjusted.  Sometimes (depending on operating system, it seems) the i
 \end{tikzpicture}
  \end{center}
 
+\subsection{A tikz image compiled to an image with alt text, outside a float environment, and with a caption}
+
+ \begin{center}\ThisAltText{The figure shows two disks, $A$ and $B$, of the same radius, centered at points, on a horizontal line. The radii are smaller than the distance between the center points, but greater than half of the distance. The intersection of the two disks is called $C$. There is a point $x \in A\cap B$, and another disk, $D$, centered in $x$ and contaned in $A\cap B$. }
+\begin{tikzpicture}[scale=0.5,very thick]
+\node at (0,0) [shape=circle,draw,inner sep=40pt, fill=green!50!white, opacity=0.2, dashed]{};
+\node at (5,0) [shape=circle,draw,inner sep=30pt, fill=red!50!white, opacity=0.2, dashed]{};
+\node at (3,0.4) [shape=circle,draw,inner sep=08.5pt, fill=gray!50!white, opacity=0.5, dashed]{};
+\node at (3,0.4) {$\bullet$};
+\node at (3,0.9) {$x$};
+\node at (3,-1.1) {$C$};
+\node at (-0.5, -3) {\small $A$};
+\node at (5.6, -2) {\small $B$};
+\end{tikzpicture}
+\captionof{figure}{Given any $A,B \in \mathcal{F}$, if $x \in A \cap B$ there exists $C \in \mathcal{F}$ such that $x\in C\subseteq A \cap B$.
+\label{fig:basis}}
+\end{center}
 
 \subsection{A tikz-cd diagram compiled into a figure with alt text: }
  

@@ -410,6 +410,8 @@ MathJax = {
 
 \(\newcommand {\Dc }{ \mathcal {D} }\)
 
+\( \newcommand {\Grp }{ \mathrm {Grp} } \)
+
 \(\newcommand {\Z }{ \mathbb {Z} }\)
 
 \(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
@@ -468,12 +470,14 @@ Joa&#x0303;o Faria Martins
 <div class="titledate">
 
 <p>
-Last modified: May 23, 2023
+Last modified: April 15, 2024
 </p>
 </div>
 
 </div>
-<!--................................-->
+<!--
+...... section Contents ......
+-->
 <h4 id="autosec-3">Contents</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-3"></a>
 
@@ -483,7 +487,7 @@ Last modified: May 23, 2023
 
 <p>
 <a href="Sample_Lwarp_Xy-jax.html#autosec-4" class="tocsection" >
-<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+<span class="sectionnumber">1</span>&#x2003;Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
 </p>
 
 
@@ -531,24 +535,30 @@ Last modified: May 23, 2023
 
 <p>
 <a href="Sample_Lwarp_Xy-jax.html#autosec-53" class="tocsubsection" >
-<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
-</p>
-
-
-<p>
-<a href="Sample_Lwarp_Xy-jax.html#autosec-56" class="tocsection" >
-<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+<span class="sectionnumber">5.4</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment, and with a caption</a>
 </p>
 
 
 <p>
 <a href="Sample_Lwarp_Xy-jax.html#autosec-57" class="tocsubsection" >
+<span class="sectionnumber">5.5</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-60" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax.html#autosec-61" class="tocsubsection" >
 <span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
 </p>
 
 
 <p>
-<a href="Sample_Lwarp_Xy-jax.html#autosec-62" class="tocsubsection" >
+<a href="Sample_Lwarp_Xy-jax.html#autosec-66" class="tocsubsection" >
 <span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
 </p>
 </nav>
@@ -559,7 +569,12 @@ Last modified: May 23, 2023
 </p>
 
 <p>
-The responsibility for this HTML file is <a href="http://www1.maths.leeds.ac.uk/~pmtjfa/index.html" target="_blank" >Joa&#x0303;o Faria Martins</a>’ only.<br />
+\[\hskip -0.5cm\xymatrix @C=25pt@R=30pt{&amp; T\times T\ar [drr]_{\sqcup } \ar [rr]^{ \tau } &amp;\drtwocell \omit {\,\,\, \mathbf {R}}&amp; T \times T \ar [d]^{\sqcup } \\ &amp;&amp;&amp; T.}
+\]
+</p>
+
+<p>
+The responsibility for this HTML file is <a href="https://joaofariamartins.github.io/" target="_blank" >Joa&#x0303;o Faria Martins</a>’ only.<br />
 Corrections, suggestions, etc. are very welcome, and can be sent to: <a href="mailto:j.fariamartins@leeds.ac.uk" target="_blank" >j.fariamartins@leeds.ac.uk</a>.<br />
 <b>This is strictly a non-specialist experimental file.</b><br />
 
@@ -642,8 +657,10 @@ href="lwarp_mathjax.txt" target="_blank" >lwarp_mathjax.txt</a> (automatically c
 </p>
 </li>
 </ul>
-<!--................................-->
-<h4 id="autosec-4"><span class="sectionnumber">1&#x2003;</span>Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</h4>
+<!--
+...... section Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax ......
+-->
+<h4 id="autosec-4"><span class="sectionnumber">1&#x2003;</span>Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-4"></a>
 
 
@@ -663,13 +680,15 @@ contains:
 The version of the software was:
 </p>
 <pre class="verbatim">
-pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian)
-lwarpmk: v0.903   Automated make for the LaTeX Lwarp package.
+pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex)
+lwarpmk: lwarpmk: v0.910   Automated make for the LaTeX Lwarp package.
 
 </pre>
 
 <p>
-The source latex file can be found here: <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a>.
+The source latex file can be found here: <a href="Sample_Lwarp_Xy-jax.tex" target="_blank" >Sample_Lwarp_Xy-jax.tex</a> or here <a href="Sample_Lwarp_Xy-jax-split.tex" target="_blank"
+>Sample_Lwarp_Xy-jax-split.tex</a>, depending whether you are seeing the <a href="Sample_Lwarp_Xy-jax.html" target="_blank" >“stand-alone” version of this webpage</a>, or the <a
+href="Sample_Lwarp_Xy-jax-split-index.html" target="_blank" >“split” version of this webpage</a>.
 </p>
 
 <p>
@@ -710,7 +729,7 @@ Credit is due to instructions in: <a href="https://github.com/sonoisa/XyJax-v3" 
 </p>
 
 <p>
-If using Xy-pic diagrams displayed with <b>XyJax-v3</b>, insert the following in the preamble of your latex file:
+If using XY-pic diagrams displayed with <b>XyJax-v3</b>, insert the following in the preamble of your latex file:
 </p>
 <pre class="verbatim">
  \usepackage[all]{xy}
@@ -866,7 +885,9 @@ Among the accessibility features that seem to work well are:
 </ul>
 </li>
 </ul>
-<!--................................-->
+<!--
+...... section Examples: xymatrix diagrams displayed with Xy-Jaxv3 using Lwarp ......
+-->
 <h4 id="autosec-11"><span class="sectionnumber">2&#x2003;</span>Examples: xymatrix diagrams displayed with Xy-Jaxv3 using Lwarp</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-11"></a>
 
@@ -933,6 +954,35 @@ _0(E_b) \ra {\iota } \pi _0(E)=\{0\}.     \]
 <p>
 • Commutative diagrams drawn with <a href="https://tug.org/applications/Xy-pic/" target="_blank" ><b>Xy-pic</b></a> displayed by using <a href="https://github.com/sonoisa/XyJax-v3" target="_blank"
 ><b>XyJax-v3</b></a>.<br />
+For a good introduction to typeseting diagrams with Xy-pic see e.g.
+</p>
+<ul style="list-style-type:none">
+
+
+<li>
+<p>
+– <a href="https://www.math.purdue.edu/~adebray/lecture_notes/using_xy.pdf" target="_blank" >https://www.math.purdue.edu/~adebray/lecture_notes/using_xy.pdf</a> (Arun Debray Using XY to
+typeset automata. July 5, 2016.)
+</p>
+</li>
+<li>
+
+
+<p>
+– <a href="https://web.math.ku.dk/~holm/download/xyrefer.pdf" target="_blank" >https://web.math.ku.dk/~holm/download/xyrefer.pdf</a> (Kristoffer H. Rose &amp; Ross Moore: XY-pic Reference
+Manual, Version 3.7 1999/02/16.)
+</p>
+</li>
+<li>
+
+
+<p>
+– See also the more recent <a href="https://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/generic/diagrams/xypic/doc/xyguide.pdf" target="_blank" >user guide</a> (Kristoffer H. Rose, Version
+3.8.9, October 6, 2013) in the official page of <a href="https://ctan.org/pkg/xymatrix?lang=en" target="_blank" >xymatrix – Commutative diagrams using XY-pic </a>
+</p>
+</li>
+</ul>
+<p>
 E.g.
 </p>
 <p>
@@ -963,12 +1013,37 @@ _{(x,y)} \otimes \eta &apos;_{(y,z)} }\\ \\ &amp; \displaystyle \bigoplus _{y \i
 @{=&gt;}[rrr]^&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;{\eta _{(X,Y,Z)}^{N_1,N_2}}&amp;&amp;&amp; \Hpb _{(X,Z)}^{N_1\times _Y N_2}\,.      } \]
 </p>
 <p>
-
-
+\[\xymatrix { &amp;\Cc \rtwocell ^F_{F&apos;}{\eta } &amp;\Dc } \]
+</p>
+<p>
+\[\hskip -0.5cm\xymatrix @C=25pt@R=30pt{&amp; T\times T\ar [drr]_{\sqcup } \ar [rr]^{ \tau } &amp;\drtwocell \omit {\,\,\, \mathbf {R}}&amp; T \times T \ar [d]^{\sqcup } \\ &amp;&amp;&amp; T.}
+\]
+</p>
+<p>
+\[\xymatrix @C=45pt{&amp;\Cc \sqcup \Cc &apos; \rtwocell \omit {\quad \,\, \langle \eta ,\eta &apos;\rangle } \ar @/^1.5pc/[r]^{T_b\circ \langle f, f&apos; \rangle } \ar @/_1.5pc/[r]_{\langle
+T,T&apos;\rangle } &amp; \Grp .        }\]
+</p>
+<p>
+\[ \xymatrix @C=60pt{\Cc \ruppertwocell ^F{\eta } \rlowertwocell _{F&apos;&apos;}{\eta &apos;} \ar [r]|{F&apos;&apos;} &amp; \Dc &amp; = &amp;\Cc \ar @/^1.5pc/[r]^{F}\ar
+@/_1.5pc/[r]_{F&apos;&apos;}\rtwocell \omit {\quad \,\,\,\,\eta \#_1\eta &apos;} &amp; \Dc &amp;} \]
+</p>
+<p>
+\[ \hskip -2cm\xymatrix @C=60pt{ &amp;\big ( \mathbf {Cob}^{(n,n+1,n+2)}\big )^3 \ar [d]_{\id \times \sqcup }\ar [dr]^{\sqcup \times \id } \drrtwocell \omit {\qquad \boldsymbol {\chi
+}&apos;\times \mathcal {F}_{\mathbf {B}}} \ddtwocell \omit {&lt;-13&gt; \alpha } \ar [rr]^{\mathcal {F}_{\mathbf {B}} \times \mathcal {F}_{\mathbf {B}} \times \mathcal {F}_{\mathbf {B}}}
+&amp;&amp; \big (\mathbf {Prof} \big )^3\ar [d]^{\otimes \times \id }\\ &amp;\big ( \mathbf {Cob}^{(n,n+1,n+2)})^2 \ar [d]_{\sqcup } &amp; \big ( \mathbf {Cob}^{(n,n+1,n+2)})^2 \ar
+[dl]^{\sqcup } \dtwocell \omit { \boldsymbol {\chi }&apos;} \ar [r]^{\mathcal {F}_{\mathbf {B}} \times \mathcal {F}_{\mathbf {B}}} &amp; \big (\mathbf {Prof} \big )^2 \ar [dl]^{\otimes } \\
+&amp; \big (\mathbf {Cob}^{(n,n+1,n+2)}\big ) \ar [r]_{\mathcal {F}_{\mathbf {B}}}&amp; \mathbf {Prof}\\ &amp; \ar @3[r]_{\boldsymbol {\omega }&apos;} &amp; \\ &amp;\big ( \mathbf
+{Cob}^{(n,n+1,n+2)}\big )^3 \ar [d]_{\id \times \sqcup } \drrtwocell \omit {\quad \qquad \mathcal {F}_{\mathbf {B}}\times \boldsymbol {\chi }&apos; }\ar [rr]^{\mathcal {F}_{\mathbf {B}} \times
+\mathcal {F}_{\mathbf {B}} \times \mathcal {F}_{\mathbf {B}}} &amp;&amp; \big (\mathbf {Prof} \big )^3\ddltwocell \omit {\alpha } \ar [d]^{\otimes \times \id }\ar [dl]^{\id \times \otimes }\\
+&amp;\big ( \mathbf {Cob}^{(n,n+1,n+2)})^2 \ar [d]_{\sqcup } \drtwocell \omit {\,\,\boldsymbol {\chi }&apos; } \ar [r]^{\mathcal {F}_{\mathbf {B}} \times \mathcal {F}_{\mathbf {B}}} &amp; \big
+( \mathbf {Prof})^2 \ar [d]^{\otimes } &amp; \big (\mathbf {Prof} \big )^2\ar [dl]^{\otimes }\\ &amp; \big (\mathbf {Cob}^{(n,n+1,n+2)}\big ) \ar [r]_{\mathcal {F}_{\mathbf {B}}}&amp; \mathbf
+{Prof}.   } \]
 </p>
 </li>
 </ul>
-<!--................................-->
+<!--
+...... section Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams ......
+-->
 <h4 id="autosec-13"><span class="sectionnumber">3&#x2003;</span>Issues when using XyJax-v3 and Lwarp for typesetting xymatrix diagrams</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-13"></a>
 
@@ -1061,17 +1136,6 @@ $$ \xymatrix{   } $$.
 
 
 <p>
-• The 2-cell option does not appear to work with Xy-Jaxv3. However xymatrix diagrams can still be compiled as svg figures, with alt text; see <a href="Sample_Lwarp_Xy-jax.html#xymatrix-with-alttext">5.1</a>.
-</p>
-<p>
-\[\xymatrixcolsep {0.5cm}\xymatrixrowsep {2cm}\hskip -0.5cm\xymatrix {&amp; T\times T\ar [drr]_{\sqcup } \ar [rr]^{ \tau } &amp;\drtwocell &lt;\omit &gt;{\,\,\, \mathbf {R}}&amp; T \times T \ar
-[d]^{\sqcup } \\ &amp;&amp;&amp; T.} \]
-</p>
-</li>
-<li>
-
-
-<p>
 • <b>Not all accessibility functions of MathJax work with Xy-Jaxv3, only some can be used, e.g. zoom and source latex code</b>.<br />
 Accessibility features of Xy-jax <a href="https://github.com/sonoisa/XyJax-v3" target="_blank" >are not officially supported</a>.<br />
 
@@ -1088,7 +1152,7 @@ Accessibility features of Xy-jax <a href="https://github.com/sonoisa/XyJax-v3" t
 <!--
 
 
-                                                                                              exp(x + yi) = ex cos(y) + i sin(y)                                                          (2)--><a id="Euler"></a><!--
+                                                                                              exp(x + yi) = ex cos(y) + i sin(y)                                                      (2)--><a id="Euler"></a><!--
                                                                                                                                    
 
 -->
@@ -1144,7 +1208,9 @@ used.
 </p>
 </li>
 </ul>
-<!--................................-->
+<!--
+...... section More general notes ......
+-->
 <h4 id="autosec-24"><span class="sectionnumber">4&#x2003;</span>More general notes</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-24"></a>
 
@@ -1393,7 +1459,9 @@ Or use <em>lwarpmk pdftohtml</em> if there are compilation errors.
 </p>
 </li>
 </ul>
-<!--................................-->
+<!--
+...... section Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text ......
+-->
 <h4 id="autosec-41"><span class="sectionnumber">5&#x2003;</span>Some examples of tikz and xymatrix diagrams compiled as svg images, with alternative text</h4>
 <a id="Sample_Lwarp_Xy-jax-autopage-41"></a>
 
@@ -1407,7 +1475,9 @@ figures with <b>Alt Text</b>. (E.g. it may be sensible to instead provide a comp
 <p>
 This option (svg image with alternative text) is also available for tikz and tikz-cd figures. Examples are below.
 </p>
-<!--................................-->
+<!--
+...... subsection An xymatrix diagram compiled as an image with alt text ......
+-->
 <h5 id="autosec-42"><span class="sectionnumber">5.1&#x2003;</span>An xymatrix diagram compiled as an image with alt text</h5>
 <a id="Sample_Lwarp_Xy-jax-autopage-42"></a>
 
@@ -1415,8 +1485,8 @@ This option (svg image with alternative text) is also available for tikz and tik
 <a id="xymatrix-with-alttext"></a>
 
 <p>
-An <i>xymatrix</i> diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The 2-cell option can be used.<br />
-The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating system.
+An <i>xymatrix</i> diagram compiled into a picture with alt text. Can utilize equation numbers, with no errors. The size of the svg image must be adjusted. Sometimes the image is not correctly cropped: depends on operating
+system.
 </p>
 
 <div class="displaymathnumbered">
@@ -1428,24 +1498,28 @@ The size of the svg image must be adjusted. Sometimes the image is not correctly
     id="lateximage-Sample_Lwarp_Xy-jax-1"
     class="lateximagesource"
 ><!--
-       τ
-T ×T            /   T ×T         (3)
+T ×T
+           τ        /   T ×T       (3)
 
+               s{              ⊔
+       ⊔                R
 
-           t|                ⊔
-       ⊔            R
-                     !   
-                         T.
+                          
+                            T.
 --><img
     src="Sample_Lwarp_Xy-jax-images/image-1.svg"
-    alt="(Write some alt text here.)"
+    alt="(This diagram shows a right triangular, diagram, with the top side horizontal, being a cathet, and containing an arrow τ , from T × T to T × T . From the right-hand-end of the cathet,
+there is vertical downwards arrow (also a cathet), ⊔ : T × T → T . From the left-hand-side of the initial cathet, there is the hypothese downwards arrow marked with ⊔ : T × T → T . There is a
+2-cell from the composition of the two cathets to the hypothese, marked with boldface R)"
     role="math"
     style=""
     class="lateximage"
 ></span>
 </p>
 </div>
-<!--................................-->
+<!--
+...... subsection A tikz image compiled as an image with alt text: ......
+-->
 <h5 id="autosec-45"><span class="sectionnumber">5.2&#x2003;</span>A tikz image compiled as an image with alt text:</h5>
 <a id="Sample_Lwarp_Xy-jax-autopage-45"></a>
 
@@ -1470,16 +1544,16 @@ Size can be adjusted. Sometimes (depending on operating system, it seems) the im
     3
 --><img
     src="Sample_Lwarp_Xy-jax-images/image-2.svg"
-    alt="(An equilateral triangle, with one of the edges horizontal.          Vertices are labelled 1, 2 and 3, clockwise, starting from the top left vertex.)"
+    alt="(An equilateral triangle, with one of the edges horizontal.     Vertices are labelled 1, 2 and 3, clockwise, starting from the top left vertex.)"
     style=""
     class="lateximage"
 ></span>
 </p>
 
+
 <div class="figurecaption">
-<p>
-Figure 1:&nbsp;An equilateral triangle with its vertices labeled 1, 2 and 3
-</p>
+Figure 1: An equilateral triangle with its vertices labeled 1, 2 and 3
+
 </div>
 
 <a id="fig:triangle"></a>
@@ -1487,7 +1561,9 @@ Figure 1:&nbsp;An equilateral triangle with its vertices labeled 1, 2 and 3
 </figure>
 
 </div>
-<!--................................-->
+<!--
+...... subsection A tikz image compiled to an image with alt text, outside a float environment ......
+-->
 <h5 id="autosec-49"><span class="sectionnumber">5.3&#x2003;</span>A tikz image compiled to an image with alt text, outside a float environment</h5>
 <a id="Sample_Lwarp_Xy-jax-autopage-49"></a>
 <div class="center">
@@ -1511,9 +1587,42 @@ Figure 1:&nbsp;An equilateral triangle with its vertices labeled 1, 2 and 3
 ></span>
 </p>
 </div>
-<!--................................-->
-<h5 id="autosec-53"><span class="sectionnumber">5.4&#x2003;</span>A tikz-cd diagram compiled into a figure with alt text: </h5>
+<!--
+...... subsection A tikz image compiled to an image with alt text, outside a float environment, and with a caption ......
+-->
+<h5 id="autosec-53"><span class="sectionnumber">5.4&#x2003;</span>A tikz image compiled to an image with alt text, outside a float environment, and with a caption</h5>
 <a id="Sample_Lwarp_Xy-jax-autopage-53"></a>
+<div class="center">
+
+<p>
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-4"
+    class="lateximagesource"
+><!--
+    x
+    •
+    C
+        B
+A
+--><img
+    src="Sample_Lwarp_Xy-jax-images/image-4.svg"
+    alt="(The figure shows two disks, A and B, of the same radius, centered at points, on a horizontal line. The radii are smaller than the distance between the center points, but greater
+than half of the distance. The intersection of the two disks is called C. There is a point x ∈ A ∩ B, and another disk, D, centered in x and contaned in A ∩ B. )"
+    style=""
+    class="lateximage"
+></span>
+</p>
+
+<div class="figurecaption">
+<a id="autoid-3" ></a >
+Figure 2: Given any \(A,B \in \mathcal {F}\), if \(x \in A \cap B\) there exists \(C \in \mathcal {F}\) such that \(x\in C\subseteq A \cap B\). <a id="fig:basis"></a>
+</div>
+</div>
+<!--
+...... subsection A tikz-cd diagram compiled into a figure with alt text:        ......
+-->
+<h5 id="autosec-57"><span class="sectionnumber">5.5&#x2003;</span>A tikz-cd diagram compiled into a figure with alt text: </h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-57"></a>
 
 
 <p>
@@ -1528,11 +1637,11 @@ The following diagram commutes.<br />
 
 <div class="displaymath">
 
-<a id="autoid-3" ></a >
+<a id="autoid-4" ></a >
 
 <p>
 <span
-    id="lateximage-Sample_Lwarp_Xy-jax-4"
+    id="lateximage-Sample_Lwarp_Xy-jax-5"
     class="lateximagesource"
 ><!--
         F (f )
@@ -1542,7 +1651,7 @@ F (A)            F (B)
 G(A)             G(B)
         G(f )
 --><img
-    src="Sample_Lwarp_Xy-jax-images/image-4.svg"
+    src="Sample_Lwarp_Xy-jax-images/image-5.svg"
     alt="(A diagram showing F (f ) ◦ ηA = ηB ◦ G(f ))"
     role="math"
     style=""
@@ -1550,12 +1659,16 @@ G(A)             G(B)
 ></span>
 </p>
 </div>
-<!--................................-->
-<h4 id="autosec-56"><span class="sectionnumber">6&#x2003;</span>Sample mathematics</h4>
-<a id="Sample_Lwarp_Xy-jax-autopage-56"></a>
-<!--................................-->
-<h5 id="autosec-57"><span class="sectionnumber">6.1&#x2003;</span>Adjoint functors and coadjoint functors via universal arrows</h5>
-<a id="Sample_Lwarp_Xy-jax-autopage-57"></a>
+<!--
+...... section Sample mathematics ......
+-->
+<h4 id="autosec-60"><span class="sectionnumber">6&#x2003;</span>Sample mathematics</h4>
+<a id="Sample_Lwarp_Xy-jax-autopage-60"></a>
+<!--
+...... subsection Adjoint functors and coadjoint functors via universal arrows ......
+-->
+<h5 id="autosec-61"><span class="sectionnumber">6.1&#x2003;</span>Adjoint functors and coadjoint functors via universal arrows</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-61"></a>
 
 
 <a id="adjunctions"></a>
@@ -1570,7 +1683,7 @@ Let \(\Cc \) and \(\Dc \) be categories. Let \(G\colon \Dc \to \Cc \) be a funct
 
 <li>
 <p>
-<a id="Sample_Lwarp_Xy-jax-autopage-58"></a>
+<a id="Sample_Lwarp_Xy-jax-autopage-62"></a>
 <span class="amsthmnameplain">Definition</span><span class="amsthmnumberplain"> <span class="textup">1</span></span>. <a id="def:Uarrow"></a>Let \(A\) be an object of \(\Cc \). A <b>universal
 arrow</b> from \(A\) to \(G\colon \Dc \to \Cc \) is a pair:
 </p>
@@ -1589,12 +1702,12 @@ where \(F_A\) is an object in \(\Dc \) and \(\eta _A\colon A \to G(F_A)\) is an 
 </p>
 <div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:74pt ; ">
 
-<a id="Sample_Lwarp_Xy-jax-autopage-59"></a>
+<a id="Sample_Lwarp_Xy-jax-autopage-63"></a>
 
 </div>
 <div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:421pt ; ">
 
-<a id="Sample_Lwarp_Xy-jax-autopage-60"></a>
+<a id="Sample_Lwarp_Xy-jax-autopage-64"></a>
 
 <p>
 For any object of \(B\) of \(\Dc \) and any arrow \(f\colon A \to G(B)\), in \(\Cc \), there exists a <b>unique</b> arrow \(\hat {f}\colon F_A \to B\), in \(\Dc \), that makes the following diagram, in \(\Cc \),
@@ -1619,7 +1732,7 @@ commute:
 
 <li>
 <p>
-<a id="Sample_Lwarp_Xy-jax-autopage-61"></a>
+<a id="Sample_Lwarp_Xy-jax-autopage-65"></a>
 <span class="amsthmnameplain">Exercise</span><span class="amsthmnumberplain"> <span class="textup">2</span></span>. In the conditions of the previous definition, prove that if \(\left (F_A, A \ra {\eta _A}
 G(F_A)\right )\) is a universal arrow from \(A\) to \(G\), then we have a bijection:
 </p>
@@ -1655,9 +1768,11 @@ Moreover, prove that the bijection \(\phi _{A,B}\) is natural in \(B\). This mea
 </ul>
 
 </div>
-<!--................................-->
-<h5 id="autosec-62"><span class="sectionnumber">6.2&#x2003;</span>The Galois correspondence for \(f(t)=t^3-2\), over the rational field</h5>
-<a id="Sample_Lwarp_Xy-jax-autopage-62"></a>
+<!--
+...... subsection The Galois correspondence for , over the rational field ......
+-->
+<h5 id="autosec-66"><span class="sectionnumber">6.2&#x2003;</span>The Galois correspondence for \(f(t)=t^3-2\), over the rational field</h5>
+<a id="Sample_Lwarp_Xy-jax-autopage-66"></a>
 
 
 <a id="Galois"></a>
@@ -1746,7 +1861,7 @@ normal also follows from the fact that they are the splitting fields of \(p(t)=t
 
 <li>
 <p>
-<a id="Sample_Lwarp_Xy-jax-autopage-63"></a>
+<a id="Sample_Lwarp_Xy-jax-autopage-67"></a>
 <span class="amsthmnameplain">Remark</span><span class="amsthmnumberplain"> <span class="textup">3</span></span>. Also note that we have a series of subfields of \(\C \) (we use \(\leq \) to denote subfield):
 </p>
 

@@ -8,7 +8,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<title>Lwarp-xyJax — Sample mathematics</title>
+<title>Lwarp-xyJax — A tikz-cd diagram compiled into a figure with alt text: </title>
 <link rel="stylesheet" type="text/css" href="my_file_split.css" />
 
 <!-- Joao Faria Martins, 1st Nov 2022:
@@ -270,7 +270,7 @@ MathJax = {
 <body>
 
 
-<a id="Sample_Lwarp_Xy-jax-split-autopage-64"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autopage-65"></a>
 <nav class="topnavigation"><a href="Sample_Lwarp_Xy-jax-split-index.html" class="linkhome" >
 Home</a></nav>
 
@@ -303,7 +303,7 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-1.html#autosec-5" class="tocsection" >
-<span class="sectionnumber">1</span>&#x2003;Context: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
+<span class="sectionnumber">1</span>&#x2003;Context and instructions: using Lwarp to compile latex to HTML, so that xymatrix diagrams are displayed with Xy-Jax</a>
 </p>
 
 
@@ -351,24 +351,30 @@ Home</a>
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-8.html#autosec-61" class="tocsubsection" >
-<span class="sectionnumber">5.4</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
-</p>
-
-
-<p>
-<a href="Sample_Lwarp_Xy-jax-9.html#autosec-65" class="tocsection" >
-<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+<span class="sectionnumber">5.4</span>&#x2003;A tikz image compiled to an image with alt text, outside a float environment, and with a caption</a>
 </p>
 
 
 <p>
 <a href="Sample_Lwarp_Xy-jax-9.html#autosec-66" class="tocsubsection" >
+<span class="sectionnumber">5.5</span>&#x2003;A tikz-cd diagram compiled into a figure with alt text: </a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-70" class="tocsection" >
+<span class="sectionnumber">6</span>&#x2003;Sample mathematics</a>
+</p>
+
+
+<p>
+<a href="Sample_Lwarp_Xy-jax-10.html#autosec-71" class="tocsubsection" >
 <span class="sectionnumber">6.1</span>&#x2003;Adjoint functors and coadjoint functors via universal arrows</a>
 </p>
 
 
 <p>
-<a href="Sample_Lwarp_Xy-jax-10.html#autosec-72" class="tocsubsection" >
+<a href="Sample_Lwarp_Xy-jax-11.html#autosec-77" class="tocsubsection" >
 <span class="sectionnumber">6.2</span>&#x2003;The Galois correspondence for \(f(t)=t^3-2\), over the rational field</a>
 </p>
 
@@ -518,6 +524,8 @@ Home</a>
 
 \(\newcommand {\Dc }{ \mathcal {D} }\)
 
+\( \newcommand {\Grp }{ \mathrm {Grp} } \)
+
 \(\newcommand {\Z }{ \mathbb {Z} }\)
 
 \(\newcommand {\ra }[1]{\xrightarrow {#1}}\)
@@ -555,111 +563,46 @@ Home</a>
 </div>
 
 <p>
-<!--................................-->
-<h4 id="autosec-65"><span class="sectionnumber">6&#x2003;</span>Sample mathematics</h4>
-<a id="Sample_Lwarp_Xy-jax-split-autopage-65"></a>
-<a id="Sample_Lwarp_Xy-jax-split-autofile-9"></a>
-<!--................................-->
-<h5 id="autosec-66"><span class="sectionnumber">6.1&#x2003;</span>Adjoint functors and coadjoint functors via universal arrows</h5>
+<!--
+...... subsection A tikz-cd diagram compiled into a figure with alt text:        ......
+-->
+<h5 id="autosec-66"><span class="sectionnumber">5.5&#x2003;</span>A tikz-cd diagram compiled into a figure with alt text: </h5>
 <a id="Sample_Lwarp_Xy-jax-split-autopage-66"></a>
-
-
-<a id="adjunctions"></a>
+<a id="Sample_Lwarp_Xy-jax-split-autofile-9"></a>
 
 <p>
-Let \(\Cc \) and \(\Dc \) be categories. Let \(G\colon \Dc \to \Cc \) be a functor.
-</p>
-<div class="amsthmbodyplain">
-
-<ul style="list-style-type:none">
-
-
-<li>
-<p>
-<a id="Sample_Lwarp_Xy-jax-split-autopage-67"></a>
-<span class="amsthmnameplain">Definition</span><span class="amsthmnumberplain"> <span class="textup">1</span></span>. <a id="def:Uarrow"></a>Let \(A\) be an object of \(\Cc \). A <b>universal
-arrow</b> from \(A\) to \(G\colon \Dc \to \Cc \) is a pair:
+Issues with size of diagrams created with tikz-cd. Sometimes (depending on operating system) the image may be incorrectly cropped.
 </p>
 
 <p>
-\[ \left (F_A, A \ra {\eta _A} G(F_A)\right ), \]
+The following diagram commutes.<br />
+
 </p>
+
+
+<div class="displaymath">
+
+<a id="autoid-4" ></a >
 
 <p>
-where \(F_A\) is an object in \(\Dc \) and \(\eta _A\colon A \to G(F_A)\) is an arrow in \(\Cc \), such that the following universal property is satisfied:
+<span
+    id="lateximage-Sample_Lwarp_Xy-jax-split-5"
+    class="lateximagesource"
+><!--
+        F (f )
+F (A)            F (B)
+ηA                 ηB
+
+G(A)             G(B)
+        G(f )
+--><img
+    src="Sample_Lwarp_Xy-jax-split-images/image-5.svg"
+    alt="(A diagram showing F (f ) ◦ ηA = ηB ◦ G(f ))"
+    role="math"
+    style=""
+    class="lateximage"
+></span>
 </p>
-
-<p>
-
-
-</p>
-<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:74pt ; ">
-
-<a id="Sample_Lwarp_Xy-jax-split-autopage-68"></a>
-
-</div>
-<div class="minipage" style="vertical-align:bottom ; justify-content:flex-start ; width:421pt ; ">
-
-<a id="Sample_Lwarp_Xy-jax-split-autopage-69"></a>
-
-<p>
-For any object of \(B\) of \(\Dc \) and any arrow \(f\colon A \to G(B)\), in \(\Cc \), there exists a <b>unique</b> arrow \(\hat {f}\colon F_A \to B\), in \(\Dc \), that makes the following diagram, in \(\Cc \),
-commute:
-</p>
-
-<p>
-\[\xymatrix {&amp; A \ar [drr]_f\ar [rr]^{\eta _A} &amp;&amp; G(F_A) \ar @{--&gt;}[d]^{G(\hat {f})}\\ &amp;&amp;&amp; G(B)} \]
-</p>
-
-</div>
-
-</li>
-
-</ul>
-
-</div>
-<div class="amsthmbodyplain">
-
-<ul style="list-style-type:none">
-
-
-<li>
-<p>
-<a id="Sample_Lwarp_Xy-jax-split-autopage-70"></a>
-<span class="amsthmnameplain">Exercise</span><span class="amsthmnumberplain"> <span class="textup">2</span></span>. In the conditions of the previous definition, prove that if \(\left (F_A, A \ra {\eta _A}
-G(F_A)\right )\) is a universal arrow from \(A\) to \(G\), then we have a bijection:
-</p>
-
-<p>
-\[\phi _{A,B}\colon \hom _\Cc \big (A,G(B)\big ) \longrightarrow \hom _\Dc (F_A,B), \]
-</p>
-
-<p>
-such that
-</p>
-
-<p>
-\[ \big (f\colon A \to G(B)\big ) \stackrel {\phi _{(A,B)}}{\longmapsto } (\hat {f}\colon F_A \to B\big ).\]
-</p>
-
-<p>
-Moreover, prove that the bijection \(\phi _{A,B}\) is natural in \(B\). This means that given any arrow \(g\colon B \to C\), in \(\Dc \), the following diagram (in the category of sets) commutes:
-</p>
-
-<p>
-\[ \xymatrix { &amp; \hom _\Cc (A,G(B)) \ar [d]_{m\mapsto G(g)\circ m } \ar [rrrr]^{\phi _{A,B}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,B) \ar [d]^{n\mapsto g\circ n } \\ &amp; \hom _\Cc (A,G(C))
-\ar [rrrr]_{\phi _{A,C}} &amp;&amp;&amp;&amp; \hom _\Dc (F_A,C)\\ } \]
-</p>
-
-<p>
-
-
-</p>
-
-</li>
-
-</ul>
-
 </div>
 
 </section>
