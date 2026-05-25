@@ -1,107 +1,111 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  15 APR 2024 10:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.7)  25 MAY 2026 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Sample_Lwarp_Xy-jax.tex
 (./Sample_Lwarp_Xy-jax.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-07>
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/lwarp/lwarp.sty
-Package: lwarp 2023/01/03 v0.910 Allows LaTeX to directly produce HTML5 output.
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/lwarp/lwarp.sty
+Package: lwarp 2026/02/24 v0.921 Allows LaTeX to directly produce HTML5 output.
 
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/iftex/ifpdf.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/ifptex/ifptex.sty
-Package: ifptex 2022/04/03 v2.2 pTeX checker
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/ifptex/ifptex.sty
+Package: ifptex 2023/04/08 v2.2c pTeX checker
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count283
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/xpatch/xpatch.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-02-07 L3 programming layer (loader) 
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/verifycommand/verifycommand.sty
+Package: verifycommand 2025/03/07 v1.11 Verify definitions have not changed.
+)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/xpatch/xpatch.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count194
-\l__pdf_internal_box=\box51
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count284
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-02-02 L3 Experimental document command parser
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/ifplatform/ifplatform.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/tools/shellesc.sty
-Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/infwarerr/infwarerr.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/catchfile/catchfile.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/etexcmds/etexcmds.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/iftex/ifluatex.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 
@@ -109,85 +113,85 @@ Package ifplatform Warning:
     shell escape is disabled, so I can only detect \ifwindows.
 
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/letltxmacro/letltxmacro.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/newunicodechar/newunicodechar.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 )
-
-Package newunicodechar Warning: Redefining Unicode character on input line 859.
-
-
-
-Package newunicodechar Warning: Redefining Unicode character on input line 860.
-
-
-
-Package newunicodechar Warning: Redefining Unicode character on input line 861.
-
-
-
-Package newunicodechar Warning: Redefining Unicode character on input line 862.
-
-
-
-Package newunicodechar Warning: Redefining Unicode character on input line 863.
-
-
-
-Package newunicodechar Warning: Redefining Unicode character on input line 864.
-
-
 
 Package newunicodechar Warning: Redefining Unicode character on input line 865.
 
 
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/upquote/upquote.sty
+Package newunicodechar Warning: Redefining Unicode character on input line 866.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 867.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 868.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 869.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 870.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 871.
+
+
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ))
-\LWR@templengthone=\skip50
-\LWR@templengthtwo=\skip51
-\LWR@templengththree=\skip52
-\c@LWR@tempcountone=\count195
-\c@LWR@texboxdepth=\count196
+\LWR@templengthone=\skip51
+\LWR@templengthtwo=\skip52
+\LWR@templengththree=\skip53
+\c@LWR@tempcountone=\count285
+\c@LWR@texboxdepth=\count286
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/kvoptions/kvoptions.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics/keyval.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks19
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/kvsetkeys/kvsetkeys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-Package lwarp Info: Using option 'mathjax' on input line 1186.
+Package lwarp Info: Using option 'mathjax' on input line 1230.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/comment/comment.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/comment/comment.sty
 \CommentStream=\write3
  Excluding comment 'comment')
 Lwarp: Including comment 'warpall' Lwarp: Excluding comment 'warpHTML'
@@ -204,24 +208,24 @@ Including 'warpprint' comment.
 (./comment_print.cut Lwarp: Including comment 'warpsvg')
 Excluding 'warpHTML' comment. Lwarp: Excluding comment 'LWRcreatelwarpmk'
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
-Including 'warpall' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
- Straight input of comment_all.cut.
-(./comment_all.cut
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count197
-\calc@Bcount=\count198
-\calc@Adimen=\dimen141
-\calc@Bdimen=\dimen142
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count199
-\calc@Cskip=\skip55
+
+Straight input of comment_all.cut. (./comment_all.cut
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count287
+\calc@Bcount=\count288
+\calc@Adimen=\dimen149
+\calc@Bdimen=\dimen150
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count289
+\calc@Cskip=\skip56
 )) Excluding 'warpHTML' comment.
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
@@ -232,24 +236,24 @@ Including 'warpall' comment.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xstring/xstring.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xstring/xstring.tex
-\integerpart=\count266
-\decimalpart=\count267
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xstring/xstring.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xstring/xstring.tex
+\xs_counta=\count290
+\xs_countb=\count291
 )
-Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/environ/environ.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/trimspaces/trimspaces.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks19
+\@envbody=\toks20
 )) Excluding 'warpHTML' comment.
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
@@ -284,7 +288,7 @@ Including 'warpprint' comment.
 
  Straight input of comment_print.cut.
 (./comment_print.cut
-Package lwarp Info: Generating lwarp configuration files, on input line 12.
+Package lwarp Info: Generating lwarp configuration files, on input line 16.
  Lwarp: Including comment 'LWRwriteconf')
 Including 'LWRwriteconf' comment.
 \openout3 = `comment_writeconf.cut'.
@@ -313,7 +317,7 @@ Including 'LWRwriteconf' comment.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp.css'.
+LaTeX Warning: Writing or overwriting file `lwarp.css'.
 
 \openout15 = `lwarp.css'.
 
@@ -324,7 +328,7 @@ LaTeX Warning: Writing or overwriting file `./lwarp.css'.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp_sagebrush.css'.
+LaTeX Warning: Writing or overwriting file `lwarp_sagebrush.css'.
 
 \openout15 = `lwarp_sagebrush.css'.
 
@@ -335,7 +339,7 @@ LaTeX Warning: Writing or overwriting file `./lwarp_sagebrush.css'.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp_formal.css'.
+LaTeX Warning: Writing or overwriting file `lwarp_formal.css'.
 
 \openout15 = `lwarp_formal.css'.
 
@@ -346,7 +350,7 @@ LaTeX Warning: Writing or overwriting file `./lwarp_formal.css'.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./sample_project.css'.
+LaTeX Warning: Writing or overwriting file `sample_project.css'.
 
 \openout15 = `sample_project.css'.
 
@@ -357,7 +361,7 @@ LaTeX Warning: Writing or overwriting file `./sample_project.css'.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp.ist'.
+LaTeX Warning: Writing or overwriting file `lwarp.ist'.
 
 \openout15 = `lwarp.ist'.
 
@@ -368,7 +372,7 @@ LaTeX Warning: Writing or overwriting file `./lwarp.ist'.
  Straight input of comment_writeconf.cut.
 (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp.xdy'.
+LaTeX Warning: Writing or overwriting file `lwarp.xdy'.
 
 \openout15 = `lwarp.xdy'.
 
@@ -386,7 +390,7 @@ LaTeX Warning: Writing or overwriting file `./lwarp.xdy'.
 
 Straight input of comment_writeconf.cut. (./comment_writeconf.cut
 
-LaTeX Warning: Writing or overwriting file `./lwarp_mathjax.txt'.
+LaTeX Warning: Writing or overwriting file `lwarp_mathjax.txt'.
 
 \openout15 = `lwarp_mathjax.txt'.
 
@@ -470,7 +474,11 @@ Excluding 'warpHTML' comment. Including 'warpprint' comment.
 
 
 Straight input of comment_print.cut. (./comment_print.cut)
-Excluding 'warpHTML' comment. Including 'warpall' comment.
+Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
+
+ Straight input of comment_all.cut.
+(./comment_all.cut) Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
 
@@ -480,24 +488,24 @@ Including 'warpall' comment.
 
  Straight input of comment_all.cut.
 (./comment_all.cut
-\c@FootnoteDepth=\count268
-\c@footnoteReset=\count269
+\c@FootnoteDepth=\count292
+\c@footnoteReset=\count293
 ) Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Including 'warpprint' comment.
 \openout3 = `comment_print.cut'.
 
 
 Straight input of comment_print.cut. (./comment_print.cut)
-\c@LWR@currentautosecpage=\count270
-\c@LWR@currentautosecfloatpage=\count271
-\c@LWR@previousautopagelabel=\count272
+\c@LWR@currentautosecpage=\count294
+\c@LWR@currentautosecfloatpage=\count295
+\c@LWR@previousautopagelabel=\count296
 
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
  Straight input of comment_all.cut.
 (./comment_all.cut
-\c@FileDepth=\count273
+\c@FileDepth=\count297
 ) Excluding 'warpHTML' comment.
 Excluding 'warpMathJax' comment. Excluding 'warpMathJax' comment.
 Excluding 'warpHTML' comment. Including 'warpprint' comment.
@@ -557,15 +565,15 @@ Excluding 'warpHTML' comment. Including 'warpall' comment.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-\HTMLvleftskip=\skip56
-\HTMLleftmargini=\skip57
+\HTMLvleftskip=\skip57
+\HTMLleftmargini=\skip58
 )
 Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
  Straight input of comment_all.cut.
 (./comment_all.cut
-\VerbatimHTMLWidth=\skip58
+\VerbatimHTMLWidth=\skip59
 ) Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
@@ -605,7 +613,7 @@ Excluding 'warpHTML' comment. Including 'warpall' comment.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-\c@SideTOCDepth=\count274
+\c@SideTOCDepth=\count298
 )
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
 Including 'warpprint' comment.
@@ -618,6 +626,12 @@ Including 'warpprint' comment.
 
 Straight input of comment_all.cut. (./comment_all.cut)
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
@@ -629,52 +643,46 @@ Excluding 'warpHTML' comment. Including 'warpprint' comment.
 
 Straight input of comment_print.cut. (./comment_print.cut)
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
-Including 'warpall' comment.
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+
+Straight input of comment_print.cut. (./comment_print.cut)
+Including 'warpprint' comment.
+\openout3 = `comment_print.cut'.
+
+ Straight input of comment_print.cut.
+(./comment_print.cut) Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
- Straight input of comment_all.cut.
-(./comment_all.cut) Excluding 'warpHTML' comment.
+
+Straight input of comment_all.cut. (./comment_all.cut)
 Including 'warpprint' comment.
 \openout3 = `comment_print.cut'.
 
  Straight input of comment_print.cut.
 (./comment_print.cut) Excluding 'warpHTML' comment.
-Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
-Including 'warpprint' comment.
-\openout3 = `comment_print.cut'.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
+\openout3 = `comment_all.cut'.
 
- Straight input of comment_print.cut.
-(./comment_print.cut) Including 'warpprint' comment.
+
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpprint' comment.
 \openout3 = `comment_print.cut'.
 
 
 Straight input of comment_print.cut. (./comment_print.cut)
-Including 'warpall' comment.
+Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
- Straight input of comment_all.cut.
-(./comment_all.cut) Including 'warpprint' comment.
-\openout3 = `comment_print.cut'.
 
-
-Straight input of comment_print.cut. (./comment_print.cut)
-Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
-Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
-Including 'warpprint' comment.
-\openout3 = `comment_print.cut'.
-
- Straight input of comment_print.cut.
-(./comment_print.cut) Excluding 'warpHTML' comment.
-Including 'warpall' comment.
-\openout3 = `comment_all.cut'.
-
- Straight input of comment_all.cut.
-(./comment_all.cut) Excluding 'warpHTML' comment. Including 'warpall' comment.
+Straight input of comment_all.cut. (./comment_all.cut)
+Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
 
 
 Straight input of comment_all.cut. (./comment_all.cut
-\LWR@fminipagebox=\box52
+\LWR@fminipagebox=\box53
 )
 Excluding 'warpHTML' comment. Including 'warpall' comment.
 \openout3 = `comment_all.cut'.
@@ -702,843 +710,838 @@ Including 'warpprint' comment.
 (./comment_print.cut) Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.
 Excluding 'warpHTML' comment. Excluding 'warpHTML' comment.)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xy.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes, docmode,
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyrecat.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyidioms.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xy.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xy.tex Bootstrap'ing: catcodes, docmode,
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyrecat.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen143
-\Y@c=\dimen144
-\U@c=\dimen145
-\D@c=\dimen146
-\L@c=\dimen147
-\R@c=\dimen148
-\Edge@c=\toks20
-\X@p=\dimen149
-\Y@p=\dimen150
-\U@p=\dimen151
-\D@p=\dimen152
-\L@p=\dimen153
-\R@p=\dimen154
-\Edge@p=\toks21
-\X@origin=\dimen155
-\Y@origin=\dimen156
-\X@xbase=\dimen157
-\Y@xbase=\dimen158
-\X@ybase=\dimen159
-\Y@ybase=\dimen160
-\X@min=\dimen161
-\Y@min=\dimen162
-\X@max=\dimen163
-\Y@max=\dimen164
-\lastobjectbox@=\box53
-\zerodotbox@=\box54
-\almostz@=\dimen165
+\X@c=\dimen151
+\Y@c=\dimen152
+\U@c=\dimen153
+\D@c=\dimen154
+\L@c=\dimen155
+\R@c=\dimen156
+\Edge@c=\toks21
+\X@p=\dimen157
+\Y@p=\dimen158
+\U@p=\dimen159
+\D@p=\dimen160
+\L@p=\dimen161
+\R@p=\dimen162
+\Edge@p=\toks22
+\X@origin=\dimen163
+\Y@origin=\dimen164
+\X@xbase=\dimen165
+\Y@xbase=\dimen166
+\X@ybase=\dimen167
+\Y@ybase=\dimen168
+\X@min=\dimen169
+\Y@min=\dimen170
+\X@max=\dimen171
+\Y@max=\dimen172
+\lastobjectbox@=\box54
+\zerodotbox@=\box55
+\almostz@=\dimen173
  direction,
-\d@X=\dimen166
-\d@Y=\dimen167
-\K@=\count275
-\KK@=\count276
-\Direction=\count277
-\K@dXdY=\dimen168
-\K@dYdX=\dimen169
+\d@X=\dimen174
+\d@Y=\dimen175
+\K@=\count299
+\KK@=\count300
+\Direction=\count301
+\K@dXdY=\dimen176
+\K@dYdX=\dimen177
 \xyread@=\read2
 \xywrite@=\write5
-\csp@=\count278
-\quotPTK@=\dimen170
+\csp@=\count302
+\quotPTK@=\dimen178
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks22
-\connectobjectbox@@=\box55
+\swaptoks@@=\toks23
+\connectobjectbox@@=\box56
  objects,
-\styletoks@=\toks23
+\styletoks@=\toks24
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyall.tex  Xy-pic option: All features v.3.8
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xycurve.tex
- Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count279
-\crvpts@=\toks24
-\splinebox@=\box56
-\splineval@=\dimen171
-\splinedepth@=\dimen172
-\splinetol@=\dimen173
-\splinelength@=\dimen174
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyall.tex  Xy-pic option: All features v.3.8
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xycurve.tex  Xy-pic option: Curve and Spline extension v.3.12
+curve,
+\crv@cnt@=\count303
+\crvpts@=\toks25
+\splinebox@=\box57
+\splineval@=\dimen179
+\splinedepth@=\dimen180
+\splinetol@=\dimen181
+\splinelength@=\dimen182
  circles,
-\L@=\dimen175
+\L@=\dimen183
  loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyframe.tex
- Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xycmtip.tex
- Xy-pic option: Computer Modern tip extension v.3.7
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xytips.tex  Xy-pic option: More Tips extension v.3.11
-loaded) loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyline.tex  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen176
-
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyframe.tex  Xy-pic option: Frame and Bracket extension v.3.14
 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyrotate.tex
- Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xycolor.tex  Xy-pic option: Colour extension v.3.11
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xycmtip.tex  Xy-pic option: Computer Modern tip extension v.3.7
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xytips.tex  Xy-pic option: More Tips extension v.3.11 loaded)
 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xymatrix.tex  Xy-pic option: Matrix feature v.3.14
-\Row=\count280
-\Col=\count281
-\queue@=\toks25
-\queue@@=\toks26
-\qcount@=\count282
-\qcount@@=\count283
-\matrixsize@=\count284
-
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyline.tex  Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen184
+ loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyrotate.tex  Xy-pic option: Rotate and Scale extension v.3.8
 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyarrow.tex  Xy-pic option: Arrow and Path feature v.3.9
-path, \ar, loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xygraph.tex  Xy-pic option: Graph feature v.3.11 loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xycolor.tex  Xy-pic option: Colour extension v.3.11 loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xymatrix.tex  Xy-pic option: Matrix feature v.3.14
+\Row=\count304
+\Col=\count305
+\queue@=\toks26
+\queue@@=\toks27
+\qcount@=\count306
+\qcount@@=\count307
+\matrixsize@=\count308
+ loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyarrow.tex  Xy-pic option: Arrow and Path feature v.3.9 path,
+\ar, loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xygraph.tex  Xy-pic option: Graph feature v.3.11 loaded) loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xy2cell.tex  Xy-pic option: Two-cell feature v.3.7 two-cells,
 loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xy2cell.tex  Xy-pic option: Two-cell feature v.3.7
-two-cells, loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xyknot.tex  Xy-pic option: Knots and Links feature v.3.9
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xyknot.tex  Xy-pic option: Knots and Links feature v.3.9
 knots and links, loaded)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf.tex  Xy-pic option: PDF driver v.1.7
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf.tex  Xy-pic option: PDF driver v.1.7
 Xy-pic pdf driver: `color' extension support
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf-co.tex loaded)
-Xy-pic pdf driver: `curve' extension support
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf-cu.tex loaded)
-Xy-pic pdf driver: `frame' extension support
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf-fr.tex loaded)
-Xy-pic pdf driver: `line' extension support
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf-li.tex loaded)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf-co.tex loaded) Xy-pic pdf driver: `curve' extension support
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf-cu.tex loaded) Xy-pic pdf driver: `frame' extension support
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf-fr.tex loaded) Xy-pic pdf driver: `line' extension support
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/frontendlayer/tikz.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/basiclayer/pgf.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/utilities/pgfrcs.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen177
-\pgfutil@tempdimb=\dimen178
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/xypic/xypdf-ro.tex loaded) loaded))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/frontendlayer/tikz.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/basiclayer/pgf.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/utilities/pgfrcs.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfrcs.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/basiclayer/pgfcore.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics-cfg/graphics.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen179
-\Gin@req@width=\dimen180
+\Gin@req@height=\dimen187
+\Gin@req@width=\dimen188
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/systemlayer/pgfsys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
 ))
-\pgf@x=\dimen181
-\pgf@y=\dimen182
-\pgf@xa=\dimen183
-\pgf@ya=\dimen184
-\pgf@xb=\dimen185
-\pgf@yb=\dimen186
-\pgf@xc=\dimen187
-\pgf@yc=\dimen188
-\pgf@xd=\dimen189
-\pgf@yd=\dimen190
+\pgf@x=\dimen189
+\pgf@y=\dimen190
+\pgf@xa=\dimen191
+\pgf@ya=\dimen192
+\pgf@xb=\dimen193
+\pgf@yb=\dimen194
+\pgf@xc=\dimen195
+\pgf@yc=\dimen196
+\pgf@xd=\dimen197
+\pgf@yd=\dimen198
 \w@pgf@writea=\write6
 \r@pgf@reada=\read3
-\c@pgf@counta=\count285
-\c@pgf@countb=\count286
-\c@pgf@countc=\count287
-\c@pgf@countd=\count288
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
-\pgf@sys@id@count=\count289
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count313
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count290
-\pgfsyssoftpath@bigbuffer@items=\count291
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count314
+\pgfsyssoftpath@bigbuffer@items=\count315
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics-cfg/color.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmath.code.tex
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen191
-\pgfmath@count=\count292
-\pgfmath@box=\box58
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmath.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathutil.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen199
+\pgfmath@count=\count316
+\pgfmath@box=\box59
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathcalc.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count293
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.basic.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.random.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.base.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.round.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.misc.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathcalc.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count317
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfint.code.tex)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen192
-\pgf@picmaxx=\dimen193
-\pgf@picminy=\dimen194
-\pgf@picmaxy=\dimen195
-\pgf@pathminx=\dimen196
-\pgf@pathmaxx=\dimen197
-\pgf@pathminy=\dimen198
-\pgf@pathmaxy=\dimen199
-\pgf@xx=\dimen256
-\pgf@xy=\dimen257
-\pgf@yx=\dimen258
-\pgf@yy=\dimen259
-\pgf@zx=\dimen260
-\pgf@zy=\dimen261
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfint.code.tex)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen256
+\pgf@picmaxx=\dimen257
+\pgf@picminy=\dimen258
+\pgf@picmaxy=\dimen259
+\pgf@pathminx=\dimen260
+\pgf@pathmaxx=\dimen261
+\pgf@pathminy=\dimen262
+\pgf@pathmaxy=\dimen263
+\pgf@xx=\dimen264
+\pgf@xy=\dimen265
+\pgf@yx=\dimen266
+\pgf@yy=\dimen267
+\pgf@zx=\dimen268
+\pgf@zy=\dimen269
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen262
-\pgf@path@lasty=\dimen263
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen270
+\pgf@path@lasty=\dimen271
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen264
-\pgf@shorten@start@additional=\dimen265
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen272
+\pgf@shorten@start@additional=\dimen273
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box59
-\pgf@hbox=\box60
-\pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count294
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count318
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen266
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen274
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen267
-\pgf@pt@y=\dimen268
-\pgf@pt@temp=\dimen269
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen275
+\pgf@pt@y=\dimen276
+\pgf@pt@temp=\dimen277
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen270
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen278
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen271
-\pgf@sys@shading@range@num=\count295
-\pgf@shadingcount=\count296
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen279
+\pgf@sys@shading@range@num=\count319
+\pgf@shadingcount=\count320
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box62
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box63
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box63
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box64
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen272
-\pgf@nodesepend=\dimen273
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen280
+\pgf@nodesepend=\dimen281
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/utilities/pgffor.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/utilities/pgfkeys.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/pgf/math/pgfmath.sty
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/math/pgfmath.code.tex))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen274
-\pgffor@skip=\dimen275
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/utilities/pgffor.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/utilities/pgfkeys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgfkeys.code.tex))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/pgf/math/pgfmath.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/math/pgfmath.code.tex))
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen282
+\pgffor@skip=\dimen283
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count297
-\pgfplotmarksize=\dimen276
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count321
+\pgfplotmarksize=\dimen284
 )
-\tikz@lastx=\dimen277
-\tikz@lasty=\dimen278
-\tikz@lastxsaved=\dimen279
-\tikz@lastysaved=\dimen280
-\tikz@lastmovetox=\dimen281
-\tikz@lastmovetoy=\dimen282
-\tikzleveldistance=\dimen283
-\tikzsiblingdistance=\dimen284
-\tikz@figbox=\box64
-\tikz@figbox@bg=\box65
-\tikz@tempbox=\box66
-\tikz@tempbox@bg=\box67
-\tikztreelevel=\count298
-\tikznumberofchildren=\count299
-\tikznumberofcurrentchild=\count300
-\tikz@fig@count=\count301
+\tikz@lastx=\dimen285
+\tikz@lasty=\dimen286
+\tikz@lastxsaved=\dimen287
+\tikz@lastysaved=\dimen288
+\tikz@lastmovetox=\dimen289
+\tikz@lastmovetoy=\dimen290
+\tikzleveldistance=\dimen291
+\tikzsiblingdistance=\dimen292
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count322
+\tikznumberofchildren=\count323
+\tikznumberofcurrentchild=\count324
+\tikz@fig@count=\count325
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count302
-\pgfmatrixcurrentcolumn=\count303
-\pgf@matrix@numberofcolumns=\count304
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count326
+\pgfmatrixcurrentcolumn=\count327
+\pgf@matrix@numberofcolumns=\count328
 )
-\tikz@expandcount=\count305
+\tikz@expandcount=\count329
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/tikz-cd/tikz-cd.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/tikz-cd/tikzlibrarycd.code.tex
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen285
-\pgfarrowlength=\dimen286
-\pgfarrowwidth=\dimen287
-\pgfarrowlinewidth=\dimen288
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen293
+\pgfarrowlength=\dimen294
+\pgfarrowwidth=\dimen295
+\pgfarrowlinewidth=\dimen296
 )))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/babel/babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
-\babel@savecnt=\count306
-\U@D=\dimen289
-\l@unhyphenated=\language87
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/babel/babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaT
+eX and XeLaTeX
+\babel@savecnt=\count330
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2111.
+\U@D=\dimen297
+\l@unhyphenated=\language91
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/babel/txtbabel.def)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count307
+\bbl@dirlevel=\count331
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/babel-english/english.ldf
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 105.
+(babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 108.
+(babel)             (\language22). Reported on input line 108.
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/pdfescape/pdfescape.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hycolor/hycolor.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hyperref/nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/refcount/refcount.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/gettitlestring/gettitlestring.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count332
 )
-\@linkdim=\dimen290
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen298
+\Hy@linkcounter=\count333
+\Hy@pagecounter=\count334
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/intcalc/intcalc.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count335
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count312
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count336
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/url/url.sty
+\Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen291
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen299
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/bitset/bitset.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/bigintcalc/bigintcalc.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
-\Field@Width=\dimen292
-\Fld@charsize=\dimen293
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
-
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Fld@menulength=\count337
+\Field@Width=\dimen300
+\Fld@charsize=\dimen301
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count338
+\c@Item=\count339
+\c@Hfootnote=\count340
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count341
+\c@bookmark@seq@number=\count342
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
-)
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/uniquecounter/uniquecounter.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-85.
+84.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip60
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsfonts/amssymb.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsfonts/amsfonts.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks39
+\@emptytoks=\toks40
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amscd.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amsgen.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks40
-\ex@=\dimen294
+\@emptytoks=\toks41
+\ex@=\dimen302
 )
-\athelp@=\toks41
-\minaw@=\dimen295
-\bigaw@=\dimen296
-\minCDarrowwidth=\dimen297
+\athelp@=\toks42
+\minaw@=\dimen303
+\bigaw@=\dimen304
+\minCDarrowwidth=\dimen305
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/caption/caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/caption/caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen298
-\captionmargin=\dimen299
-\caption@leftmargin=\dimen300
-\caption@rightmargin=\dimen301
-\caption@width=\dimen302
-\caption@indent=\dimen303
-\caption@parindent=\dimen304
-\caption@hangindent=\dimen305
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count319
-\c@continuedfloat=\count320
+\c@caption@flags=\count343
+\c@continuedfloat=\count344
 Package caption Info: hyperref package is loaded.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/ulem/ulem.sty
-\UL@box=\box68
-\UL@hyphenbox=\box69
-\UL@skip=\skip60
-\UL@hook=\toks42
-\UL@height=\dimen306
-\UL@pe=\count321
-\UL@pixel=\dimen307
-\ULC@box=\box70
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/ulem/ulem.sty
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip61
+\UL@hook=\toks43
+\UL@height=\dimen314
+\UL@pe=\count345
+\UL@pixel=\dimen315
+\ULC@box=\box71
 Package: ulem 2019/11/18
-\ULdepth=\dimen308
+\ULdepth=\dimen316
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/geometry/geometry.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/generic/iftex/ifvtex.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/g
+eneric/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count322
-\Gm@cntv=\count323
-\c@Gm@tempcnt=\count324
-\Gm@bindingoffset=\dimen309
-\Gm@wd@mp=\dimen310
-\Gm@odd@mp=\dimen311
-\Gm@even@mp=\dimen312
-\Gm@layoutwidth=\dimen313
-\Gm@layoutheight=\dimen314
-\Gm@layouthoffset=\dimen315
-\Gm@layoutvoffset=\dimen316
-\Gm@dimlist=\toks43
+\Gm@cnth=\count346
+\Gm@cntv=\count347
+\c@Gm@tempcnt=\count348
+\Gm@bindingoffset=\dimen317
+\Gm@wd@mp=\dimen318
+\Gm@odd@mp=\dimen319
+\Gm@even@mp=\dimen320
+\Gm@layoutwidth=\dimen321
+\Gm@layoutheight=\dimen322
+\Gm@layouthoffset=\dimen323
+\Gm@layoutvoffset=\dimen324
+\Gm@dimlist=\toks44
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip61
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip62
 
 For additional information on amsmath, use the `?' option.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amsbsy.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen317
+\pmbraise@=\dimen325
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsmath/amsopn.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count325
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count326
-\leftroot@=\count327
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count328
-\DOTSCASE@=\count329
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box71
-\strutbox@=\box72
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen318
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count330
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count331
-\dotsspace@=\muskip17
-\c@parentequation=\count332
-\dspbrk@lvl=\count333
-\tag@help=\toks44
-\row@=\count334
-\column@=\count335
-\maxfields@=\count336
-\andhelp@=\toks45
-\eqnshift@=\dimen319
-\alignsep@=\dimen320
-\tagshift@=\dimen321
-\tagwidth@=\dimen322
-\totwidth@=\dimen323
-\lineht@=\dimen324
-\@envbody=\toks46
-\multlinegap=\skip62
-\multlinetaggap=\skip63
-\mathdisplay@stack=\toks47
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+\inf@bad=\count349
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count350
+\leftroot@=\count351
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count352
+\DOTSCASE@=\count353
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box72
+\strutbox@=\box73
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen326
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count354
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count355
+\dotsspace@=\muskip18
+\c@parentequation=\count356
+\dspbrk@lvl=\count357
+\tag@help=\toks45
+\row@=\count358
+\column@=\count359
+\maxfields@=\count360
+\andhelp@=\toks46
+\eqnshift@=\dimen327
+\alignsep@=\dimen328
+\tagshift@=\dimen329
+\tagwidth@=\dimen330
+\totwidth@=\dimen331
+\lineht@=\dimen332
+\@envbody=\toks47
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks48
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amscls/amsthm.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks48
-\thm@bodyfont=\toks49
-\thm@headfont=\toks50
-\thm@notefont=\toks51
-\thm@headpunct=\toks52
-\thm@preskip=\skip64
-\thm@postskip=\skip65
-\thm@headsep=\skip66
-\dth@everypar=\toks53
+\thm@style=\toks49
+\thm@bodyfont=\toks50
+\thm@headfont=\toks51
+\thm@notefont=\toks52
+\thm@headpunct=\toks53
+\thm@preskip=\skip65
+\thm@postskip=\skip66
+\thm@headsep=\skip67
+\dth@everypar=\toks54
 )
-\c@Theorem=\count337
-\c@Fundamental Theorem=\count338
+\c@Theorem=\count361
+\c@Fundamental Theorem=\count362
  Excluding 'warpHTML' comment.
 (./Sample_Lwarp_Xy-jax.aux)
 \openout1 = `Sample_Lwarp_Xy-jax.aux'.
@@ -1565,46 +1568,46 @@ LaTeX Font Info:    ... okay on input line 171.
 
 \openout4 = `Sample_Lwarp_Xy-jax.lwarpmkconf'.
 
-\LWR@colorminipagebox=\box73
+\LWR@colorminipagebox=\box74
 LaTeX Font Info:    Trying to load font information for U+msa on input line 171
 .
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsfonts/umsa.fd
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 171
 .
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/amsfonts/umsb.fd
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package xypdf Info: Line width: 0.47998pt on input line 171.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/context/base/mkii/supp-pdf.mkii
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/c
+ontext/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen325
-\scratchbox=\box74
-\nofMPsegments=\count340
-\nofMParguments=\count341
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen326
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count363
+\scratchdimen=\dimen333
+\scratchbox=\box75
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen334
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks56
 )
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/tex/l
+atex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1662,15 +1665,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--192
 
 [1
 
-{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-v
-ar/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-13.
-
-(/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
+{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-var/fonts/
+map/pdftex/updmap/pdftex.map}{/localhome/home/pmtjfa/local-texlive/install-tl-2
+0230216/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 Overfull \hbox (34.8765pt too wide) in paragraph at lines 226--226
 [] \T1/cmtt/m/n/12 pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (pre
 loaded format=pdflatex)[] 
@@ -1687,7 +1684,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
-[2]
+[2{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fon
+ts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Overfull \hbox (0.8554pt too wide) in paragraph at lines 259--260
 []\T1/cmr/m/it/12 pdflatex Sample_Lwarp_Xy-jax.tex \T1/cmr/m/n/12 (pos-si-bly t
 wice) : cre-ates Sample_Lwarp_Xy-jax.pdf
@@ -1746,7 +1744,7 @@ Lwarp_Xy-
  []
 
 [7]
-<Stasheff.png, id=227, 454.69875pt x 443.6575pt>
+<Stasheff.png, id=230, 454.69875pt x 443.6575pt>
 File: Stasheff.png Graphic file (type png)
 <use Stasheff.png>
 Package pdftex.def Info: Stasheff.png  used on input line 536.
@@ -1784,80 +1782,77 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 750.
 
 <xymatrix 5x4 326> <xymatrix 5x4 326> [13] [14] (./Sample_Lwarp_Xy-jax.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2020/03/25>
+ ***********
 Package rerunfilecheck Info: File `Sample_Lwarp_Xy-jax.out' has not changed.
 (rerunfilecheck)             Checksum: 37154CD6911F4289BBE489C95A426D1E;5168.
  ) 
 Here is how much of TeX's memory you used:
- 30322 strings out of 476029
- 573188 string characters out of 5766719
- 1905346 words of memory out of 5000000
- 49925 multiletter control sequences out of 15000+600000
- 541019 words of font info for 118 fonts, out of 8000000 for 9000
+ 30509 strings out of 467525
+ 570022 string characters out of 5398963
+ 1058343 words of memory out of 5000000
+ 58643 multiletter control sequences out of 15000+600000
+ 656453 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,19n,115p,3245b,1027s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf
--dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/localhome/home/pmtjfa/local-te
-xlive/install-tl-20230216/local-texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-
-super-ts1.enc}</localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></localhome/home/pm
-tjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx6.pfb></localhome/home/pmtjfa/local-texlive/install-tl-2023
-0216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></localh
-ome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></localhome/home/pmtjfa/local-texlive/ins
-tall-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></localhome/home/pmtjfa/loca
-l-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/loca
-l-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></localhome/home/
-pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cmextra/cmmib8.pfb></localhome/home/pmtjfa/local-texlive/install
--tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></localhome/home/pmtjfa/local-texl
-ive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></localhome/home/pmtjfa/
-local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/l
-ocal-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></localhome/h
-ome/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb></localhome/home/pmtjfa/local-texlive/install-t
-l-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msam10.pfb></localhome/home/pmtjfa/local-
-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/
-local-texlive/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></localhome/h
-ome/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb></localhome/home/pmtjfa/local-texlive/install-t
-l-20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
-localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1728.pfb></localhome/home/pmtjfa/local-texliv
-e/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sfrm
-0700.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texliv
-e/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></localhome/home/pmtjfa/l
-ocal-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/cm
--super/sfrm1000.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/l
-ocal-texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></localhome/ho
-me/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type
-1/public/cm-super/sfrm1440.pfb></localhome/home/pmtjfa/local-texlive/install-tl
--20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></l
-ocalhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive/texmf-dist
-/fonts/type1/public/cm-super/sfti1200.pfb></localhome/home/pmtjfa/local-texlive
-/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/cm-super/sftt1
-000.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local-texlive
-/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></localhome/home/pmtjfa/lo
-cal-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/public/xyp
-ic/xyatip10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/local
--texlive/texmf-dist/fonts/type1/public/xypic/xybsql10.pfb></localhome/home/pmtj
-fa/local-texlive/install-tl-20230216/local-texlive/texmf-dist/fonts/type1/publi
-c/xypic/xybtip10.pfb>
-Output written on Sample_Lwarp_Xy-jax.pdf (14 pages, 551295 bytes).
+ 103i,19n,115p,3245b,1022s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></localhome/home/pmtjfa/local-texlive/in
+stall-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></lo
+calhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx8.pfb></localhome/home/pmtjfa/local-texlive/install-t
+l-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></localhom
+e/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-202
+30216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></localhome/hom
+e/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/
+2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></localhome/home/pmtjf
+a/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts
+/cmextra/cmmib8.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/2
+026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></localhome/home/pmtjfa
+/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></localhome/home/pmtjfa/local-
+texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></localhome/home/pmtjfa/local-texlive/i
+nstall-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy6.pfb></localhome/home/pmtjfa/local-texlive/install
+-tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></localho
+me/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msam10.pfb></localhome/home/pmtjfa/local-texlive/install-
+tl-20230216/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></lo
+calhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/typ
+e1/public/cm-super/sfbi1200.pfb></localhome/home/pmtjfa/local-texlive/install-t
+l-20230216/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></localhome
+/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbx1440.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230
+216/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></localhome/home/p
+mtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm0700.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/202
+6/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></localhome/home/pmtjfa/l
+ocal-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/cm-super/sf
+rm1000.pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf
+-dist/fonts/type1/public/cm-super/sfrm1200.pfb></localhome/home/pmtjfa/local-te
+xlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.
+pfb></localhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/f
+onts/type1/public/cm-super/sfrm2074.pfb></localhome/home/pmtjfa/local-texlive/i
+nstall-tl-20230216/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></l
+ocalhome/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1000.pfb></localhome/home/pmtjfa/local-texlive/install-
+tl-20230216/2026/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></localhom
+e/home/pmtjfa/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/pub
+lic/xypic/xyatip10.pfb></localhome/home/pmtjfa/local-texlive/install-tl-2023021
+6/2026/texmf-dist/fonts/type1/public/xypic/xybsql10.pfb></localhome/home/pmtjfa
+/local-texlive/install-tl-20230216/2026/texmf-dist/fonts/type1/public/xypic/xyb
+tip10.pfb>
+Output written on Sample_Lwarp_Xy-jax.pdf (14 pages, 549921 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
+ 438 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
  45 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

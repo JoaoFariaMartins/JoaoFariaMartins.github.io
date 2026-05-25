@@ -20,7 +20,7 @@
 
 %Use the next option to split html home page into subpages. Code is from https://people.bath.ac.uk/feb/lwarp/lwarp-intro.html
 % %
-%
+
 % \usepackage[
 %    HomeHTMLFilename= Sample_Lwarp_Xy-jax-split-index,     %  Sample_Lwarp_Xy-jax_Split =  Filename of the homepage.
 %    HTMLFilename={ Sample_Lwarp_Xy-jax-},       %  Sample_Lwarp_Xy-jax- = Filename prefix of other pages.
@@ -33,8 +33,8 @@
 % \booltrue{CombineHigherDepths} % Combine parts/chapters/sections
 % \setcounter{SideTOCDepth}{2}     % Include subsections in the side\TOC
 % \HTMLTitle{Lwarp-xyJax } % Overrides \title for the web page.
-
-
+%
+%
 
 \HTMLLanguage{en-UK}             % Sets the HTML meta language
 
@@ -55,7 +55,7 @@
 %\usepackage[all]{xy}
 \usepackage[all,2cell,knot]{xy}
 \UseAllTwocells
-\MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+\MathJaxFilename{lwarp-with-Xy-jax_v6.txt}
 
 
 % For original lwarp use comment out command above. Or use:
@@ -173,7 +173,7 @@
 \title{Sample HTML file: produced with  lwarp, with mathematical formulae displayed with  MathJax, and  xymatrix commutative  diagrams displayed  with XyJax-v3}
 \author{Jo\~{a}o Faria Martins}
 \affiliation{University of Leeds}
-\date{Last modified: April 15, 2024}
+\date{Last modified: May 25, 2024}
 \maketitle
 
 \tableofcontents
@@ -200,8 +200,8 @@ See the links below for:
     \item Latex source for the split version of this page, with sans serif fonts: \href{Sample_Lwarp_Xy-jax-split.tex}{Sample\_Lwarp\_Xy-jax-split.tex},
    \item CSS files for the stand-alone version of this page: \href{lwarp.css}{lwarp.css} (automatically provided by \emph{lwarpmk}) and \href{my_file_stand-alone.css}{my\_file\_stand-alone.css} (minor tweak to adjust margins),
    \item CSS files for the split version of this page: \href{lwarp\_formal.css}{lwarp\_formal.css} (automatically provided by \emph{lwarpmk}) and \href{my_file_split.css}{my\_file\_split.css} (minor tweak enforcing sans serif fonts).
-   \item Configuration file required for browsers to find Xy-Jaxv3,
-\href{lwarp-with-Xy-jax_v3.txt}{lwarp-with-Xy-jax\_v3.txt}. This script is essentially the original Lwarp MathJax emulation code, \href{lwarp_mathjax.txt}{lwarp\_mathjax.txt}  (automatically created by  lwarp v0.902), with two minimal additions, as shown.
+   \item Configuration file required for browsers to find Xy-Jaxv6,
+\href{lwarp-with-Xy-jax_v6.txt}{lwarp-with-Xy-jax\_v6.txt}. This script is essentially the original Lwarp MathJax emulation code, \href{lwarp_mathjax.txt}{lwarp\_mathjax.txt}  (automatically created by  lwarp v0.902), with two minimal additions, as shown. File tweaked 25May2026. Requires \href{https://raw.githubusercontent.com/sonoisa/XyJax-v3/master/build/xypic.js}{xypic.js} in directory ``js''.
 \end{itemize}
 
 
@@ -233,11 +233,11 @@ The source latex file can be found here: \href{Sample_Lwarp_Xy-jax.tex}{Sample\_
 
  \noindent This HTML file  also makes use of the following configuration script, so that {\textbf{Xy-pic}} diagrams, particularly \href{https://www.ctan.org/pkg/xymatrix}{\textit{xymatrix}} commmutative diagrams, can be displayed by using \textbf{Xy-Jax-v3}. (Or at least a good sample  of them: there seem to be some compatibility issues.)\\
 \begin{center}
-\href{lwarp-with-Xy-jax_v3.txt}{lwarp-with-Xy-jax\_v3.txt}.
+\href{lwarp-with-Xy-jax_v6.txt}{lwarp-with-Xy-jax\_v6.txt}.
 \end{center}
 This script file has minimal additions (two in total) in the original Lwarp MathJax emulation code, that is automatically created by  lwarp v0.902), namely:
 \begin{center} \href{lwarp_mathjax.txt}{lwarp\_mathjax.txt}, \end{center}
- (Two lines were added to the script above, as shown,  in order that browsers can find Xy-Jaxv3.)
+ %(Two lines were added to the script above, as shown,  in order that browsers can find Xy-Jaxv3.)
 
 \noindent This modification was produced under items 5 and 6 of the licence \url{https://www.ctan.org/license/lppl1.3}  (The LATEX Project Public License 1.3).
 \\
@@ -249,9 +249,9 @@ Credit is  due to instructions in: \url{https://github.com/sonoisa/XyJax-v3} (th
  If using \Xy-pic diagrams displayed with {\textbf{XyJax-v3}}, insert the following in the preamble of your latex file:
 \begin{verbatim}
   \usepackage[all]{xy}
-  \MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+  \MathJaxFilename{lwarp-with-Xy-jax_v6.txt}
 \end{verbatim}
-
+Also create a directory ``js'', and copy the file  \href{https://raw.githubusercontent.com/sonoisa/XyJax-v3/master/build/xypic.js}{xypic.js} to it.
 
 \textbf{Compile .tex to .html using:}
 
@@ -497,10 +497,10 @@ and then:
 This means that you can use slightly different versions of commands for pdf and for html.
 \item If using Xy-pic diagrams (if displayed as Xy-jax) put in the preamble of the tex file:
 \begin{verbatim}
- \MathJaxFilename{lwarp-with-Xy-jax_v3.txt}
+ \MathJaxFilename{lwarp-with-Xy-jax_v6.txt}
 \end{verbatim}
-You will also need this configuration file: \href{lwarp-with-Xy-jax_v3.txt}{lwarp-with-Xy-jax\_v3.txt}.
-(Explanation is in Section \ref{Context}.)
+You will also need this configuration file: \href{lwarp-with-Xy-jax_v6.txt}{lwarp-with-Xy-jax\_v6.txt}.
+(Explanation is in Section \ref{Context}. Also requires \href{https://raw.githubusercontent.com/sonoisa/XyJax-v3/master/build/xypic.js}{xypic.js} in directory ``js'')
 
 
 \item Sample use of Xy-pic compatible with lwarp (so that the resulting xymatrix code  is readable by Xy-Jax):

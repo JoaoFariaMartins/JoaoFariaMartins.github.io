@@ -8,6 +8,7 @@
     }
 
 \AtBeginDocument{
+\LWR@traceinfo{AtBeginDocument logos}
     \IfPackageLoadedTF{graphics}{
         \IfPackageLoadedTF{metalogo}{}{
             \renewrobustcmd*{\Xe}

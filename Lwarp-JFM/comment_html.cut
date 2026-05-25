@@ -1,7 +1,7 @@
 \CustomizeMathJax{\newcommand{\C}{ \mathbb{C} }}
-\CustomizeMathJax{\newcommand{\Cc}{ \mathcal{D} }}
+\CustomizeMathJax{\newcommand{\Cc}{ \mathcal{C} }}
 \CustomizeMathJax{\newcommand{\Dc}{ \mathcal{D} }}
-
+\CustomizeMathJax{ \newcommand{\Grp}{ \mathrm{Grp} } }
 \CustomizeMathJax{\newcommand{\Z}{ \mathbb{Z} }}
 \CustomizeMathJax{\newcommand{\ra}[1]{\xrightarrow{#1}}}
 \CustomizeMathJax{\DeclareMathOperator{\Sym}{Sym}}
