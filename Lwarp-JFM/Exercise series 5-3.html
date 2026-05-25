@@ -1,0 +1,1450 @@
+
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+<meta charset="UTF-8" />
+<meta name="generator" content="LaTeX Lwarp package" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MATH3225 - Exercise series — Exercises for week 10</title>
+<link rel="stylesheet" type="text/css" href="my_file_split-3.css" />
+
+<!-- Joao Faria Martins, 1st Nov 2022:
+Original file called
+lwarp_mathjax.txt
+provided by lwarpmk: v0.902.
+File tweaked by Joao Faria Martins, 7 January 2022 and 8 January 2022.
+Additions to Lwarp_mathjax.txt:
+Two lines were added to the script, as shown,           in order that browsers can find Xy-Jaxv3, hopefully without breaking the MathJax emulation code.
+In particular these additions to the original configuration do not seem to break the equation numbering.
+
+
+Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3 and
+in "40.11 lwarp_mathjax.txt" in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+--
+
+
+This modification in the Lwarp configuration file was produced under items 5 and 6 of the licence https://www.ctan.org/license/lppl1.3
+and also the following paragraph in the official Lwarp manual, http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/lwarp/lwarp.pdf
+"40.11 lwarp_mathjax.txt custom script
+To generate a custom script, such as to use a local repository, copy lwarp_mathjax.txt to a new file, make changes while keeping lwarp-s adjustments for equation numbering and starred macros, and use \MathJaxFilename to select the new filename."
+-->
+
+
+
+
+<script>
+// Lwarp MathJax emulation code
+//
+// Based on code by Davide P. Cervone.
+// Equation numbering: https://github.com/mathjax/MathJax/issues/2427
+// Starred and ifnextchar macros: https://github.com/mathjax/MathJax/issues/2428
+// \left, \right delimiters: https://github.com/mathjax/MathJax/issues/2535
+//
+// Modified by Brian Dunn to adjust equation numbering and add subequations.
+//
+// LaTeX can use \seteqnumber{subequations?}{section}{number} before each equation.
+// subequations? is 0 usually, 1 if inside subequations.
+// section is a string printed as-is, or empty.
+// number is auto-incremented by MathJax between equations.
+//
+// Tweaks by Joao Faria Martins (08/01/2022) in order that Xy-jaxv3 can be found. Lots of credit to instructions in https://github.com/sonoisa/XyJax-v3
+// added by Joao Faria Martins: 07 Jan 2022 '[custom]/xypic.js',            paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+
+
+
+MathJax = {
+      subequations: "0",
+      section: "",
+      loader: {
+             load: ['[tex]/tagformat', '[tex]/textmacros', '[custom]/xypic.js'],
+             paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+      },
+      startup: {
+             ready() {
+                  //          These would be replaced by import commands if you wanted to make
+                  //          a proper extension.
+                  const Configuration = MathJax._.input.tex.Configuration.Configuration;
+                  const CommandMap = MathJax._.input.tex.SymbolMap.CommandMap;
+                  const Macro = MathJax._.input.tex.Symbol.Macro;
+                  const TexError = MathJax._.input.tex.TexError.default;
+                  const ParseUtil = MathJax._.input.tex.ParseUtil.default;
+                  const expandable = MathJax._.util.Options.expandable;
+
+
+
+                  //          Insert the replacement string into the TeX string, and check
+                  //          that there haven't been too many maxro substitutions (prevents
+                  //          infinite loops).
+                  const useArgument = (parser, text) => {
+                         parser.string = ParseUtil.addArgs(parser, text, parser.string.slice(parser.i));
+                         parser.i = 0;
+                         if (++parser.macroCount > parser.configuration.options.maxMacros) {
+                               throw new TexError('MaxMacroSub1',
+                               'MathJax maximum macro substitution count exceeded; ' +
+                               'is there a recursive macro call?');
+                         }
+                  }
+
+
+
+                  //          Create the command map for:
+                  //                 \ifstar, \ifnextchar, \ifblank, \ifstrequal, \seteqnumber
+                  new CommandMap('Lwarp-macros', {
+                         ifstar: 'IfstarFunction',
+                         ifnextchar: 'IfnextcharFunction',
+                         ifblank: 'IfblankFunction',
+                         ifstrequal: 'IfstrequalFunction',
+                         seteqnumber: 'SeteqnumberFunction'
+                  }, {
+                         //         This function implements an ifstar macro.
+                         IfstarFunction(parser, name) {
+                               const resultstar = parser.GetArgument(name);
+                               const resultnostar = parser.GetArgument(name);
+                               const star = parser.GetStar();                           // true if there is a *
+                               useArgument(parser, star ? resultstar : resultnostar);
+                         },
+
+
+
+                         //         This function implements an ifnextchar macro.
+                         IfnextcharFunction(parser, name) {
+                               let whichchar = parser.GetArgument(name);
+                               if (whichchar.match(/^(?:0x[0-9A-F]+|[0-9]+)$/i)) {
+                                    // $ syntax highlighting
+                                    whichchar = String.fromCodePoint(parseInt(whichchar));
+                               }
+                               const resultnextchar = parser.GetArgument(name);
+                               const resultnotnextchar = parser.GetArgument(name);
+                               const gotchar = (parser.GetNext() === whichchar);
+                               useArgument(parser, gotchar ? resultnextchar : resultnotnextchar);
+                         },
+
+
+
+                         // This function implements an ifblank macro.
+                         IfblankFunction(parser, name) {
+                               const blankarg = parser.GetArgument(name);
+                               const resultblank = parser.GetArgument(name);
+                               const resultnotblank = parser.GetArgument(name);
+                               const isblank = (blankarg.trim() == "");
+                               useArgument(parser, isblank ? resultblank : resultnotblank);
+                         },
+
+
+
+                         // This function implements an ifstrequal macro.
+                         IfstrequalFunction(parser, name) {
+                               const strequalfirst = parser.GetArgument(name);
+                               const strequalsecond = parser.GetArgument(name);
+                               const resultequal = parser.GetArgument(name);
+                               const resultnotequal = parser.GetArgument(name);
+                               const isequal = (strequalfirst == strequalsecond);
+                               useArgument(parser, isequal ? resultequal : resultnotequal);
+                         },
+
+
+
+                         //         This function modifies the equation numbers.
+                         SeteqnumberFunction(parser, name) {
+                                    //   Get the macro parameters
+                                    const star = parser.GetStar();                        // true if there is a *
+                                    const optBrackets = parser.GetBrackets(name);          // contents of optional brackets
+                                    const newsubequations = parser.GetArgument(name);        // the subequations argument
+                                    const neweqsection = parser.GetArgument(name);        // the eq section argument
+                                    const neweqnumber = parser.GetArgument(name);          // the eq number argument
+                                    MathJax.config.subequations=newsubequations ;         // a string with boolean meaning
+                                    MathJax.config.section=neweqsection ;                 // a string with numeric meaning
+                                    parser.tags.counter = parser.tags.allCounter = neweqnumber ;
+                         }
+
+
+
+                  });
+
+
+
+                  //          Create the Lwarp-macros package
+                  Configuration.create('Lwarp-macros', {
+                         handler: {macro: ['Lwarp-macros']}
+                  });
+
+
+
+                  MathJax.startup.defaultReady();
+
+
+
+                  // For forward references:
+                  MathJax.startup.input[0].preFilters.add(({math}) => {
+                         if (math.inputData.recompile){
+                                    MathJax.config.subequations = math.inputData.recompile.subequations;
+                                    MathJax.config.section = math.inputData.recompile.section;
+                         }
+                  });
+                  MathJax.startup.input[0].postFilters.add(({math}) => {
+                         if (math.inputData.recompile){
+                                    math.inputData.recompile.subequations = MathJax.config.subequations;
+                                    math.inputData.recompile.section = MathJax.config.section;
+                         }
+                  });
+
+
+
+                         // For \left, \right with unicode-math:
+                         const {DelimiterMap} = MathJax._.input.tex.SymbolMap;
+                         const {Symbol} = MathJax._.input.tex.Symbol;
+                         const {MapHandler} = MathJax._.input.tex.MapHandler;
+                         const delimiter = MapHandler.getMap('delimiter');
+                         delimiter.add('\\lBrack', new Symbol('\\lBrack', '\u27E6'));
+                         delimiter.add('\\rBrack', new Symbol('\\rBrack', '\u27E7'));
+                         delimiter.add('\\lAngle', new Symbol('\\lAngle', '\u27EA'));
+                         delimiter.add('\\rAngle', new Symbol('\\rAngle', '\u27EB'));
+                         delimiter.add('\\lbrbrak', new Symbol('\\lbrbrak', '\u2772'));
+                         delimiter.add('\\rbrbrak', new Symbol('\\rbrbrak', '\u2773'));
+                         delimiter.add('\\lbag', new Symbol('\\lbag', '\u27C5'));
+                         delimiter.add('\\rbag', new Symbol('\\rbag', '\u27C6'));
+                         delimiter.add('\\llparenthesis', new Symbol('\\llparenthesis', '\u2987'));
+                         delimiter.add('\\rrparenthesis', new Symbol('\\rrparenthesis', '\u2988'));
+                         delimiter.add('\\llangle', new Symbol('\\llangle', '\u2989'));
+                         delimiter.add('\\rrangle', new Symbol('\\rrangle', '\u298A'));
+                         delimiter.add('\\Lbrbrak', new Symbol('\\Lbrbrak', '\u27EC'));
+                         delimiter.add('\\Rbrbrak', new Symbol('\\Rbrbrak', '\u27ED'));
+                         delimiter.add('\\lBrace', new Symbol('\\lBrace', '\u2983'));
+                         delimiter.add('\\rBrace', new Symbol('\\rBrace', '\u2984'));
+                         delimiter.add('\\lParen', new Symbol('\\lParen', '\u2985'));
+                         delimiter.add('\\rParen', new Symbol('\\rParen', '\u2986'));
+                         delimiter.add('\\lbrackubar', new Symbol('\\lbrackubar', '\u298B'));
+                         delimiter.add('\\rbrackubar', new Symbol('\\rbrackubar', '\u298C'));
+                         delimiter.add('\\lbrackultick', new Symbol('\\lbrackultick', '\u298D'));
+                         delimiter.add('\\rbracklrtick', new Symbol('\\rbracklrtick', '\u298E'));
+                         delimiter.add('\\lbracklltick', new Symbol('\\lbracklltick', '\u298F'));
+                         delimiter.add('\\rbrackurtick', new Symbol('\\rbrackurtick', '\u2990'));
+                         delimiter.add('\\langledot', new Symbol('\\langledot', '\u2991'));
+                         delimiter.add('\\rangledot', new Symbol('\\rangledot', '\u2992'));
+                         delimiter.add('\\lparenless', new Symbol('\\lparenless', '\u2993'));
+                         delimiter.add('\\rparengtr', new Symbol('\\rparengtr', '\u2994'));
+                         delimiter.add('\\Lparengtr', new Symbol('\\Lparengtr', '\u2995'));
+                         delimiter.add('\\Rparenless', new Symbol('\\Rparenless', '\u2996'));
+                         delimiter.add('\\lblkbrbrak', new Symbol('\\lblkbrbrak', '\u2997'));
+                         delimiter.add('\\rblkbrbrak', new Symbol('\\rblkbrbrak', '\u2998'));
+                         delimiter.add('\\lvzigzag', new Symbol('\\lvzigzag', '\u29D8'));
+                         delimiter.add('\\rvzigzag', new Symbol('\\rvzigzag', '\u29D9'));
+                         delimiter.add('\\Lvzigzag', new Symbol('\\Lvzigzag', '\u29DA'));
+                         delimiter.add('\\Rvzigzag', new Symbol('\\Rvzigzag', '\u29DB'));
+                         delimiter.add('\\lcurvyangle', new Symbol('\\lcurvyangle', '\u29FC'));
+                         delimiter.add('\\rcurvyangle', new Symbol('\\rcurvyangle', '\u29FD'));
+                         delimiter.add('\\Vvert', new Symbol('\\Vvert', '\u2980'));
+             }           // ready
+      },                // startup
+
+
+//xypic added: Joao Faria Martins (8 Jan 2022)
+      tex: {
+             packages: {'[+]': ['tagformat', 'Lwarp-macros', 'textmacros', 'xypic']},
+             tags: "ams",
+                         tagformat: {
+                                    number: function (n) {
+                                         if(MathJax.config.subequations==0)
+                                                 return(MathJax.config.section + n);
+                                         else
+                                                 return(MathJax.config.section + String.fromCharCode(96+n));
+                                    },
+                         },
+      }
+}
+</script>
+
+
+
+<script
+             id="MathJax-script"
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
+
+
+
+</head>
+<body>
+
+
+<a id="Topology_probsheet-5-autopage-73"></a>
+<div class="pagegrid">
+
+
+<nav class="topnavigation"><a href="Topology_Problemsheet-5.html" class="linkhome" >
+Home</a></nav>
+<div class="sidetoccontainer">
+
+
+<nav class="sidetoc">
+
+
+<div class="sidetoctitle">
+
+<p>
+<span class="sidetocthetitle">MATH3225 Problem Sheet 5</span>
+</p>
+
+<p>
+Contents
+</p>
+</div>
+
+
+<div class="sidetoccontents">
+
+<p>
+<a href="Topology_Problemsheet-5.html" class="linkhome" >
+Home</a>
+</p>
+
+<p>
+<a href="Exercise series 5-1.html#autosec-5" class="tocsection" >
+<span class="sectionnumber">1</span>&#x2003;Exercises for week 9</a>
+</p>
+
+
+<p>
+<a href="Exercise series 5-2.html#autosec-34" class="tocsection" >
+<span class="sectionnumber">2</span>&#x2003;Some general exercises: no week attached to them</a>
+</p>
+
+
+<p>
+<a href="Exercise series 5-3.html#autosec-74" class="tocsection" >
+<span class="sectionnumber">3</span>&#x2003;Exercises for week 10</a>
+</p>
+
+
+</div>
+
+</nav>
+
+</div>
+
+
+<main class="bodycontainer">
+
+
+<section class="textbody">
+
+<h1>MATH3225 Problem Sheet 5</h1>
+
+<!--MathJax customizations:-->
+<div data-nosnippet
+    style="display:none"
+>
+
+\(\newcommand{\footnotename}{footnote}\)
+
+\(\def \LWRfootnote {1}\)
+
+\(\newcommand {\footnote }[2][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\newcommand {\footnotemark }[1][\LWRfootnote ]{{}^{\mathrm {#1}}}\)
+
+\(\let \LWRorighspace \hspace \)
+
+\(\renewcommand {\hspace }{\ifstar \LWRorighspace \LWRorighspace }\)
+
+\(\newcommand {\TextOrMath }[2]{#2}\)
+
+\(\newcommand {\mathnormal }[1]{{#1}}\)
+
+\(\newcommand \ensuremath [1]{#1}\)
+
+\(\newcommand {\LWRframebox }[2][]{\fbox {#2}} \newcommand {\framebox }[1][]{\LWRframebox } \)
+
+\(\newcommand {\setlength }[2]{}\)
+
+\(\newcommand {\addtolength }[2]{}\)
+
+\(\newcommand {\setcounter }[2]{}\)
+
+\(\newcommand {\addtocounter }[2]{}\)
+
+\(\newcommand {\arabic }[1]{}\)
+
+\(\newcommand {\number }[1]{}\)
+
+\(\newcommand {\noalign }[1]{\text {#1}\notag \\}\)
+
+\(\newcommand {\cline }[1]{}\)
+
+\(\newcommand {\directlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\luatexdirectlua }[1]{\text {(directlua)}}\)
+
+\(\newcommand {\protect }{}\)
+
+\(\def \LWRabsorbnumber #1 {}\)
+
+\(\def \LWRabsorbquotenumber &quot;#1 {}\)
+
+\(\newcommand {\LWRabsorboption }[1][]{}\)
+
+\(\newcommand {\LWRabsorbtwooptions }[1][]{\LWRabsorboption }\)
+
+\(\def \mathchar {\ifnextchar &quot;\LWRabsorbquotenumber \LWRabsorbnumber }\)
+
+\(\def \mathcode #1={\mathchar }\)
+
+\(\let \delcode \mathcode \)
+
+\(\let \delimiter \mathchar \)
+
+\(\def \oe {\unicode {x0153}}\)
+
+\(\def \OE {\unicode {x0152}}\)
+
+\(\def \ae {\unicode {x00E6}}\)
+
+\(\def \AE {\unicode {x00C6}}\)
+
+\(\def \aa {\unicode {x00E5}}\)
+
+\(\def \AA {\unicode {x00C5}}\)
+
+\(\def \o {\unicode {x00F8}}\)
+
+\(\def \O {\unicode {x00D8}}\)
+
+\(\def \l {\unicode {x0142}}\)
+
+\(\def \L {\unicode {x0141}}\)
+
+\(\def \ss {\unicode {x00DF}}\)
+
+\(\def \SS {\unicode {x1E9E}}\)
+
+\(\def \dag {\unicode {x2020}}\)
+
+\(\def \ddag {\unicode {x2021}}\)
+
+\(\def \P {\unicode {x00B6}}\)
+
+\(\def \copyright {\unicode {x00A9}}\)
+
+\(\def \pounds {\unicode {x00A3}}\)
+
+\(\let \LWRref \ref \)
+
+\(\renewcommand {\ref }{\ifstar \LWRref \LWRref }\)
+
+\( \newcommand {\multicolumn }[3]{#3}\)
+
+\(\require {textcomp}\)
+
+\(\newcommand {\intertext }[1]{\text {#1}\notag \\}\)
+
+\(\let \Hat \hat \)
+
+\(\let \Check \check \)
+
+\(\let \Tilde \tilde \)
+
+\(\let \Acute \acute \)
+
+\(\let \Grave \grave \)
+
+\(\let \Dot \dot \)
+
+\(\let \Ddot \ddot \)
+
+\(\let \Breve \breve \)
+
+\(\let \Bar \bar \)
+
+\(\let \Vec \vec \)
+
+\(\newcommand {\id }{\mathrm {id}}\)
+
+\(\newcommand {\llv }{\left \lvert }\)
+
+\(\newcommand {\rrv }{\right \rvert }\)
+
+\(\newcommand {\ve }{\varepsilon }\)
+
+\(\newcommand {\C }{\mathbb {C}}\)
+
+\(\newcommand {\N }{\mathbb {N}}\)
+
+\(\newcommand {\R }{\mathbb {R}}\)
+
+\(\newcommand {\Z }{\mathbb {Z}}\)
+
+\(\newcommand {\llb }{\left \lbrace }\)
+
+\(\newcommand {\rrb }{\right \rbrace }\)
+
+\(\newcommand {\ol }{\overline }\)
+
+\(\renewcommand {\phi }{\varphi }\)
+
+\(\newcommand *{\QEDB }{\quad \begin {flushright} {$\blacksquare $} \end {flushright} }\)
+
+\( \newcommand {\M }{\mathbb {M}}\)
+
+\(\newcommand {\R }{\mathbb {R}}\)
+
+\(\newcommand {\N }{\mathbb {N}}\)
+
+\(\newcommand {\Z }{\mathbb {Z}}\)
+
+\(\newcommand {\Q }{\mathbb {Q}}\)
+
+\(\newcommand {\circo }{\accentset {\circ }}\)
+
+\(\newcommand {\e }{\varepsilon }\)
+
+\(\newcommand {\B }{\mathbb {B}}\)
+
+\(\newcommand {\mbb }{\mathbb }\)
+
+\(\newcommand {\C }{\mbb {C}}\)
+
+\(\newcommand {\CP }{\mbb {CP}^{n} }\)
+
+\(\newcommand {\mc }{\mathcal }\)
+
+\(\newcommand {\la }{\langle }\)
+
+\(\newcommand {\ra }{\rangle }\)
+
+\(\newcommand {\F }{\mathbb {F}}\)
+
+\(\newcommand {\h }{\mathcal {H}}\)
+
+\(\newcommand {\A }{\mathcal {A}}\)
+
+\(\newcommand {\Ca }{\mathcal {C}}\)
+
+\(\newcommand {\tu }{\rightarrow }\)
+
+\(\newcommand {\uu }{\uparrow }\)
+
+\(\newcommand {\du }{\downarrow }\)
+
+\(\newcommand {\wtu }{\rightharpoonup }\)
+
+\(\newcommand {\wstar }{\xrightharpoonup {\ast }}\)
+
+\(\newcommand {\emb }{\hookrightarrow }\)
+
+\(\newcommand {\cemb }{\subseteq \textcolor {blue}{\subseteq }}\)
+
+\(\newcommand {\Om }{\Omega }\)
+
+\(\newcommand {\om }{\omega }\)
+
+\(\newcommand {\dl }{{\delta }}\)
+
+\(\newcommand {\Dl }{{\Delta }}\)
+
+\(\newcommand {\ta }{{\theta }}\)
+
+\(\newcommand {\al }{{\alpha }}\)
+
+\(\newcommand {\vphi }{\varphi }\)
+
+\(\newcommand {\ed }{{\rm d}}\)
+
+\(\newcommand {\dv }{{\rm d}^{\ast }}\)
+
+\(\newcommand {\D }{{\nabla }}\)
+
+\(\newcommand {\Db }{{\nabla ^{\bot }}}\)
+
+\(\newcommand {\ti }[1]{{\tilde {#1}}}\)
+
+\(\newcommand {\eps }{{\varepsilon }}\)
+
+\(\newcommand {\fr }[2]{\frac {#1}{#2}}\)
+
+\(\newcommand {\sm }{{\setminus }}\)
+
+\(\newcommand {\Mn }{\mathcal {M}}\)
+
+\(\newcommand {\Nn }{\mathcal {N}}\)
+
+\(\newcommand {\T }{{\rm T}}\)
+
+\(\newcommand {\p }{\rho }\)
+
+\(\newcommand {\pl }[2]{{\frac {\partial #1}{\partial #2}}}\)
+
+\(\newcommand {\ppl }[3]{{\frac {\partial ^2 #1}{\partial #2 \partial #3}}}\)
+
+\(\newcommand {\pppl }[4]{{\frac {\partial ^3 #1}{\partial #2 \partial #3 \partial #4}}}\)
+
+\(\newcommand {\pal }[1]{\frac {\partial ^{|\alpha |} #1}{\partial x^{\alpha }}}\)
+
+\(\newcommand {\zb }{\overline {z}}\)
+
+\(\newcommand {\db }{\overline {\partial }}\)
+
+\(\newcommand {\de }{\partial }\)
+
+\(\newcommand {\nn }{\nonumber }\)
+
+\(\newcommand {\wt }{\widetilde }\)
+
+\(\newcommand {\ol }{\overline }\)
+
+\(\newcommand {\RP }[1]{\mathbb {R}\mathbb {P}^{#1}}\)
+
+\(\newcommand {\bigslant }[2]{ {{#1}\left /{}_{#2}\right .}}\)
+
+\(\newcommand {\ii }{\mathrm {i}}\)
+
+\(\newcommand {\Int }{\mathrm {Int}}\)
+
+</div>
+
+<!--
+...... section Exercises for week 10 ......
+-->
+<h4 id="autosec-74"><span class="sectionnumber">3&#x2003;</span>Exercises for week 10</h4>
+<a id="Topology_probsheet-5-autopage-74"></a>
+<a id="Topology_probsheet-5-autofile-3"></a>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-75"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">14</span></span>. </span> <b>(*)</b> Let \(X\) and \(Y\) be topological spaces. Suppose that
+\(f\colon X \to Y\) is continuous. Let \(x,x&apos;\in X\). Let \(y=f(x)\) and \(y&apos;=f(x&apos;)\).<br />
+Let \(\phi ,\gamma \colon [0,1]\to X\) be paths in \(X\), with \(\gamma (0)=x=\phi (0)\) and \(\gamma (1)=x&apos;=\phi (1)\). Suppose that \(\phi \) and \(\gamma \) are path-homotopic. Prove that \(f\circ
+\gamma , f\circ \phi \colon [0,1]\to Y\) are path-homotopic paths, both starting in \(y\) and both ending in \(y&apos;\).<br />
+<b>Hint:</b> Adapt the comments just after Definition 5.41 of the notes.
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> First of all \((f\circ \gamma )(0)=(f\circ \phi )(0)=f(x)=y\) and \((f\circ \gamma )(1)=(f\circ \phi )(1)=f(x&apos;)=y&apos;\). So \(f\circ \gamma , f\circ \phi \colon [0,1]\to Y\)
+each starts in \(y\), and each ends in \(y&apos;\), so it makes sense to address whether the paths \(f\circ \gamma \) and \(f\circ \phi \) are path-homotopic.
+</p>
+
+<p>
+Let \(H\colon [0,1]^2 \to X\) be a path-homotopy between \(\phi \) and \(\gamma \). So \(H\colon [0,1]^2 \to X\) is continuous, and satisfies:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">•</span> \(H(t,0)=\phi (t)\) and \(H(t,1)=\gamma (t)\), for each \(t \in [0,1]\);
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(0,s)=x\) and \(H(1,s)=x&apos;\), for each \(s \in [0,1]\).
+</p>
+</li>
+</ul>
+
+<p>
+Take \(J=f\circ H\), so \(J\) is a continuous function, \([0,1]^2 \to Y\), since it is the composite of continuous functions. Moreover:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">•</span> \(J(t,0)=f(H(t,0))=(f\circ \phi )(t)\), and \(J(t,1)=f(H(t,1))=(f\circ \gamma )(t)\), for each \(t \in [0,1]\);
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(J(0,s)=f(H(0,s))=f(x)=y\), and \(J(1,s)=f(H(1,s))=f(x&apos;)=y&apos;\), for each \(s \in [0,1]\).
+</p>
+</li>
+</ul>
+
+<p>
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-78"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">15</span></span>. </span> Let \(X\) and \(Y\) be topological spaces, let \(x \in X\) and let
+\(h\colon X\rightarrow Y\) be a homeomorphism. Prove that for any \(x\in X\), the induced map \(h_*\colon \pi _1(X,x)\rightarrow \pi _1(Y,h(x))\) is a group isomorphism (i.e. a bijective homomorphism).
+</p>
+
+</li>
+
+</ul>
+
+</div>
+<blockquote>
+
+<p>
+<b>Solution:</b> Given that \(h\colon X \to Y\) is continuous, we already know that we have an induced homomorphism \(h_*\colon \pi _1(X,x)\rightarrow \pi _1(Y,h(x))\), of groups. So it suffices to prove that
+\(h_*\colon \pi _1(X,x)\rightarrow \pi _1(Y,h(x))\) is bijective. We give two different arguments:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+<li>
+<p>
+<b>First proof:</b><br />
+Let us show that \(h_*\) is bijective. To see that it is surjective, note that, for every loop \(\gamma \) in \(Y\) with base \(h(x)\), the path \(h^{-1} \circ \gamma \) is a loop in \(X\) with base \(x\) and furthermore
+\(h_*([h^{-1} \circ \gamma ]) = [h \circ h^{-1} \circ \gamma ] = [\gamma ]\). Hence \(h_*\) is surjective.
+</p>
+<p>
+To see that it is injective, let us fix \(\gamma _1\) and \(\gamma _2\) to be two loops in \(X\) with base \(x\) satisfying that \(h_*([\gamma _1])=h_*([\gamma _2])\). We show that \([\gamma _1] = [\gamma _2]\).
+</p>
+<p>
+Recall that \(h_*([\gamma _1])= [h\circ \gamma _1]\) and \(h_*([\gamma _2])= [h\circ \gamma _2]\). So \([h\circ \gamma _1] = [h\circ \gamma _2]\). Now recall that, since \(h\) is a homeomorphism, \(h^{-1}\)
+is continuous. So we have that \((h^{-1})_*:\pi _1(Y,h(x)) \rightarrow \pi _1(X,x)\) is a well-defined function that is a group homomorphism. In particular \((h^{-1})_*([h\circ \gamma _1]) = (h^{-1})_*([h\circ
+\gamma _2])\). Finally note that
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+<!--
+
+
+                                                                                            (h−1 )∗ ([h ◦ γ1 ]) = [h−1 ◦ h ◦ γ1 ] = [γ1 ],
+                                                                                            (h−1 )∗ ([h ◦ γ2 ]) = [h−1 ◦ h ◦ γ2 ] = [γ2 ].
+
+
+-->
+
+<p>
+
+\begin{align*}
+(h^{-1})_*([h\circ \gamma _1]) &amp;= [h^{-1}\circ h \circ \gamma _1] = [\gamma _1], \\ (h^{-1})_*([h\circ \gamma _2]) &amp;= [h^{-1}\circ h \circ \gamma _2] = [\gamma _2].
+\end{align*}
+We conclude that \([\gamma _1] = [\gamma _2]\), as desired.
+</p>
+</li>
+<li>
+
+<p>
+
+</p>
+</li>
+<li>
+
+<p>
+<b>Second proof:</b><br />
+It suffices to find an explicit inverse of \(h_*\colon \pi _1(X,x)\rightarrow \pi _1(Y,h(x))\). Take \(g\colon Y \to X\) to be the inverse of \(f\), also a continuous function, because \(h\colon X \to Y\) is a
+homeomorphism. By definition of inverse function, \(h\circ g=\id _Y\) and \(g\circ h=\id _X\). Take \(g_*\colon \pi _1(Y,h(x))\to \pi _1(X,x)\). We claim that \(g_*\) is the inverse of \(h_*\). So note:
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+<!--
+
+
+                                                                                         g∗ ◦ h∗ = (g ◦ h)∗ , by Theorem 5.44.
+                                                                                                 = (idX )∗
+                                                                                                 = idπ1 (X,x) , again by Theorem 5.44.
+
+
+
+-->
+
+<p>
+
+\begin{align*}
+g_*\circ h_*&amp;=(g\circ h)_*, \textrm { by Theorem 5.44.}\\ &amp;=(\id _X)_*\\ &amp;=\id _{\pi _1(X,x)}, \textrm { again by Theorem 5.44.}\\
+\end{align*}
+Analogously,
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+<!--
+
+
+                                                                                        h∗ ◦ g∗ = (h ◦ g)∗ , by Theorem 5.44.
+                                                                                                = (idY )∗
+                                                                                                = idπ1 (Y,f (x)) , again by Theorem 5.44.
+
+
+
+-->
+
+<p>
+
+\begin{align*}
+h_*\circ g_*&amp;=(h\circ g)_*, \textrm { by Theorem 5.44.}\\ &amp;=(\id _Y)_*\\ &amp;=\id _{\pi _1(Y,f(x))}, \textrm { again by Theorem 5.44.}\\
+\end{align*}
+
+</p>
+</li>
+</ul>
+
+<p>
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+<p>
+
+</p>
+
+<p>
+We now introduce a new definition, which is also in the lecture notes: See <b>5.12 Strong deformation retracts</b>.
+</p>
+
+<p>
+
+</p>
+
+<p>
+<b>Definition:</b> Let \(X\) be a topological space. A subset \(K\subseteq X\) is called a <b>strong deformation retract</b> of \(X\), if there exists a continuous function, \(H\colon X \times [0,1] \to X\) such that:
+</p>
+<ul class="enumerate" style="list-style-type:none">
+
+<li>
+<p>
+<span class="listmarker">1.</span> \(H(x,0)=x\), for all \(x \in X\),
+</p>
+
+</li>
+<li>
+
+<p>
+<span class="listmarker">2.</span> \(H(x,1)\in K\), for all \(x \in X\),
+</p>
+
+</li>
+<li>
+
+<p>
+<span class="listmarker">3.</span> \(H(k,t)=k\), for all \(k \in K\) and \(t\in [0,1]\).
+</p>
+</li>
+</ul>
+
+<p>
+We call the map \(H\colon X\times [0,1]\to X\) a strong deformation retraction, from \(X\) to \(K\).
+</p>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-81"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">16</span></span>. </span> Prove that \(\R \times \{0\}\) is a strong deformation retract of \(\R
+\times [-1,1]\), where we consider the topologies induced by the standard topology of \(\R ^2\).<br />
+<b>Hint:</b> You can use the fact that the product topology in \((\R \times [-1,1])\times [0,1]\) is the topology that \(\R ^3\), with the Euclidean topology, induces on \(\R \times [-1,1]\times [0,1]\).
+</p>
+<blockquote>
+
+<p>
+<b>Solution (given):</b> Recall that
+</p>
+
+<p>
+\[\R \times [-1,1]=\{(x,y):    x \in \R \textrm { and } y \in [-1,1] \}.\]
+</p>
+
+<p>
+We consider the function:
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+
+<!--
+
+
+
+                                                                                         H : (R × [−1, 1]) × [0, 1] → R × [−1, 1]
+                                                                                                                                  
+                                                                                                          (x, y, t) 7→ x, y(1 − t) .
+
+
+
+-->
+
+
+<p>
+
+
+\begin{align*}
+H\colon (\R \times [-1,1]) \times [0,1]&amp;\to \R \times [-1,1]\\ (x,y,t)&amp;\mapsto \big ( x, y(1-t) \big ).
+\end{align*}
+This function is continuous. Indeed letting \(\pi _1\colon \R \times [-1,1]\to \R \) and \(\pi _2\colon \R \times [-1,1]\to [-1,1]\) be the projections onto the first and second variables, we have that \((\pi _1\circ
+H) (x,y,t)=x\) and \((\pi _2\circ H )(x,y,t)=y(1-t)\). These are continuous functions, \(\R \times [-1,1]\times [0,1]\to \R \) and \(\R \times [-1,1]\times [0,1]\to [-1,1]\), since they are polynomials, in
+three variables.
+</p>
+
+<p>
+Finally we clearly have:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">•</span> \(H(x,y,0)=(x,y)\), for all \((x,y) \in \R \times [-1,1]\).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(x,y,1)=(x,0) \in \R \times \{0\}\) for all \((x,y) \in \R \times [-1,1]\).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(x,y, t)=(x,y)\), for all \((x,y) \in \R \times \{0\}\) and \(t\in [0,1]\). This is because \(H(x,0,t)=(x,0)\).
+</p>
+</li>
+</ul>
+
+<p>
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+
+<p>
+
+</p>
+
+<p>
+Yet, we now need another definition. Let \(X\) be a topological space.
+</p>
+
+<p>
+<b>Definition:</b> We say that \(K\subseteq X\) is a retract of \(X\) if there exists a continuous function \(p\colon X \to K\) such that \(p(k)=k\), for all \(k \in K\). (Here \(K\) is given the induced topology.)
+</p>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-84"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">17</span></span>. </span> Prove that if \(K\) is a strong deformation retract of \(X\) then \(K\) is
+a retract of \(X\).
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> Let \(H\colon X\times [0,1]\to X\) be a strong deformation retract of \(X\) onto \(K\). We consider the function \(f\colon X \to X\) such that \(f(x)=H(x,1)\). Given that, in particular
+</p>
+<ul class="enumerate" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">1.</span> \(H(k,t)=k\), for all \(k \in K\),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">2.</span> \(H(x,1)\in K\), for all \(x \in X\).
+</p>
+</li>
+</ul>
+
+<p>
+we have that \(f(k)=k\), for all \(k \in K\) and also that \(f(x)\in K\) for all \(x \in X\).
+</p>
+
+<p>
+We claim that \(f\colon X \to X\) is continuous. The properties of the product topology give that the function \(\iota _1\colon X \to X\times [0,1]\) such that \(\iota _1(x)=(x,1)\) is continuous. Indeed this follows
+from the fact that the two component functions, \(X \to X\), with \(x\mapsto x\), and \(X \to [0,1]\), \(x \mapsto 1\) are continuous, because the first is the identity function, \(X \to X\), and the second a constant function.
+</p>
+
+<p>
+So \(f=H\circ \iota _1\) is a continuous function \(X\to X\). Finally, since \(f(X)\subseteq K\), the co-restriction \(f^K\colon X \to K\), with \(x\mapsto f(x)\) ,is continuous, by the properties of the induced topology.
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-87"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">18</span></span>. </span> Let \(K\) be a strong deformation retract of \(X\). Prove that \(K\) is
+path-connected if, and only if, \(X\) is path connected.
+</p>
+<blockquote>
+
+<p>
+<b>Solution (given):</b> \(\Leftarrow \)<br />
+Suppose \(X\) is path-connected. Let us prove that \(K\) is path-connected. Let \(x, y \in K\). Let us find a path \(\gamma \colon [0,1] \to K\), with \(\gamma (0)=x\) and \(\gamma (1)=y\). Let \(\phi \colon [0,1]
+\to X\) be a path, starting in \(x\) and ending in \(y\), which exists, since \(X\) is path-connected. We know that \(K\) is a strong deformation retract of \(X\), and hence a retract of \(X\). So, choose \(p\colon X \to K\) with
+\(p(k)=k\), for all \(k \in K\). The function \(\gamma =p\circ \phi \) is path in \(K\), and moreover, \(\gamma (0)=x\) and \(\gamma (1)=y\).<br />
+<b>NB:</b> Alternatively, we can apply the previous exercise together with exercise <a href="Exercise series 5-1.html#impath-conn">2</a>.
+</p>
+
+<p>
+
+
+</p>
+
+<p>
+\(\implies \)<br />
+Suppose that \(K\) is path-connected. Let us prove that \(X\) is path-connected. We choose a strong deformation retraction, \(H\colon X\times [0,1]\to X\), from \(X\) to \(K\).
+</p>
+
+<p>
+Let \(x,y \in X\). Let us build a path \(\gamma \) connecting \(x\) to \(y\). Consider the following three paths:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">•</span> \(\gamma _1\colon [0,1]\to X\) such that \(\gamma _1(t)=H(x,t)\). So \(\gamma _1(0)=x\) and \(\gamma _1(1)=H(x,1)\in K\).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(\gamma _2\colon [0,1]\to X\) such that \(\gamma _2(t)=H(y,t)\). So \(\gamma _2(0)=y\) and \(\gamma _2(1)=H(y,1)\in K\).
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> Consider a path \(\phi \colon [0,1]\to K\), connecting \(\gamma _1(1)\) and \(\gamma _2(1)\), which exists since \(K\) is path-connected.
+</p>
+</li>
+</ul>
+
+<p>
+A path connecting \(x\) to \(y\) is then, e.g., the concatenation \((\gamma _1 * \phi ) *\overline {\gamma _2}\). &#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-90"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">19</span></span>. </span> <b>(*)</b> Suppose that \(K\) is a strong deformation retract of \(X\).
+Let \(k\in K\). Prove that if \(\pi _1(K,k)\) is trivial then so is \(\pi _1(X,k)\).<br />
+<b>Hint:</b> Use the fact that the relation of path-homotopy between paths is an equivalence relation. In particular, if \(\gamma \sim \gamma &apos;\) and if \(\gamma &apos;\sim \gamma &apos;&apos;\), then \(\gamma
+\sim \gamma &apos;&apos;\).
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> It suffices to prove that \(\pi _1(X,k)\) has only one element. To this end we prove that any path \(\gamma \colon [0,1]\to X\), starting and ending in \(k\) is homotopic to \(e_k\), the constant path at
+\(k\). Consider a strong deformation retration \(H\colon X\times [0,1]\to X\) of \(X\) onto \(K\). Consider the function:
+</p>
+<span class="hidden"> \(\seteqnumber{0}{}{3}\)</span>
+
+
+<!--
+
+
+
+                                                                                                   H1 : [0, 1]2 → X
+                                                                                                        (s, t) 7→ H(γ(s), t).
+
+
+
+-->
+
+
+<p>
+
+
+\begin{align*}
+H_1\colon [0,1]^2 &amp;\to X\\ (s,t)&amp;\mapsto H(\gamma (s),t).
+\end{align*}
+<b>Claim:</b> \(H_1\) is continuous.
+</p>
+<blockquote>
+
+<p>
+<b>Proof of the claim</b><br />
+We first prove that the function \(F\colon [0,1]^2 \to X\times [0,1]\) such that \(F(s,t)=(\gamma (s),t)\) is continuous. The properties of the product topology tell us that it suffices proving that \(F_1\colon [0,1]^2
+\to X\) such that \(F_1(s,t)=\gamma (s)\) and \(F_2\colon [0,1]^2 \to [0,1]\) such that \(F_2(s,t)=t\) are continuous. The function \(F_2\) is continuous as it is the projection \([0,1]\times [0,1]\to [0,1]\), on
+the second variable. The function \(F_1\) is continuous since it is the composition with the projection \([0,1]\times [0,1]\to [0,1]\), on the first variable with \(\gamma \colon [0,1]\to X\).
+</p>
+
+<p>
+Now observe that \(H_1=H\circ F\).
+</p>
+</blockquote>
+
+<p>
+Now note that \(H_1\) is a path homotopy, starting at \(\gamma \). Indeed, \(H_1(s,0)=H(\gamma (s),0)=\gamma (s)\) for every \(s\in [0,1]\). Moreover \(H_1(0,t)=H(\gamma (0),t)=H(k,t)=k\), and
+\(H_1(1,t)=H(\gamma (1),t)=H(k,t)=k\). Note that \(H_1\) connects \(\gamma \) with the path \(\phi \colon [0,1]\to K\) such that \(\phi (s)=H_1(s,1)=H(\gamma (s),1)\). This is a path in \(K\), starting and ending
+in \(k\). And since \(\pi _1(K,k)\) is trivial, then \(\phi \sim e_k\). Since \(\gamma \sim \phi \) we have that \(\gamma \sim e_k\). &#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-94"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">20</span></span>. </span> <b>(*)</b> Let \(X=\{(x,y)\in \R ^2:   0 \leq y\leq x^2\}\).
+Prove that \(\pi _1\big (X,(0,0)\big )\) is trivial.<br />
+<b>Hint:</b> Find a deformation retraction from \(X\) onto \(\R \times \{0\}\), a convex set, and apply Theorem 5.35, together with the previous exercise.
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> The function \(H\colon X \times [0,1] \to X\) such that
+</p>
+
+<p>
+\[(x,y,s)\mapsto (x,y(1-s))\]
+</p>
+
+<p>
+is continuous, for each component is a polynomial in at most two variables. Clearly \(H(x,y,0)=(x,y)\) and \(H(x,y,1)=(x,0)\in \R \times \{0\}\), for each \((x,y)\in X\). Moreover every \((x,y)\in \R \times \{0\}\)
+must satisfy \(y=0\) and so \(H(x,y,t)=H(x,0,t)=(x,0)=(x,y)\) for each \(t \in [0,1]\). So \(\R \times \{0\}\) is a strong deformation retract of \(X\). Since \(\R \times \{0\}\) is convex, \(\pi _1\big (\R \times
+\{0\},(0,0)\big )\) is trivial. The previous exercise hence gives that \(\pi _1\big (X,(0,0)\big )\) is trivial.&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-97"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">21</span></span>. </span> <a id="exercise:ref"></a> Let \(X\) and \(Y\) be topological
+spaces. Let \(x \in X\) and \(y \in Y\). Let \(f\colon X\rightarrow Y\) be a continuous function with \(f(x)=y\).
+</p>
+
+<p>
+Suppose that \(\pi _1(X,x)\) is infinite, whereas \(\pi _1(Y,f(x))\) is trivial. Prove that there does not exists a continuous map \(g\colon Y \rightarrow X\) with \(g(y)=x\) and such that \((g \circ f)_* :   \pi
+_1(X,x) \rightarrow \pi _1(X,x)\) is injective.
+</p>
+<blockquote>
+
+<p>
+<b>Solution (given):</b> Suppose we have a continuous function \(f\colon X\to Y\) and points \(x\in X\) and \(y\in Y\) as described. Suppose we are given a continuous function \(g\colon Y \to X\) with \(g(y)=x\). We
+then have the following commutative diagram of pointed spaces and pointed maps,
+</p>
+
+<p>
+\[\xymatrix { &amp; (X,x)\ar @/^2pc/[rr]^{g\circ f} \ar [r]_{f} &amp;(Y,y) \ar [r]_{g}&amp; (X,x)}.\]
+</p>
+
+<p>
+(The diagram being commutative means exactly that ‘going’ from \(X \to X\), directly, via \(g\circ f\) is the same as going from \(X\) to \(Y\), via \(f\), and then going from \(Y\) to \(X\), via \(g\).)
+</p>
+
+<p>
+This gives the following commutative diagram of groups, and homomorphisms between groups:
+</p>
+
+<p>
+\[\xymatrix { &amp; \pi _1(X,y)\ar @/^2pc/[rr]^{(g\circ f)_*} \ar [r]_{f_*} &amp;\pi _1(Y,y) \ar [r]_{g_*}&amp; \pi _1(X,x)}.\]
+</p>
+
+<p>
+Suppose that \(\pi _1(Y,y)\) is trivial. So \(\pi (Y,y)=(\{e\},\cdot )\). Given any \(k\in \pi _1(X,x)\) we have that \((g\circ f)_*(k)=(g_*\circ f_*)(k)=g_*(e)=e_{\pi _1(X,x)}\), the identity of \(\pi
+_1(X,x)\). So all elements \(k \in \pi _1(X,x)\) are sent to the identity element of \(\pi _1(X,x)\), via \((g\circ f)_*\). And since \(\pi _1(X,x)\) is infinite, it cannot then be that \((g\circ f)_*\) is injective.
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-100"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">22</span></span>. </span> <b>(*)</b> Let \(X\) and \(Y\) be topological spaces. Let \(f\colon X
+\to Y\) be a continuous function. Let \(x\in X\) and let \(y = f(x)\). Prove that if \(\pi _1(X,x)\) is not the trivial group, but \(\pi _1(Y,y)\) is trivial, then there does not exist a continuous map \(g\colon Y\to X\) such
+that \(g\circ f=\mathrm {id}_X\).<br />
+
+
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> The solution is essentially a repetition of the solution of Exercise <a href="Exercise series 5-3.html#exercise:ref">21</a>. Suppose we have a function \(f\colon X\to Y\). Let \(x \in X\), fixed, and
+let \(y=f(x)\). Suppose we are given a continuous function \(g\colon Y \to X\) with \(g(y)=x\). We then have the following commutative diagram of pointed spaces and pointed maps.
+</p>
+
+<p>
+\[\xymatrix { &amp; (X,x)\ar @/^2pc/[rr]^{g\circ f} \ar [r]_{f} &amp;(Y,y) \ar [r]_{g}&amp; (X,x)}.\]
+</p>
+
+<p>
+(The diagram being commutative means exactly that ‘going’ from \(X \to X\), directly, via \(g\circ f\) is the same as going from \(X\) to \(Y\), via \(f\), and then going from \(Y\) to \(X\), via \(g\).)
+</p>
+
+<p>
+This gives the following commutative diagram of groups, and homomorphisms between groups:
+</p>
+
+<p>
+\[\xymatrix { &amp; \pi _1(X,x)\ar @/^2pc/[rr]^{(g\circ f)_*} \ar [r]_{f_*} &amp;\pi _1(Y,y) \ar [r]_{g_*}&amp; \pi _1(X,x)}.\]
+</p>
+
+<p>
+Suppose that \(\pi _1(Y,y)\) is trivial. So \(\pi (Y,y)=(\{e\},\cdot )\). Given any \(k\in \pi _1(X,x)\) we have that \((g\circ f)_*(k)=(g_*\circ f_*)(k)=g_*(e)=e_{\pi _1(X,x)}\), the identity of \(\pi
+_1(X,x)\). So all elements \(k \in \pi _1(X,x)\) are sent to the identity element of \(\pi _1(X,x)\), via \((g\circ f)_*\). And since \(\pi _1(X,x)\) has more than one element, it cannot then be that \((g\circ f)_*\) is
+injective.
+</p>
+
+<p>
+
+
+</p>
+
+<p>
+Suppose we had a function \(g\colon Y \to X\) with \(g\circ f=\id _X\). Then, as maps \(\pi _1(X,x)\to \pi _1(X,x)\), we would have \((g\circ f)_*=(\id _X)_*=\id _{\pi _1(X,x)}\). But then it would follow
+that \((g\circ f)_*\) would be injective; a contradiction.&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+<div class="amsthmbodydefinition">
+
+<ul class="list" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker"><a id="Topology_probsheet-5-autopage-103"></a>
+<span class="amsthmnamedefinition">Exercise</span><span class="amsthmnumberdefinition"> <span class="textup">23</span></span>. </span> Construct a path-homotopy between the path \(\gamma \colon
+[0,1]\to \R ^2\) such that \(\gamma (t)=(t,0)\) and the path \(\gamma &apos;\colon [0,1]\to \R ^2\) such that \(\gamma &apos;(t)=(t^2,t-t^2)\).<br />
+<b>Hint</b> Adapt the proof of Proposition 5.33. (The argument is a lot shorter as you can have an explicit form for a path-homotopy. Use the fact that polynomial functions in several variables are continuous.)
+</p>
+<blockquote>
+
+<p>
+<b>Solution:</b> Note that \(\gamma (0)=\gamma &apos;(0)=(0,0)\) and \(\gamma (1)=\gamma &apos;(1)=(1,0)\). So \(\gamma \) and \(\gamma &apos;\) have the same initial point and the same end-point. We take
+\(H\colon [0,1]\times [0,1]\to \R ^2\) to be such that \(H(t,s)=(1-s)\gamma (t)+s\gamma &apos;(t)\). So
+</p>
+
+<p>
+\[H(t,s)=\big ( (1-s)t+s t^2, s(t-t^2) \big ) .\]
+</p>
+
+<p>
+In particular, clearly:
+</p>
+<ul class="itemize" style="list-style-type:none">
+
+
+<li>
+<p>
+<span class="listmarker">•</span> \(H(t,0)=\gamma (t)\), for all \(t \in [0,1]\),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(t,1)=\gamma &apos;(t)\), for all \(t \in [0,1]\),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(0,s)=(0,0)\), for all \(s \in [0,1]\),
+</p>
+
+
+</li>
+<li>
+
+
+<p>
+<span class="listmarker">•</span> \(H(1,s)=(1,0)\), for all \(s \in [0,1]\).
+</p>
+</li>
+</ul>
+
+<p>
+Finally, \(H\colon [0,1]\times [0,1]\to \) is continuous given that its composition with the two projections \(\R ^2\to \R \), namely the component functions \((t,s)\mapsto (1-s)t+s t^2\) and \((t,s)\mapsto
+s(t-t^2)\), are continuous functions \([0,1]^2 \to \R \), because they are the restriction of polynomials of two variable (always continuous functions) to \([0,1]\times [0,1]\).<br />
+NB: this solution uses again that the topology of \(\R ^2\), with the standard topology, coincides with the product topology in \(\R \times \R \), where \(\R \) is given the Euclidean topology.
+</p>
+
+<p>
+&#x2003;
+</p>
+<div class="flushright">
+
+<p>
+&#x220E;
+</p>
+</div>
+
+</blockquote>
+
+</li>
+
+</ul>
+
+</div>
+
+<a id="Topology_probsheet-5-autofile-last"></a>
+</section>
+
+</main>
+
+
+<nav class="botnavigation"><a href="Topology_Problemsheet-5.html" class="linkhome" >
+Home</a></nav>
+
+</div><!-- grid -->
+</body>
+</html>
